@@ -1,0 +1,40 @@
+name: ""
+version: ""
+archetype: ""
+status: planning
+repo: ""
+website: ""
+docs: ""
+package:
+  registry: ""
+  name: ""
+  install_command: ""
+audience:
+  target_user: ""
+  primary_problem: ""
+positioning:
+  one_sentence: ""
+  proof: ""
+  limitations: ""
+channels:
+  primary: []
+  secondary: []
+assets:
+  demo: ""
+  screenshots: []
+  social_image: ""
+links:
+  github_release: ""
+  package: ""
+  x_post: ""
+  hn_post: ""
+  reddit_posts: []
+  product_hunt: ""
+metrics:
+  baseline_date: ""
+  github_stars: 0
+  downloads: 0
+review_dates:
+  day_1: ""
+  day_7: ""
+  day_30: ""
