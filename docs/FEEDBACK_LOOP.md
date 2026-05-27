@@ -61,7 +61,7 @@ If using remem, keep the memory type supported and put launch semantics into the
 
 ```text
 memory_type: architecture
-project: publish
+project: shipwise
 topic_key: launch-<project>-<version>-<date>
 text:
   Summary, platforms, links, metrics, feedback classes, template changes.

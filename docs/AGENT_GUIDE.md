@@ -1,8 +1,8 @@
 # Agent Guide
 
-This repository is a publishing guide for agents. It does not publish by itself.
+This repository is Shipwise — a publishing guide for agents. It does not publish by itself.
 
-When a user asks an agent to prepare or run an open-source launch, the agent should use this repository as the operating manual: read the project facts, read the platform source docs, prepare platform-specific assets, publish only where appropriate, and record outcomes.
+When a user asks an agent to prepare or run an open-source launch, the agent should use Shipwise as the operating manual: read the project facts, read the platform source docs, prepare platform-specific assets, publish only where appropriate, and record outcomes.
 
 ## Operating Rules
 

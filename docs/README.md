@@ -38,7 +38,7 @@ Read these in order when planning a launch. This is an agent-facing document sys
    - Markdown-first storage, with optional remem/Notion/spreadsheet backends.
 
 9. [ROADMAP.md](ROADMAP.md)
-   - How this publish guide should evolve.
+   - How Shipwise should evolve.
 
 ## Fast Path
 

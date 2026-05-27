@@ -1,11 +1,11 @@
-# Multi-AI Research: Open Source Publish Guide
+# Multi-AI Research: Open Source Publish Guide (became Shipwise)
 
 Date: 2026-05-26
-Workspace: `/Users/lifcc/Desktop/code/AI/tool/publish`
+Workspace: `/Users/lifcc/Desktop/code/AI/tool/publish` (later renamed to shipwise)
 
 ## Original Question
 
-Design a publish repository / planned guide for repeatedly launching open source projects such as `ccstats` and `remem`: which platforms to publish to, how to design the launch package, and how to organize the repository.
+Design a publish repository / planned guide (later named Shipwise) for repeatedly launching open source projects such as `ccstats` and `remem`: which platforms to publish to, how to design the launch package, and how to organize the repository.
 
 ## Method
 
@@ -66,7 +66,7 @@ Design a publish repository / planned guide for repeatedly launching open source
 ## Recommended Repository Shape
 
 ```text
-publish/
+shipwise/
   README.md
   docs/
     operating-model.md

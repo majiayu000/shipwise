@@ -1,8 +1,8 @@
-# Publish
+# Shipwise
 
 Agent-facing open-source publishing guide.
 
-`publish` is a documentation system that tells an agent how to plan and execute an open-source launch. It is not a posting bot, scheduler, growth hack system, or remem-specific workflow. It gives the agent the source-of-truth docs, platform rules, asset requirements, templates, and checklists needed to publish responsibly.
+`shipwise` is a documentation system that tells an agent how to plan and execute an open-source launch. It is not a posting bot, scheduler, growth hack system, or remem-specific workflow. It gives the agent the source-of-truth docs, platform rules, asset requirements, templates, and checklists needed to publish responsibly.
 
 It applies to developer tools, CLI utilities, libraries, SDKs, AI/agent tooling, registries, frameworks, apps, and technical writeups. `ccstats` and `remem` are examples only.
 
@@ -54,7 +54,7 @@ Read sources -> Classify -> Prepare assets -> Publish manually -> Record links -
 ## Repository Map
 
 ```text
-publish/
+shipwise/
   README.md
   docs/
     README.md

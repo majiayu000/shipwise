@@ -158,7 +158,7 @@ Markdown is the source of truth. If you use remem, save summaries with supported
 
 ```text
 memory_type: architecture
-project: publish
+project: shipwise
 topic_key: launch-{project}-{version}-{date}
 text: Launch summary, metrics, feedback classes, template changes.
 ```
