@@ -32,6 +32,7 @@ cp "$root/projects/_template/launch-plan.md" "$target/launch-plan.md"
 cp "$root/projects/_template/metrics.md" "$target/metrics.md"
 cp "$root/projects/_template/feedback.md" "$target/feedback.md"
 cp "$root/projects/_template/links.md" "$target/links.md"
+cp "$root/projects/_template/signals.md" "$target/signals.md"
 
 if command -v perl >/dev/null 2>&1; then
   perl -0pi -e "s/name: \"\"/name: \"$name\"/" "$target/project.yaml"
@@ -39,4 +40,4 @@ if command -v perl >/dev/null 2>&1; then
 fi
 
 echo "Created $target"
-echo "Next: fill project.yaml, positioning.md, and launch-plan.md"
+echo "Next: fill project.yaml, positioning.md, launch-plan.md, and signals.md"

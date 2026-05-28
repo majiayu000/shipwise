@@ -16,28 +16,32 @@ Read these in order when planning a launch. This is an agent-facing document sys
    - Source-of-truth platform index.
    - Official rules and posting requirements.
 
-4. [RELEASE_LIFECYCLE_CHECKLIST.md](RELEASE_LIFECYCLE_CHECKLIST.md)
+4. [TREND_SIGNAL_WORKFLOW.md](TREND_SIGNAL_WORKFLOW.md)
+   - Optional workflow for current GitHub/community trend evidence.
+   - Converts signals into local issues and PRs without promising external outcomes.
+
+5. [RELEASE_LIFECYCLE_CHECKLIST.md](RELEASE_LIFECYCLE_CHECKLIST.md)
    - Step-by-step workflow from readiness to 30-day review.
    - Use this as the execution checklist.
 
-5. [DISTRIBUTION_TEMPLATE.md](DISTRIBUTION_TEMPLATE.md)
+6. [DISTRIBUTION_TEMPLATE.md](DISTRIBUTION_TEMPLATE.md)
    - README distribution section.
    - Package/release channel checklist.
    - Platform asset checklist.
 
-6. [TEMPLATE_SYSTEM.md](TEMPLATE_SYSTEM.md)
+7. [TEMPLATE_SYSTEM.md](TEMPLATE_SYSTEM.md)
    - 70/30 reuse model.
    - Template variables.
    - How to adapt copy per platform.
 
-7. [SUCCESS_METRICS.md](SUCCESS_METRICS.md)
+8. [SUCCESS_METRICS.md](SUCCESS_METRICS.md)
    - Metrics for visibility, activation, feedback, contribution, and learning.
 
-8. [FEEDBACK_LOOP.md](FEEDBACK_LOOP.md)
+9. [FEEDBACK_LOOP.md](FEEDBACK_LOOP.md)
    - How to record launch outcomes.
    - Markdown-first storage, with optional remem/Notion/spreadsheet backends.
 
-9. [ROADMAP.md](ROADMAP.md)
+10. [ROADMAP.md](ROADMAP.md)
    - How Shipwise should evolve.
 
 ## Fast Path
@@ -53,6 +57,7 @@ Then fill:
 - `projects/<project-name>/project.yaml`
 - `projects/<project-name>/positioning.md`
 - `projects/<project-name>/launch-plan.md`
+- `projects/<project-name>/signals.md`
 - `projects/<project-name>/metrics.md`
 
 ## Maintenance Rule

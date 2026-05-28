@@ -16,6 +16,14 @@ positioning:
   one_sentence: ""
   proof: ""
   limitations: ""
+signals:
+  sources_checked: []
+  retrieval_date: ""
+  comparable_projects: []
+  signal_type: ""
+  decision: ""
+  local_issue: ""
+  local_pr: ""
 channels:
   primary: []
   secondary: []
