@@ -13,10 +13,11 @@ When an agent is asked to publish or prepare a launch:
 1. Read [docs/AGENT_GUIDE.md](docs/AGENT_GUIDE.md).
 2. Classify the project with [docs/DECISION_TREE.md](docs/DECISION_TREE.md).
 3. Open the relevant platform source docs under [docs/platforms/](docs/platforms/README.md).
-4. Fill or create a project launch folder under `projects/<project>/`.
-5. Follow [docs/RELEASE_LIFECYCLE_CHECKLIST.md](docs/RELEASE_LIFECYCLE_CHECKLIST.md).
-6. Use templates from `templates/` only after the platform source doc says that channel is appropriate.
-7. Record source links, post URLs, metrics, and feedback.
+4. If current community momentum affects timing or issue/PR scope, run [docs/TREND_SIGNAL_WORKFLOW.md](docs/TREND_SIGNAL_WORKFLOW.md).
+5. Fill or create a project launch folder under `projects/<project>/`.
+6. Follow [docs/RELEASE_LIFECYCLE_CHECKLIST.md](docs/RELEASE_LIFECYCLE_CHECKLIST.md).
+7. Use templates from `templates/` only after the platform source doc says that channel is appropriate.
+8. Record source links, post URLs, metrics, trend signals, and feedback.
 
 Optional docs-only scaffold:
 
@@ -48,7 +49,7 @@ Open-source launches often fail for avoidable reasons:
 This guide turns that into a repeatable documentation workflow:
 
 ```text
-Read sources -> Classify -> Prepare assets -> Publish manually -> Record links -> Review feedback -> Improve docs
+Read sources -> Classify -> Check trend signals when relevant -> Prepare assets -> Publish manually -> Record links -> Review feedback -> Improve docs
 ```
 
 ## Repository Map
@@ -60,6 +61,7 @@ shipwise/
     README.md
     AGENT_GUIDE.md
     DECISION_TREE.md
+    TREND_SIGNAL_WORKFLOW.md
     RELEASE_LIFECYCLE_CHECKLIST.md
     DISTRIBUTION_TEMPLATE.md
     TEMPLATE_SYSTEM.md
@@ -91,6 +93,7 @@ shipwise/
     github/
       RELEASE_NOTES.md
       README_DISTRIBUTION_SECTION.md
+      LAUNCH_READINESS_ISSUE.md
   playbooks/
     launch-project-template.md
     launch-ccstats-v0.1-skeleton.md
@@ -127,6 +130,10 @@ shipwise/
    - Every launch should leave behind metrics, feedback, decisions, and template updates.
    - The backing store can be markdown files, Notion, remem, a spreadsheet, or a database. The system should not depend on one tool.
 
+7. Treat trends as signals, not promises.
+   - GitHub Trending, HN, Product Hunt, X, and Reddit can justify local readiness issues and PRs.
+   - They must not become acceptance criteria or claims that external outcomes are guaranteed.
+
 ## Project Archetypes
 
 Use [docs/DECISION_TREE.md](docs/DECISION_TREE.md) for the full table.
@@ -159,6 +166,7 @@ Every launch needs:
 - Do not publish a Show HN before users can try the project.
 - Do not treat Product Hunt as the default first launch for developer-only tools.
 - Do not invent benchmark, savings, productivity, or user numbers.
+- Do not claim a local PR will guarantee GitHub Trending, stars, traffic, or launch success.
 - Do not store platform credentials, cookies, tokens, or API keys in this repository.
 - Do not add automation before one manual launch has proved the workflow.
 
@@ -169,12 +177,14 @@ This is a documentation-first guide:
 - Core docs are generic and usable.
 - Platform source docs are present under `docs/platforms/`.
 - Template files are present.
+- Trend signal workflow is present for converting live community evidence into local issue/PR work.
 - `scripts/new_project.sh` can scaffold a project launch folder, but does not publish.
 - The first real validation should be a full launch plan for `ccstats` or `remem`, using real project data.
 
 ## Source Research
 
 - Local research artifact: `docs/artifacts/multi-ai-research-publish-guide-20260526-1841/research.md`
+- GitHub Trending: https://github.com/trending
 - Hacker News Show HN: https://news.ycombinator.com/showhn.html
 - Product Hunt Launch Guide: https://www.producthunt.com/launch
 - Reddit Spam Policy: https://support.reddithelp.com/hc/en-us/articles/360043504051-Spam

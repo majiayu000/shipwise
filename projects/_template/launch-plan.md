@@ -11,6 +11,18 @@
 - Day 7 review:
 - Day 30 review:
 
+## Trend Decision
+
+- Sources checked:
+- Retrieval date:
+- Comparable projects:
+- Signal type:
+- What changed in our plan:
+- What stayed out of scope:
+- Local issue:
+- Local PR:
+- Follow-up date:
+
 ## Assets
 
 - [ ] README

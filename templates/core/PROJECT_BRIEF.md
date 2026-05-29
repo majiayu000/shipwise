@@ -15,6 +15,14 @@
 - Existing workaround:
 - Why now:
 
+## Trend Signals
+
+- Sources checked:
+- Comparable projects:
+- Signal type:
+- Local opportunity:
+- Not guaranteed:
+
 ## Positioning
 
 ```text

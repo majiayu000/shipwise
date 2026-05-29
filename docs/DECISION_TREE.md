@@ -9,6 +9,11 @@ The purpose is to answer four questions:
 3. Which platforms should be used first?
 4. What assets are required?
 
+If current community momentum is part of the request, first run
+[TREND_SIGNAL_WORKFLOW.md](TREND_SIGNAL_WORKFLOW.md). Trend signals help decide
+which local issues or PRs are worth doing now, but they do not override launch
+blockers.
+
 ## Step 1: Classify The Project
 
 Pick the closest archetype. If a project fits multiple rows, choose the row that matches the user's first action after seeing the project.
@@ -36,6 +41,7 @@ Do not launch if any blocker is true.
 | Claims have no proof | Community feedback will focus on credibility |
 | License missing for open source | Blocks adoption |
 | No help path | Feedback disappears into DMs |
+| Trend claim has no live source | Turns launch copy into speculation |
 
 ## Step 3: Choose Platform Order
 
@@ -103,3 +109,6 @@ After using this file, write the launch decision into `projects/<project>/launch
 - Launch date:
 - Review date:
 ```
+
+If trend signals influenced the decision, also write the trend decision from
+`docs/TREND_SIGNAL_WORKFLOW.md` and link the local issue or PR.

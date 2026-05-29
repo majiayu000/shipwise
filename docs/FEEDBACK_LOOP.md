@@ -17,6 +17,7 @@ projects/<project>/
   feedback.md
   metrics.md
   links.md
+  signals.md
   copy/
   assets/
   retros/
@@ -54,6 +55,15 @@ For each change:
 - Which file changed?
 - What evidence justified the change?
 - What future launch should use it?
+
+### Trend Signals
+
+- Which sources were checked.
+- Retrieval date.
+- Comparable projects.
+- Signal type: viral, steady, cyclical, or long tail.
+- Which local issue or PR was created.
+- Which external outcomes were explicitly not promised.
 
 ## Optional remem Pattern
 

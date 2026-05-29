@@ -4,6 +4,11 @@ This repository is Shipwise — a publishing guide for agents. It does not publi
 
 When a user asks an agent to prepare or run an open-source launch, the agent should use Shipwise as the operating manual: read the project facts, read the platform source docs, prepare platform-specific assets, publish only where appropriate, and record outcomes.
 
+When a user asks whether a project should be turned into issues or PRs because
+of community momentum, use [TREND_SIGNAL_WORKFLOW.md](TREND_SIGNAL_WORKFLOW.md)
+before launch copy. Trend signals can justify local readiness work, but they
+must not be treated as guaranteed external outcomes.
+
 ## Operating Rules
 
 1. Source rules before platform actions.
@@ -28,20 +33,22 @@ When a user asks an agent to prepare or run an open-source launch, the agent sho
 6. Markdown is the base record.
    - Memory systems are optional mirrors.
    - The canonical launch plan, links, metrics, and retro should exist under `projects/<project>/`.
+   - Trend evidence and issue/PR links should be recorded in `projects/<project>/signals.md`.
 
 ## Agent Workflow
 
 ```text
 1. Gather project facts
-2. Classify archetype
-3. Read platform source docs
-4. Decide channels
-5. Prepare assets
-6. Draft platform-specific copy
-7. Verify launch blockers
-8. Publish manually or with user-approved platform tooling
-9. Record links and metrics
-10. Review and update docs
+2. Gather trend signals if timing, opportunity, issue creation, or PR scope depends on current community momentum
+3. Classify archetype
+4. Read platform source docs
+5. Decide channels
+6. Prepare assets
+7. Draft platform-specific copy
+8. Verify launch blockers
+9. Publish manually or with user-approved platform tooling
+10. Record links, metrics, signals, and feedback
+11. Review and update docs
 ```
 
 ## Required Project Facts
@@ -58,6 +65,7 @@ Before drafting public copy, collect:
 - License.
 - Support path.
 - Launch goal.
+- Trend sources and comparable projects, if current momentum influenced the work.
 
 If these facts are missing, create a preflight TODO instead of publishable copy.
 
