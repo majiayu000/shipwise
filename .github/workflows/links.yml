@@ -1,0 +1,23 @@
+name: Link Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  internal-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check internal markdown links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Offline mode verifies that relative links between docs resolve.
+          # External URLs are skipped here to keep CI deterministic; verify
+          # platform source links manually per the "source rules first" rule.
+          args: "--offline --no-progress './**/*.md'"
+          fail: true
