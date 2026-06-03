@@ -2,6 +2,9 @@
 
 Agent-facing open-source publishing guide.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Link Check](https://github.com/majiayu000/shipwise/actions/workflows/links.yml/badge.svg)](https://github.com/majiayu000/shipwise/actions/workflows/links.yml)
+
 `shipwise` is a documentation system that tells an agent how to plan and execute an open-source launch. It is not a posting bot, scheduler, growth hack system, or remem-specific workflow. It gives the agent the source-of-truth docs, platform rules, asset requirements, templates, and checklists needed to publish responsibly.
 
 It applies to developer tools, CLI utilities, libraries, SDKs, AI/agent tooling, registries, frameworks, apps, and technical writeups. `ccstats` and `remem` are examples only.
@@ -12,12 +15,13 @@ When an agent is asked to publish or prepare a launch:
 
 1. Read [docs/AGENT_GUIDE.md](docs/AGENT_GUIDE.md).
 2. Classify the project with [docs/DECISION_TREE.md](docs/DECISION_TREE.md).
-3. Open the relevant platform source docs under [docs/platforms/](docs/platforms/README.md).
-4. If current community momentum affects timing or issue/PR scope, run [docs/TREND_SIGNAL_WORKFLOW.md](docs/TREND_SIGNAL_WORKFLOW.md).
-5. Fill or create a project launch folder under `projects/<project>/`.
-6. Follow [docs/RELEASE_LIFECYCLE_CHECKLIST.md](docs/RELEASE_LIFECYCLE_CHECKLIST.md).
-7. Use templates from `templates/` only after the platform source doc says that channel is appropriate.
-8. Record source links, post URLs, metrics, trend signals, and feedback.
+3. Design the repo and metadata for discovery with [docs/DISCOVERABILITY.md](docs/DISCOVERABILITY.md).
+4. Open the relevant platform source docs under [docs/platforms/](docs/platforms/README.md).
+5. If current community momentum affects timing or issue/PR scope, run [docs/TREND_SIGNAL_WORKFLOW.md](docs/TREND_SIGNAL_WORKFLOW.md).
+6. Fill or create a project launch folder under `projects/<project>/`.
+7. Follow [docs/RELEASE_LIFECYCLE_CHECKLIST.md](docs/RELEASE_LIFECYCLE_CHECKLIST.md).
+8. Use templates from `templates/` only after the platform source doc says that channel is appropriate.
+9. Record source links, post URLs, metrics, trend signals, and feedback.
 
 Optional docs-only scaffold:
 
@@ -61,6 +65,7 @@ shipwise/
     README.md
     AGENT_GUIDE.md
     DECISION_TREE.md
+    DISCOVERABILITY.md
     TREND_SIGNAL_WORKFLOW.md
     RELEASE_LIFECYCLE_CHECKLIST.md
     DISTRIBUTION_TEMPLATE.md
@@ -94,6 +99,9 @@ shipwise/
       RELEASE_NOTES.md
       README_DISTRIBUTION_SECTION.md
       LAUNCH_READINESS_ISSUE.md
+      REPO_METADATA.md
+    seo/
+      keyword_map.md
   playbooks/
     launch-project-template.md
     launch-ccstats-v0.1-skeleton.md
@@ -103,6 +111,7 @@ shipwise/
     distribution_decision_tree.md
   checklists/
     release-lifecycle.md
+    discoverability.md
   scripts/
     new_project.sh   # docs scaffold only, not a publisher
 ```
@@ -133,6 +142,12 @@ shipwise/
 7. Treat trends as signals, not promises.
    - GitHub Trending, HN, Product Hunt, X, and Reddit can justify local readiness issues and PRs.
    - They must not become acceptance criteria or claims that external outcomes are guaranteed.
+
+8. Design for discovery, not just distribution.
+   - Repo name, description, topics, README first screen, social preview, and
+     package metadata decide whether the project is findable after launch day.
+   - See [docs/DISCOVERABILITY.md](docs/DISCOVERABILITY.md). Discoverability is a
+     design decision made before launch, never keyword stuffing or fake badges.
 
 ## Project Archetypes
 

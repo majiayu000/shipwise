@@ -12,36 +12,40 @@ Read these in order when planning a launch. This is an agent-facing document sys
    - Pick the launch platforms.
    - Decide which assets are required.
 
-3. [platforms/README.md](platforms/README.md)
+3. [DISCOVERABILITY.md](DISCOVERABILITY.md)
+   - Design the repo, metadata, and docs so the project is findable.
+   - GitHub repo design, search SEO, package and docs SEO, keyword strategy.
+
+4. [platforms/README.md](platforms/README.md)
    - Source-of-truth platform index.
    - Official rules and posting requirements.
 
-4. [TREND_SIGNAL_WORKFLOW.md](TREND_SIGNAL_WORKFLOW.md)
+5. [TREND_SIGNAL_WORKFLOW.md](TREND_SIGNAL_WORKFLOW.md)
    - Optional workflow for current GitHub/community trend evidence.
    - Converts signals into local issues and PRs without promising external outcomes.
 
-5. [RELEASE_LIFECYCLE_CHECKLIST.md](RELEASE_LIFECYCLE_CHECKLIST.md)
+6. [RELEASE_LIFECYCLE_CHECKLIST.md](RELEASE_LIFECYCLE_CHECKLIST.md)
    - Step-by-step workflow from readiness to 30-day review.
    - Use this as the execution checklist.
 
-6. [DISTRIBUTION_TEMPLATE.md](DISTRIBUTION_TEMPLATE.md)
+7. [DISTRIBUTION_TEMPLATE.md](DISTRIBUTION_TEMPLATE.md)
    - README distribution section.
    - Package/release channel checklist.
    - Platform asset checklist.
 
-7. [TEMPLATE_SYSTEM.md](TEMPLATE_SYSTEM.md)
+8. [TEMPLATE_SYSTEM.md](TEMPLATE_SYSTEM.md)
    - 70/30 reuse model.
    - Template variables.
    - How to adapt copy per platform.
 
-8. [SUCCESS_METRICS.md](SUCCESS_METRICS.md)
+9. [SUCCESS_METRICS.md](SUCCESS_METRICS.md)
    - Metrics for visibility, activation, feedback, contribution, and learning.
 
-9. [FEEDBACK_LOOP.md](FEEDBACK_LOOP.md)
+10. [FEEDBACK_LOOP.md](FEEDBACK_LOOP.md)
    - How to record launch outcomes.
    - Markdown-first storage, with optional remem/Notion/spreadsheet backends.
 
-10. [ROADMAP.md](ROADMAP.md)
+11. [ROADMAP.md](ROADMAP.md)
    - How Shipwise should evolve.
 
 ## Fast Path

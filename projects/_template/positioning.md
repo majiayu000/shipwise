@@ -27,6 +27,15 @@ It uses <mechanism> to deliver <verifiable result>.
 
 - 
 
+## Search Keywords
+
+Terms the target user would actually type (the problem, not the brand).
+See `docs/DISCOVERABILITY.md` and `templates/seo/keyword_map.md`.
+
+- Primary:
+- Secondary:
+- Long-tail:
+
 ## Limitations
 
 - 

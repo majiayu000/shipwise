@@ -41,14 +41,15 @@ must not be treated as guaranteed external outcomes.
 1. Gather project facts
 2. Gather trend signals if timing, opportunity, issue creation, or PR scope depends on current community momentum
 3. Classify archetype
-4. Read platform source docs
-5. Decide channels
-6. Prepare assets
-7. Draft platform-specific copy
-8. Verify launch blockers
-9. Publish manually or with user-approved platform tooling
-10. Record links, metrics, signals, and feedback
-11. Review and update docs
+4. Design repo and metadata for discovery (see DISCOVERABILITY.md)
+5. Read platform source docs
+6. Decide channels
+7. Prepare assets
+8. Draft platform-specific copy
+9. Verify launch blockers
+10. Publish manually or with user-approved platform tooling
+11. Record links, metrics, signals, and feedback
+12. Review and update docs
 ```
 
 ## Required Project Facts
@@ -65,6 +66,7 @@ Before drafting public copy, collect:
 - License.
 - Support path.
 - Launch goal.
+- Primary keyword and the search terms the target user would actually type.
 - Trend sources and comparable projects, if current momentum influenced the work.
 
 If these facts are missing, create a preflight TODO instead of publishable copy.

@@ -39,10 +39,14 @@ Output: `projects/<project>/proof.md`
 ### 4. Prepare GitHub Surface
 
 - [ ] README first screen has positioning, install, quickstart, demo, and limitations.
-- [ ] GitHub description and topics are set.
+- [ ] README H1 matches name plus primary keyword.
+- [ ] GitHub description (one keyword sentence), 5-20 topics, and homepage URL are set.
 - [ ] Issue template or support path exists.
 - [ ] Release notes are drafted.
 - [ ] Distribution section is filled from `templates/github/README_DISTRIBUTION_SECTION.md`.
+- [ ] Discoverability gate passed: `checklists/discoverability.md` (see `docs/DISCOVERABILITY.md`).
+
+Use `templates/github/REPO_METADATA.md` and `templates/seo/keyword_map.md`.
 
 ### 5. Prepare Distribution
 

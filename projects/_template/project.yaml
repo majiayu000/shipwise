@@ -16,6 +16,13 @@ positioning:
   one_sentence: ""
   proof: ""
   limitations: ""
+discoverability:
+  description: ""
+  primary_keyword: ""
+  keywords: []
+  topics: []
+  homepage_url: ""
+  social_image_set: false
 signals:
   sources_checked: []
   retrieval_date: ""
