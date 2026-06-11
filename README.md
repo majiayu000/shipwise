@@ -61,6 +61,7 @@ Read sources -> Classify -> Check trend signals when relevant -> Prepare assets 
 ```text
 shipwise/
   .github/      # issue/PR templates and CI
+  AGENTS.md     # pointer-only entry point for agent runtimes
   README.md
   docs/         # canonical operating docs and platform source guides
   templates/    # reusable copy, GitHub, platform, and SEO templates
