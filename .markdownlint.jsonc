@@ -1,0 +1,10 @@
+{
+  // Source docs use long tables, raw source URLs, and template fragments.
+  "MD013": false,
+  "MD024": false,
+  "MD025": false,
+  "MD033": false,
+  "MD034": false,
+  "MD041": false,
+  "MD060": false
+}

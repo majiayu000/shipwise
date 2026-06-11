@@ -1,0 +1,82 @@
+name: "ccstats"
+version: "0.2.65"
+archetype: "cli-tool"
+status: "repo-side dogfood complete; external publishing requires approval"
+repo: "https://github.com/majiayu000/ccstats"
+website: "https://crates.io/crates/ccstats"
+docs: "https://docs.rs/ccstats/latest/ccstats/"
+package:
+  registry: "crates.io"
+  name: "ccstats"
+  install_command: "cargo install ccstats --version 0.2.65 --locked"
+audience:
+  target_user: "Developers using Claude Code, OpenAI Codex, Cursor, or Grok who need local token and cost usage analytics."
+  primary_problem: "AI coding usage is spread across local logs and is hard to inspect by day, project, model, or session."
+positioning:
+  one_sentence: "ccstats is a fast CLI for token and cost usage analytics across Claude Code, OpenAI Codex, Cursor, and Grok logs."
+  proof: "Verified 2026-06-12: crates.io max_version 0.2.65, 260 total downloads, 136 recent downloads, GitHub latest release v0.2.64 with prebuilt assets."
+  limitations: "Cursor support is experimental; Grok local context-token snapshots are not precise provider billable usage."
+discoverability:
+  description: "Fast token and cost usage statistics CLI for Claude Code, OpenAI Codex, Cursor, and Grok."
+  primary_keyword: "AI token cost tracker"
+  keywords:
+    - "claude code usage stats"
+    - "codex usage stats"
+    - "cursor usage stats"
+    - "token usage cli"
+    - "ai token cost tracker"
+  topics:
+    - "analytics"
+    - "claude-code"
+    - "cost-tracking"
+    - "developer-tools"
+    - "openai-codex"
+    - "rust-cli"
+    - "token-usage"
+    - "ai-tools"
+  homepage_url: "https://crates.io/crates/ccstats"
+  social_image_set: false
+signals:
+  sources_checked:
+    - "GitHub repo metadata"
+    - "GitHub main README"
+    - "GitHub latest release"
+    - "crates.io crate API"
+  retrieval_date: "2026-06-12"
+  comparable_projects:
+    - "Claude Code usage dashboards"
+    - "Local token/cost usage CLIs"
+  signal_type: "readiness validation"
+  decision: "Prepare repo-side launch record and defer external posting until explicit authorization."
+  local_issue: "https://github.com/majiayu000/shipwise/issues/8"
+  local_pr: "branch fix/issues-3-8"
+channels:
+  primary:
+    - "GitHub release"
+    - "crates.io"
+    - "X thread"
+    - "Hacker News Show HN if quickstart remains tryable"
+  secondary:
+    - "niche Reddit"
+    - "Chinese developer community"
+assets:
+  demo: "README card exists; terminal demo GIF was not verified in this dogfood run."
+  screenshots:
+    - "https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png"
+  social_image: "GitHub custom social preview not verified; README card exists at docs/branding/readme-card.png."
+links:
+  github_release: "https://github.com/majiayu000/ccstats/releases/tag/v0.2.64"
+  package: "https://crates.io/crates/ccstats"
+  x_post: "not posted; explicit user authorization required"
+  hn_post: "not posted; explicit user authorization required"
+  reddit_posts:
+    - "not posted; explicit user authorization required"
+  product_hunt: "not selected for first wave"
+metrics:
+  baseline_date: "2026-06-12"
+  github_stars: 5
+  downloads: 260
+review_dates:
+  day_1: "2026-06-13"
+  day_7: "2026-06-19"
+  day_30: "2026-07-12"

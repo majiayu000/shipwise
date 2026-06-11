@@ -133,7 +133,7 @@ Start with a manual, validated workflow before adding automation:
 ```text
 README.md
 docs/operating-model.md
-templates/project.yaml
+projects/_template/project.yaml
 templates/positioning.md
 templates/launch-checklist.md
 templates/metrics.md
@@ -265,4 +265,3 @@ Secrets stay in environment variables or platform secret stores, never in this r
 - Gemini: `raw/gemini.md`.
 - ChatGPT CLI first attempt: `raw/chatgpt.md` (unusable intro only).
 - ChatGPT CLI rerun: `raw/chatgpt-rerun.md` (unusable intro only).
-

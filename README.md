@@ -3,7 +3,7 @@
 Agent-facing open-source publishing guide.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Link Check](https://github.com/majiayu000/shipwise/actions/workflows/links.yml/badge.svg)](https://github.com/majiayu000/shipwise/actions/workflows/links.yml)
+[![CI](https://github.com/majiayu000/shipwise/actions/workflows/links.yml/badge.svg)](https://github.com/majiayu000/shipwise/actions/workflows/links.yml)
 
 `shipwise` is a documentation system that tells an agent how to plan and execute an open-source launch. It is not a posting bot, scheduler, growth hack system, or remem-specific workflow. It gives the agent the source-of-truth docs, platform rules, asset requirements, templates, and checklists needed to publish responsibly.
 
@@ -60,60 +60,15 @@ Read sources -> Classify -> Check trend signals when relevant -> Prepare assets 
 
 ```text
 shipwise/
+  .github/      # issue/PR templates and CI
+  AGENTS.md     # pointer-only entry point for agent runtimes
   README.md
-  docs/
-    README.md
-    AGENT_GUIDE.md
-    DECISION_TREE.md
-    DISCOVERABILITY.md
-    TREND_SIGNAL_WORKFLOW.md
-    RELEASE_LIFECYCLE_CHECKLIST.md
-    DISTRIBUTION_TEMPLATE.md
-    TEMPLATE_SYSTEM.md
-    SUCCESS_METRICS.md
-    FEEDBACK_LOOP.md
-    ROADMAP.md
-    platforms/
-      README.md
-      github.md
-      package-registries.md
-      hacker-news.md
-      reddit.md
-      product-hunt.md
-      x.md
-      blog-newsletter.md
-      chinese-communities.md
-  templates/
-    project.yaml
-    core/
-      PROJECT_BRIEF.md
-      ANNOUNCEMENT.md
-    platforms/
-      x_thread.md
-      hn_show_hn.md
-      reddit_post.md
-      product_hunt.md
-      blog_post.md
-      chinese_community_post.md
-    github/
-      RELEASE_NOTES.md
-      README_DISTRIBUTION_SECTION.md
-      LAUNCH_READINESS_ISSUE.md
-      REPO_METADATA.md
-    seo/
-      keyword_map.md
-  playbooks/
-    launch-project-template.md
-    launch-ccstats-v0.1-skeleton.md
-  projects/
-    _template/
-  matrix/
-    distribution_decision_tree.md
-  checklists/
-    release-lifecycle.md
-    discoverability.md
-  scripts/
-    new_project.sh   # docs scaffold only, not a publisher
+  docs/         # canonical operating docs and platform source guides
+  templates/    # reusable copy, GitHub, platform, and SEO templates
+  playbooks/    # worked examples and launch skeletons
+  projects/     # project launch records; _template is the scaffold source
+  checklists/   # stable pointers or run sheets derived from canonical docs
+  scripts/      # docs scaffold only, not a publisher
 ```
 
 ## Core Principles
@@ -153,15 +108,15 @@ shipwise/
 
 Use [docs/DECISION_TREE.md](docs/DECISION_TREE.md) for the full table.
 
-| Archetype | Examples | Default first platforms |
-|---|---|---|
-| CLI / local developer tool | `ccstats`, cleanup tools, code analyzers | GitHub, package manager, X, HN or niche Reddit |
-| Library / SDK | API clients, Rust crates, npm packages | GitHub, package registry, docs, example repo, technical blog |
-| AI / agent workflow tool | MCP servers, skills, browser QA, prompt tooling | GitHub, X, Reddit/Discord niche, demo video |
-| Framework / safety / guardrail | linting, hooks, policy, quality gates | GitHub, technical article, X, HN if demoable |
-| Registry / dataset / index | skill registry, curated catalog, benchmark set | GitHub, HN, X, docs, data/API examples |
-| App / UI / SaaS-like product | hosted tool, dashboard, visual workflow | Product Hunt, X, LinkedIn, demo video, docs |
-| Deep technical writeup | architecture research, benchmark report | Blog, HN regular post, Reddit niche, newsletter |
+| Archetype | Examples |
+|---|---|
+| CLI / local developer tool | `ccstats`, cleanup tools, code analyzers |
+| Library / SDK | API clients, Rust crates, npm packages |
+| AI / agent workflow tool | MCP servers, skills, browser QA, prompt tooling |
+| Framework / safety / guardrail | linting, hooks, policy, quality gates |
+| Registry / dataset / index | skill registry, curated catalog, benchmark set |
+| App / UI / SaaS-like product | hosted tool, dashboard, visual workflow |
+| Deep technical writeup | architecture research, benchmark report |
 
 ## Launch Package Minimum
 
@@ -194,7 +149,9 @@ This is a documentation-first guide:
 - Template files are present.
 - Trend signal workflow is present for converting live community evidence into local issue/PR work.
 - `scripts/new_project.sh` can scaffold a project launch folder, but does not publish.
-- The first real validation should be a full launch plan for `ccstats` or `remem`, using real project data.
+- `projects/ccstats/` records the first real repo-side dogfood validation,
+  using live GitHub/crates.io data and a verified install/quickstart path.
+- External platform posting still requires explicit user authorization.
 
 ## Source Research
 

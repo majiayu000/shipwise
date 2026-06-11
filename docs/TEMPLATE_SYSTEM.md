@@ -37,7 +37,7 @@ Use these names consistently:
 
 ## Template Files
 
-- `templates/project.yaml`
+- `projects/_template/project.yaml`
 - `templates/core/PROJECT_BRIEF.md`
 - `templates/core/ANNOUNCEMENT.md`
 - `templates/github/RELEASE_NOTES.md`

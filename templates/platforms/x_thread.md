@@ -13,6 +13,7 @@
    `{{proof}}`
 
 5. How to try:
+
    ```bash
    {{install_command}}
    ```

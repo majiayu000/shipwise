@@ -1,4 +1,4 @@
-name: Link Check
+name: CI
 
 on:
   push:
@@ -21,3 +21,26 @@ jobs:
           # platform source links manually per the "source rules first" rule.
           args: "--offline --no-progress './**/*.md'"
           fail: true
+
+  scaffold-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scaffold a project and assert fields are filled
+        run: |
+          ./scripts/new_project.sh ci-smoke cli-tool
+          test -f projects/ci-smoke/project.yaml
+          grep -q 'name: "ci-smoke"' projects/ci-smoke/project.yaml
+          grep -q 'archetype: "cli-tool"' projects/ci-smoke/project.yaml
+          grep -q 'discoverability:' projects/ci-smoke/project.yaml
+          for f in projects/_template/*; do
+            test -e "projects/ci-smoke/$(basename "$f")"
+          done
+
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v17
+        with:
+          globs: "**/*.md"

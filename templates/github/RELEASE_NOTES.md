@@ -2,9 +2,9 @@
 
 ## Highlights
 
-- 
-- 
-- 
+-
+-
+-
 
 ## Install
 
@@ -22,19 +22,19 @@
 
 ### Added
 
-- 
+-
 
 ### Changed
 
-- 
+-
 
 ### Fixed
 
-- 
+-
 
 ## Known Limitations
 
-- 
+-
 
 ## Links
 
