@@ -2,6 +2,8 @@
 
 Minimum design-for-discovery gate. Run before launch, alongside
 `checklists/release-lifecycle.md`. Full guidance: [docs/DISCOVERABILITY.md](../docs/DISCOVERABILITY.md).
+This checklist is an execution run sheet; the linked doc remains the source for
+rules and rationale.
 
 ## Identity
 

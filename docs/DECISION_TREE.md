@@ -30,15 +30,15 @@ Use these canonical slugs in `projects/<project>/project.yaml` and
 - `writeup`
 - `unknown`
 
-| Archetype | User's first action | Typical projects | Primary platforms | Required proof |
-|---|---|---|---|---|
-| CLI / local developer tool | Install and run a command | stats tools, cleanup tools, code analyzers | GitHub, package registry, X, HN or niche Reddit | terminal demo, install command, benchmark or real output |
-| Library / SDK | Add dependency or copy code | crates, npm packages, API clients | Package registry, GitHub, docs, example repo, technical blog | quickstart, API example, compatibility matrix |
-| AI / agent workflow tool | Try workflow with their existing tools | MCP servers, skills, browser QA, prompt tooling | GitHub, X, Reddit/Discord niche, demo video | end-to-end workflow demo, integration matrix, limitations |
-| Framework / guardrail / quality system | Adopt a rule or policy | hooks, linters, guardrails, security checks | GitHub, technical article, X, HN if runnable | before/after, false-positive policy, config examples |
-| Registry / dataset / index | Search or query the collection | registries, catalogs, benchmarks, datasets | GitHub, HN, X, docs, API/data examples | coverage stats, schema, sample query, update policy |
-| App / visual product | Open a site and complete a task | dashboards, SaaS-like tools, editors | Product Hunt, X, LinkedIn, demo video, docs | live demo, screenshots, onboarding path |
-| Deep technical writeup | Read and evaluate an argument | architecture notes, benchmarks, reports | Blog, HN regular post, Reddit niche, newsletter | methodology, reproducible data, caveats |
+| Archetype | User's first action | Typical projects | Must have | First wave | Second wave | Avoid first |
+|---|---|---|---|---|---|---|
+| CLI / local developer tool | Install and run a command | stats tools, cleanup tools, code analyzers | release artifact, install command, terminal demo | GitHub, package registry, X, HN or niche Reddit | blog, Chinese community, newsletter | Product Hunt without visuals |
+| Library / SDK | Add dependency or copy code | crates, npm packages, API clients | package, docs, API example | Package registry, GitHub, example repo, technical blog | X, HN, newsletter | broad social without docs |
+| AI / agent workflow tool | Try workflow with existing tools | MCP servers, skills, browser QA, prompt tooling | integration proof, workflow demo, limitations | GitHub, X, niche Reddit/Discord, demo video | HN, Chinese video/article | claims without workflow demo |
+| Framework / guardrail / quality system | Adopt a rule or policy | hooks, linters, guardrails, security checks | config examples, before/after, false-positive policy | GitHub, technical article, X | HN, Reddit | moralizing quality claims |
+| Registry / dataset / index | Search or query the collection | registries, catalogs, benchmarks, datasets | schema, sample query, coverage stats | GitHub, HN, X, docs | blog, newsletter | "largest" claims without data |
+| App / visual product | Open a site and complete a task | dashboards, SaaS-like tools, editors | live demo, screenshots, onboarding | Product Hunt, X, LinkedIn, demo video, docs | blog, video, communities | HN Show HN if not technically interesting |
+| Deep technical writeup | Read and evaluate an argument | architecture notes, benchmarks, reports | data, method, conclusion | Blog, HN regular post, Reddit niche | newsletter, X | Show HN |
 
 ## Step 2: Check Readiness
 
