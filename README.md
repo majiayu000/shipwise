@@ -84,7 +84,6 @@ shipwise/
       blog-newsletter.md
       chinese-communities.md
   templates/
-    project.yaml
     core/
       PROJECT_BRIEF.md
       ANNOUNCEMENT.md

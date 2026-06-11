@@ -133,7 +133,7 @@ Start with a manual, validated workflow before adding automation:
 ```text
 README.md
 docs/operating-model.md
-templates/project.yaml
+projects/_template/project.yaml
 templates/positioning.md
 templates/launch-checklist.md
 templates/metrics.md
