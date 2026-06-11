@@ -149,7 +149,9 @@ This is a documentation-first guide:
 - Template files are present.
 - Trend signal workflow is present for converting live community evidence into local issue/PR work.
 - `scripts/new_project.sh` can scaffold a project launch folder, but does not publish.
-- The first real validation should be a full launch plan for `ccstats` or `remem`, using real project data.
+- `projects/ccstats/` records the first real repo-side dogfood validation,
+  using live GitHub/crates.io data and a verified install/quickstart path.
+- External platform posting still requires explicit user authorization.
 
 ## Source Research
 
