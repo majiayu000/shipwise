@@ -18,6 +18,18 @@ blockers.
 
 Pick the closest archetype. If a project fits multiple rows, choose the row that matches the user's first action after seeing the project.
 
+Use these canonical slugs in `projects/<project>/project.yaml` and
+`scripts/new_project.sh`:
+
+- `cli-tool`
+- `library-sdk`
+- `ai-workflow`
+- `framework-guardrail`
+- `registry-dataset`
+- `app-ui`
+- `writeup`
+- `unknown`
+
 | Archetype | User's first action | Typical projects | Primary platforms | Required proof |
 |---|---|---|---|---|
 | CLI / local developer tool | Install and run a command | stats tools, cleanup tools, code analyzers | GitHub, package registry, X, HN or niche Reddit | terminal demo, install command, benchmark or real output |

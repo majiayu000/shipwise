@@ -8,6 +8,7 @@ fi
 
 name="$1"
 archetype="${2:-unknown}"
+valid_archetypes="cli-tool library-sdk ai-workflow framework-guardrail registry-dataset app-ui writeup unknown"
 
 case "$name" in
   *[!a-zA-Z0-9._-]*|"")
@@ -17,6 +18,20 @@ case "$name" in
     ;;
 esac
 
+case " $valid_archetypes " in
+  *" $archetype "*) ;;
+  *)
+    echo "Unknown archetype: $archetype" >&2
+    echo "Valid archetypes: $valid_archetypes" >&2
+    exit 2
+    ;;
+esac
+
+if ! command -v perl >/dev/null 2>&1; then
+  echo "perl not found: cannot fill name/archetype in project.yaml" >&2
+  exit 1
+fi
+
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 target="$root/projects/$name"
 
@@ -25,19 +40,12 @@ if [ -e "$target" ]; then
   exit 1
 fi
 
+mkdir -p "$target"
+cp -R "$root/projects/_template/." "$target/"
 mkdir -p "$target"/{assets,copy,retros}
-cp "$root/projects/_template/project.yaml" "$target/project.yaml"
-cp "$root/projects/_template/positioning.md" "$target/positioning.md"
-cp "$root/projects/_template/launch-plan.md" "$target/launch-plan.md"
-cp "$root/projects/_template/metrics.md" "$target/metrics.md"
-cp "$root/projects/_template/feedback.md" "$target/feedback.md"
-cp "$root/projects/_template/links.md" "$target/links.md"
-cp "$root/projects/_template/signals.md" "$target/signals.md"
 
-if command -v perl >/dev/null 2>&1; then
-  perl -0pi -e "s/name: \"\"/name: \"$name\"/" "$target/project.yaml"
-  perl -0pi -e "s/archetype: \"\"/archetype: \"$archetype\"/" "$target/project.yaml"
-fi
+perl -0pi -e "s/name: \"\"/name: \"$name\"/" "$target/project.yaml"
+perl -0pi -e "s/archetype: \"\"/archetype: \"$archetype\"/" "$target/project.yaml"
 
 echo "Created $target"
 echo "Next: fill project.yaml, positioning.md, launch-plan.md, and signals.md"
