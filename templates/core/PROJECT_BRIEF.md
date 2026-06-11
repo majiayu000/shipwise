@@ -40,9 +40,9 @@ It uses {{solution}} to deliver {{proof_or_result}}.
 
 ## Limitations
 
-- 
-- 
-- 
+-
+-
+-
 
 ## Launch Goal
 

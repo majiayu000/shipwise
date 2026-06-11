@@ -9,23 +9,23 @@ It uses <mechanism> to deliver <verifiable result>.
 
 ## Target User
 
-- 
+-
 
 ## Problem
 
-- 
+-
 
 ## Alternatives
 
-- 
+-
 
 ## Differentiation
 
-- 
+-
 
 ## Proof
 
-- 
+-
 
 ## Search Keywords
 
@@ -38,4 +38,4 @@ See `docs/DISCOVERABILITY.md` and `templates/seo/keyword_map.md`.
 
 ## Limitations
 
-- 
+-

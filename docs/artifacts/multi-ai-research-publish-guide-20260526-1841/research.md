@@ -265,4 +265,3 @@ Secrets stay in environment variables or platform secret stores, never in this r
 - Gemini: `raw/gemini.md`.
 - ChatGPT CLI first attempt: `raw/chatgpt.md` (unusable intro only).
 - ChatGPT CLI rerun: `raw/chatgpt-rerun.md` (unusable intro only).
-

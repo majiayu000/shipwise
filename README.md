@@ -3,7 +3,7 @@
 Agent-facing open-source publishing guide.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Link Check](https://github.com/majiayu000/shipwise/actions/workflows/links.yml/badge.svg)](https://github.com/majiayu000/shipwise/actions/workflows/links.yml)
+[![CI](https://github.com/majiayu000/shipwise/actions/workflows/links.yml/badge.svg)](https://github.com/majiayu000/shipwise/actions/workflows/links.yml)
 
 `shipwise` is a documentation system that tells an agent how to plan and execute an open-source launch. It is not a posting bot, scheduler, growth hack system, or remem-specific workflow. It gives the agent the source-of-truth docs, platform rules, asset requirements, templates, and checklists needed to publish responsibly.
 

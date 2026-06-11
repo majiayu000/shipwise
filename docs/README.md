@@ -42,11 +42,11 @@ Read these in order when planning a launch. This is an agent-facing document sys
    - Metrics for visibility, activation, feedback, contribution, and learning.
 
 10. [FEEDBACK_LOOP.md](FEEDBACK_LOOP.md)
-   - How to record launch outcomes.
-   - Markdown-first storage, with optional remem/Notion/spreadsheet backends.
+    - How to record launch outcomes.
+    - Markdown-first storage, with optional remem/Notion/spreadsheet backends.
 
 11. [ROADMAP.md](ROADMAP.md)
-   - How Shipwise should evolve.
+    - How Shipwise should evolve.
 
 ## Fast Path
 
