@@ -12,7 +12,7 @@ jobs:
   internal-links:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Check internal markdown links
         uses: lycheeverse/lychee-action@v2
         with:
@@ -25,7 +25,7 @@ jobs:
   scaffold-smoke:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Scaffold a project and assert fields are filled
         run: |
           ./scripts/new_project.sh ci-smoke cli-tool
@@ -40,7 +40,7 @@ jobs:
   markdown-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: DavidAnson/markdownlint-cli2-action@v17
         with:
           globs: "**/*.md"

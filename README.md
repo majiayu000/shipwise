@@ -4,6 +4,7 @@ Agent-facing open-source publishing guide.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/majiayu000/shipwise/actions/workflows/links.yml/badge.svg)](https://github.com/majiayu000/shipwise/actions/workflows/links.yml)
+[![Release](https://img.shields.io/github/v/release/majiayu000/shipwise)](https://github.com/majiayu000/shipwise/releases/latest)
 
 `shipwise` is a documentation system that tells an agent how to plan and execute an open-source launch. It is not a posting bot, scheduler, growth hack system, or remem-specific workflow. It gives the agent the source-of-truth docs, platform rules, asset requirements, templates, and checklists needed to publish responsibly.
 
@@ -152,6 +153,10 @@ This is a documentation-first guide:
 - `projects/ccstats/` records the first real repo-side dogfood validation,
   using live GitHub/crates.io data and a verified install/quickstart path.
 - External platform posting still requires explicit user authorization.
+
+## Release Notes
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Source Research
 

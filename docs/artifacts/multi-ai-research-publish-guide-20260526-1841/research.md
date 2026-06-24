@@ -1,7 +1,7 @@
 # Multi-AI Research: Open Source Publish Guide (became Shipwise)
 
 Date: 2026-05-26
-Workspace: `/Users/lifcc/Desktop/code/AI/tool/publish` (later renamed to shipwise)
+Workspace: original local publish-guide workspace, later renamed to Shipwise
 
 ## Original Question
 
