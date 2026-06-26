@@ -40,9 +40,10 @@ project, session, and model-level usage summaries.
 
 - GitHub README on `main` documents Homebrew, cargo-binstall, cargo install,
   shell script, and manual release download paths.
-- crates.io reports max version `0.2.65`, 260 total downloads, and 136 recent
-  downloads as of 2026-06-12.
+- crates.io reports max version `0.2.65`, 282 total downloads, and 142 recent
+  downloads as of 2026-06-26.
 - GitHub latest release `v0.2.64` includes prebuilt archives and checksums.
+- GitHub release `v0.2.65` does not exist as of 2026-06-26.
 
 ## Search Keywords
 

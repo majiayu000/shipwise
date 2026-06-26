@@ -8,3 +8,4 @@
 | Shipwise dogfood | Source-of-truth defect | Matrix and release checklist content duplicated canonical docs. | Fixed by https://github.com/majiayu000/shipwise/issues/6 |
 | Shipwise dogfood | Agent discoverability defect | Root agent entry point was missing. | Fixed by https://github.com/majiayu000/shipwise/issues/7 |
 | ccstats readiness review | Launch blocker | External posting is not authorized in this task, and terminal demo GIF was not verified. | Keep launch posts unpublished until explicit authorization and demo proof exist. |
+| ccstats launch boundary review | Launch blocker | GitHub release `v0.2.65` does not exist while crates.io is at `0.2.65`; no platform/account authorization or final copy approval is recorded. | Keep #8 open; resolve release/demo/copy approval before external posting. |
