@@ -1,7 +1,7 @@
 name: "ccstats"
 version: "0.2.65"
 archetype: "cli-tool"
-status: "repo-side dogfood complete; external publishing requires approval"
+status: "repo-side dogfood complete; external publishing blocked on approval"
 repo: "https://github.com/majiayu000/ccstats"
 website: "https://crates.io/crates/ccstats"
 docs: "https://docs.rs/ccstats/latest/ccstats/"
@@ -14,7 +14,7 @@ audience:
   primary_problem: "AI coding usage is spread across local logs and is hard to inspect by day, project, model, or session."
 positioning:
   one_sentence: "ccstats is a fast CLI for token and cost usage analytics across Claude Code, OpenAI Codex, Cursor, and Grok logs."
-  proof: "Verified 2026-06-12: crates.io max_version 0.2.65, 260 total downloads, 136 recent downloads, GitHub latest release v0.2.64 with prebuilt assets."
+  proof: "Verified 2026-06-26: crates.io max_version 0.2.65, 282 total downloads, 142 recent downloads, GitHub latest release v0.2.64 with prebuilt assets; GitHub release v0.2.65 does not exist."
   limitations: "Cursor support is experimental; Grok local context-token snapshots are not precise provider billable usage."
 discoverability:
   description: "Fast token and cost usage statistics CLI for Claude Code, OpenAI Codex, Cursor, and Grok."
@@ -42,14 +42,14 @@ signals:
     - "GitHub main README"
     - "GitHub latest release"
     - "crates.io crate API"
-  retrieval_date: "2026-06-12"
+  retrieval_date: "2026-06-26"
   comparable_projects:
     - "Claude Code usage dashboards"
     - "Local token/cost usage CLIs"
   signal_type: "readiness validation"
-  decision: "Prepare repo-side launch record and defer external posting until explicit authorization."
+  decision: "Prepare repo-side launch record and draft copy, then defer external posting until explicit platform/account authorization and final copy approval."
   local_issue: "https://github.com/majiayu000/shipwise/issues/8"
-  local_pr: "branch fix/issues-3-8"
+  local_pr: "https://github.com/majiayu000/shipwise/pull/9"
 channels:
   primary:
     - "GitHub release"
@@ -67,16 +67,16 @@ assets:
 links:
   github_release: "https://github.com/majiayu000/ccstats/releases/tag/v0.2.64"
   package: "https://crates.io/crates/ccstats"
-  x_post: "not posted; explicit user authorization required"
-  hn_post: "not posted; explicit user authorization required"
+  x_post: "not posted; explicit platform/account authorization required"
+  hn_post: "not posted; explicit platform/account authorization required"
   reddit_posts:
-    - "not posted; explicit user authorization required"
+    - "not posted; explicit platform/account authorization required"
   product_hunt: "not selected for first wave"
 metrics:
-  baseline_date: "2026-06-12"
-  github_stars: 5
-  downloads: 260
+  baseline_date: "2026-06-26"
+  github_stars: 6
+  downloads: 282
 review_dates:
-  day_1: "2026-06-13"
-  day_7: "2026-06-19"
-  day_30: "2026-07-12"
+  day_1: "blocked until external posting is authorized"
+  day_7: "blocked until external posting is authorized"
+  day_30: "blocked until external posting is authorized"

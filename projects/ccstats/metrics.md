@@ -2,22 +2,23 @@
 
 ## Baseline
 
-- Date: 2026-06-12
-- GitHub stars: 5
+- Date: 2026-06-26
+- GitHub stars: 6
 - Forks: 0
-- Downloads: 260 total crates.io downloads; 136 recent crates.io downloads
+- Downloads: 282 total crates.io downloads; 142 recent crates.io downloads
 - Docs/site traffic: not available from public repo/crates metadata
 - Issues: 0 open GitHub issues
 - Existing audience: GitHub repository, crates.io package, Homebrew tap, docs.rs
 
 ## Day 1
 
-- Not started. External launch posts were not authorized in this run.
+- Not started. External launch posts were not authorized or published.
 
 ## Day 7
 
-- Scheduled for 2026-06-19 if external posting is authorized.
+- Not started. The 2026-06-19 review date passed without authorized external
+  posting.
 
 ## Day 30
 
-- Scheduled for 2026-07-12 if external posting is authorized.
+- Scheduled only if external posting is authorized before the review window.
