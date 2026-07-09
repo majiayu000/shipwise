@@ -1,0 +1,18 @@
+Snapshot: 2026-05-29 02:28:16 CST
+Source: https://github.com/trending?since=daily
+01 harry0703/MoneyPrinterTurbo | 4,685 stars today | 利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.
+02 affaan-m/ECC | 1,388 stars today | The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+03 Leonxlnx/taste-skill | 2,235 stars today | Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop
+04 hardikpandya/stop-slop | 755 stars today | A skill file for removing AI tells from prose
+05 twentyhq/twenty | 495 stars today | The open alternative to Salesforce, designed for AI.
+06 DigitalPlatDev/FreeDomain | 1,769 stars today | DigitalPlat FreeDomain: Free Domain For Everyone
+07 byoungd/English-level-up-tips | 2,015 stars today | An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语
+08 microsoft/markitdown | 1,263 stars today | Python tool for converting files and office documents to Markdown.
+09 obra/superpowers | 1,726 stars today | An agentic skills framework & software development methodology that works.
+10 revfactory/harness | 68 stars today | A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.
+11 codecrafters-io/build-your-own-x | 866 stars today | Master programming by recreating your favorite technologies from scratch.
+12 Lum1104/Understand-Anything | 3,766 stars today | Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.
+13 unclecode/crawl4ai | 253 stars today | 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN
+14 OpenMOSS/MOSS-TTS | 53 stars today | MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS.
+15 EveryInc/compound-engineering-plugin | 180 stars today | Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more
+16 anthropics/skills | 791 stars today | Public repository for Agent Skills
