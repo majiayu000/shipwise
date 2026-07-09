@@ -48,4 +48,4 @@ perl -0pi -e "s/name: \"\"/name: \"$name\"/" "$target/project.yaml"
 perl -0pi -e "s/archetype: \"\"/archetype: \"$archetype\"/" "$target/project.yaml"
 
 echo "Created $target"
-echo "Next: fill project.yaml, positioning.md, launch-plan.md, and signals.md"
+echo "Next: fill project.yaml, positioning.md, proof.md, readiness-report.md, launch-plan.md, and signals.md"

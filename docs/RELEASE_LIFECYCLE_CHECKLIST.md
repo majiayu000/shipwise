@@ -34,6 +34,17 @@ Block launch if install or quickstart fails.
 
 Output: `projects/<project>/proof.md`
 
+### 3.5. Write Readiness Report
+
+- [ ] P0 launch blockers are classified as verified, missing, unverified,
+      blocked, or not applicable.
+- [ ] P1 readiness gaps and P2 channel polish are separated.
+- [ ] The next action is clear: launch, wait, or improve.
+- [ ] Publishable copy is blocked if install/access, quickstart, license, proof,
+      or support path is missing.
+
+Output: `projects/<project>/readiness-report.md`
+
 ## Phase 2: Asset Package
 
 ### 4. Prepare GitHub Surface

@@ -13,6 +13,7 @@ projects/<project>/
   project.yaml
   positioning.md
   launch-plan.md
+  readiness-report.md
   proof.md
   feedback.md
   metrics.md

@@ -36,6 +36,7 @@ Read these in order when planning a launch. This is an agent-facing document sys
 8. [TEMPLATE_SYSTEM.md](TEMPLATE_SYSTEM.md)
    - 70/30 reuse model.
    - Template variables.
+   - Variable contract in [../templates/VARIABLES.md](../templates/VARIABLES.md).
    - How to adapt copy per platform.
 
 9. [SUCCESS_METRICS.md](SUCCESS_METRICS.md)
@@ -60,6 +61,8 @@ Then fill:
 
 - `projects/<project-name>/project.yaml`
 - `projects/<project-name>/positioning.md`
+- `projects/<project-name>/proof.md`
+- `projects/<project-name>/readiness-report.md`
 - `projects/<project-name>/launch-plan.md`
 - `projects/<project-name>/signals.md`
 - `projects/<project-name>/metrics.md`

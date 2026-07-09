@@ -23,6 +23,18 @@ discoverability:
   topics: []
   homepage_url: ""
   social_image_set: false
+verification:
+  license_status: ""
+  support_path: ""
+  quickstart_command: ""
+  expected_output: ""
+  verification_command: ""
+  verification_date: ""
+  proof_asset_path: ""
+launch:
+  goal_type: ""
+  launch_blockers: []
+  launch_effort_hours: 0
 signals:
   sources_checked: []
   retrieval_date: ""

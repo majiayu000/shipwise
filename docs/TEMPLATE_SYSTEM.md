@@ -35,13 +35,22 @@ Use these names consistently:
 {{launch_date}}
 ```
 
+The full variable contract is [templates/VARIABLES.md](../templates/VARIABLES.md).
+If a required variable is missing, create a preflight TODO or readiness blocker
+instead of inventing publishable copy.
+
 ## Template Files
 
 - `projects/_template/project.yaml`
+- `templates/VARIABLES.md`
 - `templates/core/PROJECT_BRIEF.md`
 - `templates/core/ANNOUNCEMENT.md`
+- `templates/core/LAUNCH_READINESS_REPORT.md`
 - `templates/github/RELEASE_NOTES.md`
 - `templates/github/README_DISTRIBUTION_SECTION.md`
+- `templates/github/LAUNCH_READINESS_ISSUE.md`
+- `templates/github/REPO_METADATA.md`
+- `templates/seo/keyword_map.md`
 - `templates/platforms/x_thread.md`
 - `templates/platforms/hn_show_hn.md`
 - `templates/platforms/reddit_post.md`

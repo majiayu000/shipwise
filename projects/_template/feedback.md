@@ -1,4 +1,4 @@
 # Feedback
 
-| Source | Type | Summary | Action |
-|---|---|---|---|
+| Source | URL | Type | Raw user text | Summary | Quality 0-5 | Issue or PR | Status | Template change needed | Action |
+|---|---|---|---|---|---:|---|---|---|---|
