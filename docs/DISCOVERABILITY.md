@@ -167,6 +167,22 @@ answers. They rely on the same metadata, parsed literally.
 - Repo metadata template: [../templates/github/REPO_METADATA.md](../templates/github/REPO_METADATA.md)
 - Keyword map template: [../templates/seo/keyword_map.md](../templates/seo/keyword_map.md)
 
+## Automation Handoff
+
+If SEO Agent Suite is available, use it as the execution layer for this
+checklist:
+
+```bash
+python3 scripts/repo_seo_baseline.py \
+  --root /absolute/path/to/target-repo \
+  --project-yaml /absolute/path/to/shipwise/projects/<project>/project.yaml \
+  --json
+```
+
+Shipwise remains the planning and record layer. SEO Agent Suite should emit
+evidence and machine-checkable failures; record resulting decisions, issue
+links, and remaining blockers back into the Shipwise project folder.
+
 ## Sources
 
 - GitHub Topics: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics
