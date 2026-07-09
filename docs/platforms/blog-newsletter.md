@@ -26,6 +26,17 @@ Each publication has its own guidelines. Before submitting, check the target pub
 - [ ] Claims are sourced.
 - [ ] CTA is specific: try, star, comment, file issue, or subscribe.
 
+## Hard Rules
+
+- If the same article is syndicated, set or request one canonical URL and record
+  the canonical target in `links.md`.
+- Every code snippet copied into the article must be tested or explicitly marked
+  as illustrative.
+- Benchmarks must include setup, command, machine/context, date, result, and
+  caveats.
+- Newsletters and guest publications require their own current submission or
+  sponsorship rules before drafting final copy.
+
 ## Do Not
 
 - Do not write a generic launch essay with no proof.

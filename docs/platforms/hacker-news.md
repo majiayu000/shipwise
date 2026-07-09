@@ -32,6 +32,16 @@ Use a regular HN submission, not Show HN, for:
 - [ ] First comment explains why it exists, how to try it, limitations, and what feedback is wanted.
 - [ ] No request for upvotes or coordinated comments.
 
+## Hard Rules
+
+- Use `Show HN:` only for a tryable thing. Blog posts, lists, newsletters, and
+  pure reading material use regular HN submission instead.
+- New features and minor version bumps are generally not enough for Show HN; use
+  it only for first launches or major overhauls.
+- Do not ask friends, users, or communities to upvote or comment.
+- Prepare the first comment before submission, including: why it exists, install
+  or access path, current limitations, and the specific feedback wanted.
+
 ## Do Not
 
 - Do not submit landing pages as Show HN.

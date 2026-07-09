@@ -4,18 +4,37 @@ Chinese developer channels are useful for localized adoption, explanation, and f
 
 ## Common Channels
 
-- WeChat official account.
-- Juejin.
-- V2EX.
-- Zhihu.
-- Bilibili.
-- OSChina.
-- Jike.
-- Xiaohongshu when visuals/story fit.
+- WeChat official account: check current WeChat public platform rules before
+  publishing.
+- Juejin: https://juejin.cn/book/m/6844733795329900551/section/6844733795380232200
+- V2EX: https://blog.v2ex.com/faq/ and https://www.v2ex.com/go/guide
+- Zhihu: https://www.zhihu.com/term/community
+- Bilibili: https://member.bilibili.com/studio/convention/?navhide=1
+- OSChina: https://www.oschina.net/
+- Jike: https://post.jellow.club/jike-agreement/
+- Xiaohongshu when visuals/story fit:
+  https://agree.xiaohongshu.com/h5/terms/ZXXY20221213003/-1
 
 ## Source Rule
 
 Each platform has its own posting, moderation, and account rules. Before publishing, check the current platform rules and the specific community norms.
+
+## Hard Rules
+
+- Record the exact source page checked, check date, account/channel, link policy,
+  and moderation risk in `launch-plan.md`.
+- Use one localized draft per platform. Do not translate one English launch post
+  and publish it unchanged everywhere.
+- For V2EX, draft carefully before posting: topics can be edited or moved only
+  within the short post-publication window documented by V2EX, and replies are
+  not editable.
+- For Zhihu, avoid marketing diversion, false certification, copied content, and
+  low-quality answer spam.
+- For Xiaohongshu, use only visual/story-led projects and avoid fake engagement,
+  traffic manipulation, and unsupported commercial claims.
+- For WeChat, Bilibili, OSChina, Juejin, and Jike, verify current account and
+  community-specific rules because public rules and enforcement vary by account
+  type and topic.
 
 ## Use When
 

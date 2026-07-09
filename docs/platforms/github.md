@@ -44,6 +44,18 @@ Google both index it. Design it before posting anywhere. Full guidance:
 
 Run the full gate: [../../checklists/discoverability.md](../../checklists/discoverability.md).
 
+## Hard Rules
+
+- Topics: GitHub allows no more than 20 topics; topic names must use lowercase
+  letters, numbers, and hyphens, and must be 50 characters or less.
+- Shipwise default: use 5 to 20 relevant topics, with no unrelated trending
+  topics.
+- Social preview: use a 1280x640 image and verify the repository setting before
+  publishing social links.
+- Release/version: the GitHub release, package registry version, and install
+  command must refer to the same intended launch version, or the mismatch must
+  be recorded as a blocker.
+
 ## Do Not
 
 - Do not launch public channels before README and install/access path work.

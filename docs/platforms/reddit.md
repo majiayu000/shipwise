@@ -23,6 +23,20 @@ Reddit is for community-specific feedback. It is not a broadcast channel.
 - [ ] Prefer a text post with context over a bare link when self-promotion risk is high.
 - [ ] Record post URLs and moderation outcomes.
 
+## Hard Rules
+
+- Reddit's spam policy prohibits repeated or unsolicited mass engagement,
+  including mass-posting repetitive content for exposure or financial gain.
+- If an account's contributions primarily link to a project, company, or product
+  it benefits from, reduce frequency and check moderator/community rules first.
+- Shipwise default: first wave is at most two subreddits, each with a rewritten
+  text post and explicit relationship disclosure.
+- If a subreddit publishes a self-promotion ratio, karma threshold, title
+  format, flair rule, or weekly thread requirement, record it in
+  `launch-plan.md` before drafting copy.
+- If no subreddit-specific rule is visible, cap launch promotion to one post per
+  release per subreddit and prefer a feedback request over a traffic request.
+
 ## Do Not
 
 - Do not mass-post repetitive content.
