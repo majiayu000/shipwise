@@ -80,6 +80,35 @@ traceable.
 | `{{source_command}}` | source install docs |
 | `{{source_notes}}` | source install docs |
 
+## Repository Discoverability Variables
+
+These fill `templates/github/REPO_METADATA.md`. Keep them aligned with the
+canonical project record and the target repository's actual settings.
+
+| Variable | Source |
+|---|---|
+| `{{one_sentence_with_primary_keyword}}` | `project.yaml:discoverability.description` |
+| `{{docs_or_landing_or_package_url}}` | first real URL from `docs`, `website`, or package metadata |
+| `{{primary_keyword}}` | `project.yaml:discoverability.primary_keyword` |
+| `{{archetype_term}}` | user-facing search term for `project.yaml:archetype` |
+| `{{language_or_runtime}}` | target repository manifest or verified README |
+| `{{domain_term_1}}`, `{{domain_term_2}}` | project-specific domain terms |
+| `{{specific_feature_term}}` | verified feature term specific to the project |
+| `{{path_to_social_preview_image}}` | `project.yaml:assets.social_image` |
+| `{{owner}}` | GitHub repository owner or organization |
+| `{{repo}}` | GitHub repository name without the owner |
+
+## Keyword Map Variables
+
+These fill `templates/seo/keyword_map.md` from the project's verified keyword
+research. They are candidate terms, not claims about ranking or search volume.
+
+| Variable | Scope |
+|---|---|
+| `{{high_intent_term_1}}`, `{{high_intent_term_2}}` | primary terms |
+| `{{related_term_1}}`, `{{related_term_2}}`, `{{related_term_3}}` | secondary terms |
+| `{{specific_phrase_1}}`, `{{specific_phrase_2}}` | long-tail terms |
+
 ## Readiness Report Variables
 
 Status variables must use one of: `verified`, `missing`, `unverified`,
@@ -88,33 +117,31 @@ Status variables must use one of: `verified`, `missing`, `unverified`,
 | Variable | Meaning |
 |---|---|
 | `{{readiness_recommendation}}` | `launch`, `wait`, or `blocked` |
-| `{{*_status}}` | status for the named readiness check |
-| `{{*_evidence}}` | source, path, command, or checked fact |
-| `{{*_next_action}}` | local next action |
 | `{{source_docs_checked}}` | platform docs read in this launch cycle |
 | `{{baseline_metrics}}` | metrics from `metrics.md` |
 | `{{launch_decision}}` | `yes` or `no` |
 | `{{launch_decision_reason}}` | specific reason |
 | `{{next_action}}` | next local action |
 
-Concrete readiness prefixes currently used by the report template:
+Every readiness check has an exact status and next-action variable. Evidence
+reuses a canonical variable when possible.
 
-```text
-target_user
-install
-quickstart
-proof
-license
-support
-distribution
-readme
-limitations
-source_docs
-metrics
-platform_copy
-social_image
-second_wave
-```
+| Check | Status variable | Evidence variable | Next-action variable |
+|---|---|---|---|
+| Target user | `{{target_user_status}}` | `{{target_user}}` | `{{target_user_next_action}}` |
+| Install/access | `{{install_status}}` | `{{install_command}}` | `{{install_next_action}}` |
+| Quickstart | `{{quickstart_status}}` | `{{quickstart_command}}` | `{{quickstart_next_action}}` |
+| Proof | `{{proof_status}}` | `{{proof}}` | `{{proof_next_action}}` |
+| License | `{{license_status}}` | `{{license_evidence}}` | `{{license_next_action}}` |
+| Support | `{{support_status}}` | `{{support_path}}` | `{{support_next_action}}` |
+| Distribution | `{{distribution_status}}` | `{{distribution_evidence}}` | `{{distribution_next_action}}` |
+| README first screen | `{{readme_status}}` | `{{readme_evidence}}` | `{{readme_next_action}}` |
+| Limitations | `{{limitations_status}}` | `{{limitations}}` | `{{limitations_next_action}}` |
+| Platform source docs | `{{source_docs_status}}` | `{{source_docs_checked}}` | `{{source_docs_next_action}}` |
+| Baseline metrics | `{{metrics_status}}` | `{{baseline_metrics}}` | `{{metrics_next_action}}` |
+| Platform copy | `{{platform_copy_status}}` | `{{platform_copy_evidence}}` | `{{platform_copy_next_action}}` |
+| Social image | `{{social_image_status}}` | `{{social_image}}` | `{{social_image_next_action}}` |
+| Second-wave channels | `{{second_wave_status}}` | `{{secondary_channels}}` | `{{second_wave_next_action}}` |
 
 ## Platform-Only Variables
 
