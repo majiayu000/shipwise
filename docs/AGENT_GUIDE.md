@@ -41,15 +41,18 @@ must not be treated as guaranteed external outcomes.
 1. Gather project facts
 2. Gather trend signals if timing, opportunity, issue creation, or PR scope depends on current community momentum
 3. Classify archetype
-4. Design repo and metadata for discovery (see DISCOVERABILITY.md)
+4. Design repo and metadata for discovery (see DISCOVERABILITY.md); run the
+   optional SEO Agent Suite subset gate only after its documented capability
+   preflight confirms `repo_seo_baseline.py --project-yaml` is available
 5. Read platform source docs
 6. Decide channels
 7. Prepare assets
-8. Draft platform-specific copy
-9. Verify launch blockers
-10. Publish manually or with user-approved platform tooling
-11. Record links, metrics, signals, and feedback
-12. Review and update docs
+8. Write launch readiness report
+9. Draft platform-specific copy only if P0 blockers are clear
+10. Verify launch blockers
+11. Publish manually or with user-approved platform tooling
+12. Record links, metrics, signals, and feedback
+13. Review and update docs
 ```
 
 ## Required Project Facts
@@ -70,6 +73,23 @@ Before drafting public copy, collect:
 - Trend sources and comparable projects, if current momentum influenced the work.
 
 If these facts are missing, create a preflight TODO instead of publishable copy.
+
+## Readiness Report
+
+Before writing publishable platform copy, create or update
+`projects/<project>/readiness-report.md` from
+`templates/core/LAUNCH_READINESS_REPORT.md`.
+
+Use these status values:
+
+- `verified`
+- `missing`
+- `unverified`
+- `blocked`
+- `not applicable`
+
+If install/access, quickstart, license, proof, or support path is missing,
+mark the launch as blocked and write local next actions instead of public copy.
 
 ## Channel Decision Record
 

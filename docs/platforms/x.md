@@ -23,6 +23,19 @@ X is an owned distribution and conversation channel. It is useful for demos, rel
 - [ ] No automated DMs or engagement loops.
 - [ ] Comments and useful replies are captured after launch.
 
+## Hard Rules
+
+- Do not post duplicative or substantially similar posts across one or more
+  accounts.
+- Do not automate posts about trending topics or use automation to influence
+  trends.
+- Do not send unsolicited automated replies, mentions, or DMs.
+- If automated replies are ever used, a user must clearly opt in, there must be
+  an opt-out path, and there can be only one automated reply per user
+  interaction.
+- Shipwise default: launch threads are manual unless a separate
+  platform-compliant automation workflow is explicitly approved.
+
 ## Do Not
 
 - Do not mass-reply to unrelated accounts.

@@ -167,6 +167,46 @@ answers. They rely on the same metadata, parsed literally.
 - Repo metadata template: [../templates/github/REPO_METADATA.md](../templates/github/REPO_METADATA.md)
 - Keyword map template: [../templates/seo/keyword_map.md](../templates/seo/keyword_map.md)
 
+## Optional Local Subset Gate
+
+SEO Agent Suite is a separate checkout. From any directory inside a Shipwise
+checkout, point `SEO_AGENT_SUITE_ROOT` at that checkout and pass both repository
+roots explicitly:
+
+```bash
+export SEO_AGENT_SUITE_ROOT=/absolute/path/to/seo-agent-suite
+TARGET_REPO_ROOT=/absolute/path/to/target-repo
+SHIPWISE_ROOT="$(git rev-parse --show-toplevel)"
+SEO_BASELINE="$SEO_AGENT_SUITE_ROOT/scripts/repo_seo_baseline.py"
+
+if python3 "$SEO_BASELINE" --help | grep -q -- '--project-yaml'; then
+  python3 "$SEO_BASELINE" \
+    --root "$TARGET_REPO_ROOT" \
+    --project-yaml "$SHIPWISE_ROOT/projects/<project>/project.yaml" \
+    --json
+else
+  printf '%s\n' \
+    'SEO Agent Suite lacks --project-yaml support; use PR #1 head 4bba63f or a later supporting revision, then rerun.' >&2
+  false
+fi
+```
+
+The capability check is required because SEO Agent Suite releases before
+revision `4bba63f` do not expose `--project-yaml`. Do not omit the preflight or
+treat an `unrecognized arguments` failure as a completed gate.
+
+For Shipwise, only the emitted `shipwise.checks` are a local deterministic
+subset gate. They compare the project record with local repository files for
+discoverability fields and community-file presence. The command may also emit
+live GitHub, registry, and site observations; those fields are time-bound
+evidence, not deterministic gate results.
+
+This subset does not run the complete Shipwise checklist, decide launch
+readiness, or prove releases, indexing, rankings, search volume, backlinks, or
+live SEO performance. Shipwise remains the planning and record layer. Record
+the local gate result, separately sourced live evidence, decisions, links, and
+remaining blockers in the Shipwise project folder.
+
 ## Sources
 
 - GitHub Topics: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics

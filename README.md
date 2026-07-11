@@ -20,9 +20,10 @@ When an agent is asked to publish or prepare a launch:
 4. Open the relevant platform source docs under [docs/platforms/](docs/platforms/README.md).
 5. If current community momentum affects timing or issue/PR scope, run [docs/TREND_SIGNAL_WORKFLOW.md](docs/TREND_SIGNAL_WORKFLOW.md).
 6. Fill or create a project launch folder under `projects/<project>/`.
-7. Follow [docs/RELEASE_LIFECYCLE_CHECKLIST.md](docs/RELEASE_LIFECYCLE_CHECKLIST.md).
-8. Use templates from `templates/` only after the platform source doc says that channel is appropriate.
-9. Record source links, post URLs, metrics, trend signals, and feedback.
+7. Write `projects/<project>/readiness-report.md` before publishable copy.
+8. Follow [docs/RELEASE_LIFECYCLE_CHECKLIST.md](docs/RELEASE_LIFECYCLE_CHECKLIST.md).
+9. Use templates from `templates/` only after the platform source doc says that channel is appropriate.
+10. Record source links, post URLs, metrics, trend signals, and feedback.
 
 Optional docs-only scaffold:
 
@@ -70,6 +71,21 @@ shipwise/
   projects/     # project launch records; _template is the scaffold source
   checklists/   # stable pointers or run sheets derived from canonical docs
   scripts/      # docs scaffold only, not a publisher
+  projects/
+    _template/
+      project.yaml
+      feedback.md
+      launch-plan.md
+      links.md
+      metrics.md
+      positioning.md
+      proof.md
+      readiness-report.md
+      signals.md
+      retros/
+        day-1.md
+        day-7.md
+        day-30.md
 ```
 
 ## Core Principles
@@ -148,6 +164,7 @@ This is a documentation-first guide:
 - Core docs are generic and usable.
 - Platform source docs are present under `docs/platforms/`.
 - Template files are present.
+- Variable contract and launch readiness report templates are present.
 - Trend signal workflow is present for converting live community evidence into local issue/PR work.
 - `scripts/new_project.sh` can scaffold a project launch folder, but does not publish.
 - `projects/ccstats/` records the first real repo-side dogfood validation,

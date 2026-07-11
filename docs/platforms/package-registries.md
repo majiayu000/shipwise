@@ -48,12 +48,18 @@ For discoverability, set `description`, `keywords` (up to 5), `categories` (from
 the official crates.io category slugs), `repository`, and `documentation` in
 `Cargo.toml`.
 
+Hard rule: after publishing to crates.io, do not assume a bad version can be
+replaced. Treat version, README, license, included files, and metadata as frozen.
+
 ### npm
 
 Run `npm pack --dry-run` and confirm package contents. Be careful with package names, scope, access, 2FA, and dist tags.
 
 For discoverability, set `description`, `keywords`, `repository`, and `homepage`
 in `package.json`. npm search ranks on these plus popularity.
+
+Hard rule: run `npm pack --dry-run` and inspect package contents before any
+announcement. Do not rely on `.gitignore` alone for published file selection.
 
 ### PyPI
 
@@ -63,9 +69,15 @@ For discoverability, set `description`/`summary`, `keywords`, official
 `classifiers`, and project URLs (Homepage, Source, Documentation) in project
 metadata.
 
+Hard rule: verify install/import from the built artifact, not only from the
+working tree.
+
 ### Homebrew
 
 Formulae need immutable source/archive URLs and correct SHA values. Run Homebrew audit/test commands before announcing.
+
+Hard rule: record the exact formula path, URL, SHA, and `brew audit`/`brew test`
+result in `proof.md`.
 
 ## Do Not
 

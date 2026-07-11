@@ -2,7 +2,9 @@
 
 ## v0.2: Documentation-first guide
 
-Status: current.
+Status: current. The documentation system and repo-side dogfood flow exist, but
+external launch publishing and post-launch retros remain blocked until explicit
+platform/account authorization is recorded.
 
 - Generic README.
 - Decision tree.
@@ -12,10 +14,14 @@ Status: current.
 - Success metrics.
 - Feedback loop.
 - Project scaffold script.
+- Discoverability gate.
+- Launch readiness report template.
+- Project proof, copy, asset, and retro scaffold.
 
 ## v0.3: First validated launch
 
-Requirement: run one real project through the full system.
+Requirement: run one real project through the full system, including authorized
+external posts and Day 1/7 review data.
 
 - Fill a complete playbook for `ccstats`, `remem`, or another real project.
 - Add real proof, screenshots, and metrics.

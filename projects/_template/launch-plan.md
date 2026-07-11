@@ -4,6 +4,7 @@
 
 - Archetype:
 - Primary goal:
+- Readiness recommendation:
 - Primary platforms:
 - Secondary platforms:
 - Not doing:
@@ -30,6 +31,7 @@
 - [ ] Quickstart
 - [ ] Demo
 - [ ] Proof
+- [ ] Readiness report
 - [ ] Release notes
 - [ ] Platform copy
 

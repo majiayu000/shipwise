@@ -37,6 +37,9 @@ jobs:
             test -e "projects/ci-smoke/$(basename "$f")"
           done
 
+      - name: Check template variable contract
+        run: ./scripts/check_template_variables.sh
+
   markdown-lint:
     runs-on: ubuntu-latest
     steps:
