@@ -41,9 +41,9 @@ must not be treated as guaranteed external outcomes.
 1. Gather project facts
 2. Gather trend signals if timing, opportunity, issue creation, or PR scope depends on current community momentum
 3. Classify archetype
-4. Design repo and metadata for discovery (see DISCOVERABILITY.md); if SEO Agent
-   Suite is available, run its `repo_seo_baseline.py --project-yaml` gate against
-   this project's `project.yaml`
+4. Design repo and metadata for discovery (see DISCOVERABILITY.md); run the
+   optional SEO Agent Suite subset gate only after its documented capability
+   preflight confirms `repo_seo_baseline.py --project-yaml` is available
 5. Read platform source docs
 6. Decide channels
 7. Prepare assets

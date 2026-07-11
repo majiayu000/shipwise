@@ -177,12 +177,23 @@ roots explicitly:
 export SEO_AGENT_SUITE_ROOT=/absolute/path/to/seo-agent-suite
 TARGET_REPO_ROOT=/absolute/path/to/target-repo
 SHIPWISE_ROOT="$(git rev-parse --show-toplevel)"
+SEO_BASELINE="$SEO_AGENT_SUITE_ROOT/scripts/repo_seo_baseline.py"
 
-python3 "$SEO_AGENT_SUITE_ROOT/scripts/repo_seo_baseline.py" \
-  --root "$TARGET_REPO_ROOT" \
-  --project-yaml "$SHIPWISE_ROOT/projects/<project>/project.yaml" \
-  --json
+if python3 "$SEO_BASELINE" --help | grep -q -- '--project-yaml'; then
+  python3 "$SEO_BASELINE" \
+    --root "$TARGET_REPO_ROOT" \
+    --project-yaml "$SHIPWISE_ROOT/projects/<project>/project.yaml" \
+    --json
+else
+  printf '%s\n' \
+    'SEO Agent Suite lacks --project-yaml support; use PR #1 head 4bba63f or a later supporting revision, then rerun.' >&2
+  false
+fi
 ```
+
+The capability check is required because SEO Agent Suite releases before
+revision `4bba63f` do not expose `--project-yaml`. Do not omit the preflight or
+treat an `unrecognized arguments` failure as a completed gate.
 
 For Shipwise, only the emitted `shipwise.checks` are a local deterministic
 subset gate. They compare the project record with local repository files for
