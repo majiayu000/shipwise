@@ -3,8 +3,8 @@
 ## One Sentence
 
 ```text
-ccstats is for developers using Claude Code, OpenAI Codex, Cursor, or Grok
-who need local token and cost usage analytics.
+ccstats is for developers using Claude Code, OpenAI Codex, Cursor, Grok, or
+Kimi Code who need local token and cost usage analytics.
 It reads local usage logs and databases to deliver daily, weekly, monthly,
 project, session, and model-level usage summaries.
 ```
@@ -18,8 +18,8 @@ project, session, and model-level usage summaries.
 
 ## Problem
 
-- AI coding usage is fragmented across local Claude Code, Codex, Cursor, and
-  Grok stores.
+- AI coding usage is fragmented across local Claude Code, Codex, Cursor, Grok,
+  and Kimi Code stores.
 - Native account dashboards do not provide the same local project/session
   breakdowns or cross-tool view.
 
@@ -32,18 +32,19 @@ project, session, and model-level usage summaries.
 ## Differentiation
 
 - Local-first CLI with multiple AI coding sources.
-- Supports Claude Code, OpenAI Codex, experimental Cursor, and Grok local
-  context-token snapshots.
+- Supports Claude Code, OpenAI Codex, experimental Cursor, Grok local
+  context-token snapshots, and Kimi Code session usage.
 - Provides CLI and Rust SDK surfaces from the same aggregation logic.
 
 ## Proof
 
 - GitHub README on `main` documents Homebrew, cargo-binstall, cargo install,
   shell script, and manual release download paths.
-- crates.io reports max version `0.2.65`, 282 total downloads, and 142 recent
-  downloads as of 2026-06-26.
-- GitHub latest release `v0.2.64` includes prebuilt archives and checksums.
-- GitHub release `v0.2.65` does not exist as of 2026-06-26.
+- crates.io reports max version `0.4.0`, 365 total downloads, and 147 recent
+  downloads as of 2026-08-13.
+- GitHub latest release `v0.4.0` includes prebuilt archives and checksums.
+- `cargo install ccstats --version 0.4.0 --locked` succeeded in a temporary
+  root during the 2026-08-13 Shipwise dogfood refresh.
 
 ## Search Keywords
 

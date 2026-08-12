@@ -1,23 +1,37 @@
 name: "ccstats"
-version: "0.2.65"
+version: "0.4.0"
 archetype: "cli-tool"
-status: "repo-side dogfood complete; external publishing blocked on approval"
+status: "repo-side dogfood refreshed; template-flow drafts ready; external publishing blocked on approval"
 repo: "https://github.com/majiayu000/ccstats"
 website: "https://crates.io/crates/ccstats"
 docs: "https://docs.rs/ccstats/latest/ccstats/"
 package:
   registry: "crates.io"
   name: "ccstats"
-  install_command: "cargo install ccstats --version 0.2.65 --locked"
+  install_command: "cargo install ccstats --version 0.4.0 --locked"
 audience:
-  target_user: "Developers using Claude Code, OpenAI Codex, Cursor, or Grok who need local token and cost usage analytics."
+  target_user: "Developers using Claude Code, OpenAI Codex, Cursor, Grok, or Kimi Code who need local token and cost usage analytics."
   primary_problem: "AI coding usage is spread across local logs and is hard to inspect by day, project, model, or session."
 positioning:
-  one_sentence: "ccstats is a fast CLI for token and cost usage analytics across Claude Code, OpenAI Codex, Cursor, and Grok logs."
-  proof: "Verified 2026-06-26: crates.io max_version 0.2.65, 282 total downloads, 142 recent downloads, GitHub latest release v0.2.64 with prebuilt assets; GitHub release v0.2.65 does not exist."
-  limitations: "Cursor support is experimental; Grok local context-token snapshots are not precise provider billable usage."
+  one_sentence: "ccstats is a fast CLI for token and cost usage analytics across Claude Code, OpenAI Codex, Cursor, Grok, and Kimi Code logs."
+  proof: "Verified 2026-08-13: crates.io max_version 0.4.0, 365 total downloads, 147 recent downloads, GitHub latest release v0.4.0, 7 GitHub stars, and a configured GitHub social preview image."
+  limitations: "Cursor support is experimental because Cursor's local database schema is not a public API; Grok reports local context-token snapshots rather than precise provider billable usage."
+verification:
+  license_status: "verified: MIT license in GitHub metadata and Cargo.toml"
+  support_path: "https://github.com/majiayu000/ccstats/issues"
+  quickstart_command: "ccstats codex today --no-cost"
+  expected_output: "A Token Usage table for local Codex data; local usage totals are not copied into public launch docs."
+  verification_command: "cargo install ccstats --version 0.4.0 --locked --root /tmp/shipwise-ccstats-0.4.0-1786552427 --force; /tmp/shipwise-ccstats-0.4.0-1786552427/bin/ccstats codex today --no-cost; python3 /Users/apple/Desktop/code/AI/tool/seo-agent-suite/scripts/repo_seo_baseline.py --root /Users/apple/Desktop/code/AI/tool/ccstats --crate ccstats --json"
+  verification_date: "2026-08-13"
+  proof_asset_path: "https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png"
+launch:
+  goal_type: "feedback"
+  launch_blockers:
+    - "Explicit platform/account authorization is not recorded."
+    - "Final copy approval is not recorded."
+    - "The documented SEO Agent Suite --project-yaml subset gate cannot run with the local checkout because the capability is absent."
 discoverability:
-  description: "Fast token and cost usage statistics CLI for Claude Code, OpenAI Codex, Cursor, and Grok."
+  description: "Fast CLI for Claude Code and OpenAI Codex token/cost usage analytics."
   primary_keyword: "AI token cost tracker"
   keywords:
     - "claude code usage stats"
@@ -34,38 +48,50 @@ discoverability:
     - "rust-cli"
     - "token-usage"
     - "ai-tools"
+    - "anthropic"
+    - "chatgpt"
+    - "cli"
+    - "cost-analysis"
+    - "jsonl"
+    - "llm"
+    - "productivity"
+    - "rust"
+    - "usage-analytics"
   homepage_url: "https://crates.io/crates/ccstats"
-  social_image_set: false
+  social_image_set: true
+  social_image_url: "https://repository-images.githubusercontent.com/1148135944/8a73d2be-8357-4c18-b705-08f54d9383ac"
+  local_gate_status: "blocked: repo_seo_baseline.py --help does not expose --project-yaml in the local SEO Agent Suite checkout"
 signals:
   sources_checked:
     - "GitHub repo metadata"
-    - "GitHub main README"
+    - "GitHub main README from local ccstats checkout"
     - "GitHub latest release"
     - "crates.io crate API"
-  retrieval_date: "2026-06-26"
+    - "SEO Agent Suite repo_seo_baseline.py help and legacy JSON output"
+  retrieval_date: "2026-08-13"
   comparable_projects:
     - "Claude Code usage dashboards"
     - "Local token/cost usage CLIs"
   signal_type: "readiness validation"
-  decision: "Prepare repo-side launch record and draft copy, then defer external posting until explicit platform/account authorization and final copy approval."
+  decision: "Prepare repo-side launch record and template-derived draft copy, then defer external posting until explicit platform/account authorization and final copy approval."
   local_issue: "https://github.com/majiayu000/shipwise/issues/8"
-  local_pr: "https://github.com/majiayu000/shipwise/pull/9"
+  local_pr: "pending in this implementation branch"
 channels:
   primary:
     - "GitHub release"
     - "crates.io"
     - "X thread"
-    - "Hacker News Show HN if quickstart remains tryable"
+    - "Hacker News Show HN only if treated as the first public launch and the maintainer is available"
   secondary:
-    - "niche Reddit"
-    - "Chinese developer community"
+    - "niche Reddit after subreddit-specific rules are checked"
+    - "Chinese developer community after localization"
 assets:
-  demo: "README card exists; terminal demo GIF was not verified in this dogfood run."
+  demo: "README card is visible above the README first paragraph; terminal demo GIF remains optional and unverified."
   screenshots:
     - "https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png"
-  social_image: "GitHub custom social preview not verified; README card exists at docs/branding/readme-card.png."
+  social_image: "https://repository-images.githubusercontent.com/1148135944/8a73d2be-8357-4c18-b705-08f54d9383ac"
 links:
-  github_release: "https://github.com/majiayu000/ccstats/releases/tag/v0.2.64"
+  github_release: "https://github.com/majiayu000/ccstats/releases/tag/v0.4.0"
   package: "https://crates.io/crates/ccstats"
   x_post: "not posted; explicit platform/account authorization required"
   hn_post: "not posted; explicit platform/account authorization required"
@@ -73,9 +99,12 @@ links:
     - "not posted; explicit platform/account authorization required"
   product_hunt: "not selected for first wave"
 metrics:
-  baseline_date: "2026-06-26"
-  github_stars: 6
-  downloads: 282
+  baseline_date: "2026-08-13"
+  github_stars: 7
+  github_forks: 0
+  github_open_issues: 1
+  downloads: 365
+  recent_downloads: 147
 review_dates:
   day_1: "blocked until external posting is authorized"
   day_7: "blocked until external posting is authorized"

@@ -2,13 +2,15 @@
 
 ## Baseline
 
-- Date: 2026-06-26
-- GitHub stars: 6
+- Date: 2026-08-13
+- GitHub stars: 7
 - Forks: 0
-- Downloads: 282 total crates.io downloads; 142 recent crates.io downloads
+- Downloads: 365 total crates.io downloads; 147 recent crates.io downloads
 - Docs/site traffic: not available from public repo/crates metadata
-- Issues: 0 open GitHub issues
+- Issues: 1 open GitHub issue
 - Existing audience: GitHub repository, crates.io package, Homebrew tap, docs.rs
+- GitHub release: `v0.4.0`
+- crates.io max version: `0.4.0`
 
 ## Day 1
 
@@ -16,8 +18,7 @@
 
 ## Day 7
 
-- Not started. The 2026-06-19 review date passed without authorized external
-  posting.
+- Not started. External launch posts were not authorized or published.
 
 ## Day 30
 

@@ -168,8 +168,10 @@ This is a documentation-first guide:
 - Trend signal workflow is present for converting live community evidence into local issue/PR work.
 - `scripts/new_project.sh` can scaffold a project launch folder, but does not publish.
 - `projects/ccstats/` records the first real repo-side dogfood validation,
-  using live GitHub/crates.io data and a verified install/quickstart path.
-- `projects/ccstats/platform-copy.md` contains draft-only platform copy.
+  using live GitHub/crates.io data, a verified `ccstats` v0.4.0
+  install/quickstart path, and a current discoverability gate record.
+- `projects/ccstats/copy/` contains draft-only platform copy produced through
+  the declared `PROJECT_BRIEF -> ANNOUNCEMENT -> platform templates` flow.
 - External platform posting still requires explicit platform/account
   authorization, final copy approval, and link logging.
 

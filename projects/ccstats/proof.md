@@ -4,54 +4,59 @@ Do not publish claims from this file unless their status is `verified`.
 
 ## Verification Summary
 
-- Verification date: 2026-06-26
-- Verification command: public GitHub repo metadata, GitHub latest release, and
-  crates.io crate API checks recorded in `project.yaml`, `positioning.md`, and
-  `metrics.md`
-- Verified by: Shipwise dogfood run
-- Result: blocked for external launch until final authorization and asset
-  approval are recorded
+- Verification date: 2026-08-13
+- Verified by: Shipwise dogfood refresh for issue #8
+- Result: blocked for external launch until platform/account authorization,
+  final copy approval, and the documented SEO Agent Suite `--project-yaml` gate
+  are resolved
 
 ## Install And Quickstart
 
 ```bash
-cargo install ccstats --version 0.2.65 --locked
-ccstats codex today --no-cost
+cargo install ccstats --version 0.4.0 --locked --root /tmp/shipwise-ccstats-0.4.0-1786552427 --force
+/tmp/shipwise-ccstats-0.4.0-1786552427/bin/ccstats codex today --no-cost
 ```
 
 Expected output:
 
 ```text
-Daily Codex usage summary for local data, without cost calculation.
+A Token Usage table for local Codex data.
 ```
 
-Status: verified in the dogfood record; rerun before external posting.
+Status: verified in this dogfood refresh. The command rendered local usage
+totals, but those private local totals are not copied into public launch docs.
 
 ## Proof Assets
 
 | Asset | Path or URL | Real data? | Status |
 |---|---|---:|---|
-| Demo |  |  | missing |
-| Screenshot | https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png | yes | unverified |
-| Benchmark |  |  | not applicable |
-| User quote |  |  | not applicable |
+| README card | https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png | yes | verified |
+| GitHub social preview | https://repository-images.githubusercontent.com/1148135944/8a73d2be-8357-4c18-b705-08f54d9383ac | yes | verified |
+| Terminal demo GIF | not recorded | not applicable | unverified |
+| Benchmark | not recorded | not applicable | not applicable |
+| User quote | not recorded | not applicable | not applicable |
 
 ## Claim Inventory
 
 | Claim | Source or command | Date | Status | Publishable? |
 |---|---|---:|---|---:|
-| crates.io max version is `0.2.65` | crates.io crate API | 2026-06-26 | verified | yes |
-| crates.io total downloads are 282 and recent downloads are 142 | crates.io crate API | 2026-06-26 | verified | yes, with date |
-| GitHub latest release is `v0.2.64` | GitHub release metadata | 2026-06-26 | verified | yes, with date |
-| GitHub release `v0.2.65` does not exist | GitHub release metadata | 2026-06-26 | verified | yes, as blocker |
-| GitHub stars are 6 and open issues are 0 | GitHub repo metadata | 2026-06-26 | verified | yes, with date |
+| crates.io max version is `0.4.0` | crates.io crate API | 2026-08-13 | verified | yes |
+| crates.io total downloads are 365 and recent downloads are 147 | crates.io crate API | 2026-08-13 | verified | yes, with date |
+| GitHub latest release is `v0.4.0` | GitHub release metadata | 2026-08-13 | verified | yes |
+| GitHub release `v0.4.0` has prebuilt assets and checksums | GitHub release metadata | 2026-08-13 | verified | yes |
+| GitHub stars are 7, forks are 0, and open issues are 1 | GitHub repo metadata | 2026-08-13 | verified | yes, with date |
+| GitHub social preview image is configured | GitHub repo metadata | 2026-08-13 | verified | yes |
+| `cargo install ccstats --version 0.4.0 --locked` works | local temporary install root | 2026-08-13 | verified | yes |
+| `ccstats codex today --no-cost` renders a Token Usage table | local temporary install root | 2026-08-13 | verified | yes, without local totals |
+| SEO Agent Suite supports `--project-yaml` locally | `repo_seo_baseline.py --help` | 2026-08-13 | blocked | no |
 
 ## Numeric Claims
 
-- 282 total crates.io downloads as of 2026-06-26.
-- 142 recent crates.io downloads as of 2026-06-26.
-- 6 GitHub stars as of 2026-06-26.
-- 0 open GitHub issues as of 2026-06-26.
+- 365 total crates.io downloads as of 2026-08-13.
+- 147 recent crates.io downloads as of 2026-08-13.
+- 7 GitHub stars as of 2026-08-13.
+- 0 GitHub forks as of 2026-08-13.
+- 1 open GitHub issue as of 2026-08-13.
 
 ## Limitations
 
@@ -59,11 +64,13 @@ Status: verified in the dogfood record; rerun before external posting.
   public API.
 - Grok support reports local context-token snapshots, not precise provider
   billable usage or account quota.
+- The local SEO Agent Suite checkout does not expose the documented
+  `--project-yaml` gate, so the project-yaml subset gate cannot be marked green.
 - External community posts were not authorized in this Shipwise run.
 
 ## Launch Blockers
 
 - Explicit platform/account authorization is not recorded.
 - Final copy approval is not recorded.
-- Terminal demo GIF is missing or unverified.
-- GitHub release `v0.2.65` does not exist, while crates.io is at `0.2.65`.
+- SEO Agent Suite must be updated to a revision with `--project-yaml`, or the
+  launch plan must explicitly accept proceeding with only the legacy baseline.
