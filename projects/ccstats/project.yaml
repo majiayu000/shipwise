@@ -75,7 +75,7 @@ signals:
   signal_type: "readiness validation"
   decision: "Prepare repo-side launch record and template-derived draft copy, then defer external posting until explicit platform/account authorization and final copy approval."
   local_issue: "https://github.com/majiayu000/shipwise/issues/8"
-  local_pr: "pending in this implementation branch"
+  local_pr: "https://github.com/majiayu000/shipwise/pull/13"
 channels:
   primary:
     - "GitHub release"

@@ -31,7 +31,7 @@
 - What stayed out of scope: posting to X, HN, Reddit, Product Hunt, or Chinese
   communities without platform/account authorization and final copy approval.
 - Local issue: https://github.com/majiayu000/shipwise/issues/8
-- Local PR: pending in this implementation branch.
+- Local PR: https://github.com/majiayu000/shipwise/pull/13
 - Follow-up date: when external posting is authorized or SEO Agent Suite gains
   the documented `--project-yaml` capability locally.
 

@@ -14,7 +14,7 @@
 - What stayed out of scope: claiming launch outcomes or publishing to external
   platforms without platform/account authorization and final copy approval.
 - Local issue: https://github.com/majiayu000/shipwise/issues/8
-- Local PR: pending in this implementation branch.
+- Local PR: https://github.com/majiayu000/shipwise/pull/13
 - Follow-up date: when external posting is authorized or the documented
   `--project-yaml` gate can run locally.
 
