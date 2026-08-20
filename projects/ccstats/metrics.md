@@ -2,15 +2,16 @@
 
 ## Baseline
 
-- Date: 2026-08-13
-- GitHub stars: 7
+- Date: 2026-08-20
+- GitHub stars: 11
 - Forks: 0
-- Downloads: 365 total crates.io downloads; 147 recent crates.io downloads
+- Downloads: 404 total crates.io downloads; 184 recent crates.io downloads
 - Docs/site traffic: not available from public repo/crates metadata
-- Issues: 1 open GitHub issue
+- Issues: 0 open GitHub issues
 - Existing audience: GitHub repository, crates.io package, Homebrew tap, docs.rs
-- GitHub release: `v0.4.0`
+- GitHub release: `v0.5.0`
 - crates.io max version: `0.4.0`
+- Version alignment: blocked; GitHub release is ahead of crates.io
 
 ## Day 1
 

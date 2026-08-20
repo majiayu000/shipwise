@@ -1,12 +1,12 @@
 # Project Brief
 
 Status: draft source filled from `templates/core/PROJECT_BRIEF.md` on
-2026-08-13.
+2026-08-13. Live evidence last refreshed 2026-08-20.
 
 ## Identity
 
 - Project: ccstats
-- Version: 0.4.0
+- Version: GitHub release 0.5.0; crates.io package 0.4.0
 - Archetype: CLI / local developer tool (`cli-tool`)
 - Repo: https://github.com/majiayu000/ccstats
 - Install/access: `cargo install ccstats --version 0.4.0 --locked`
@@ -19,8 +19,9 @@ Status: draft source filled from `templates/core/PROJECT_BRIEF.md` on
   inspect by day, project, model, or session.
 - Existing workaround: manually inspect local JSONL, SQLite, or session metadata
   and reconcile usage across tools by hand.
-- Why now: v0.4.0 aligns GitHub Releases and crates.io, adds current multi-tool
-  positioning, and has a verified install/quickstart path.
+- Why now: the multi-tool positioning and 0.4.0 install/quickstart path are
+  verified, but external posting must wait for GitHub `v0.5.0` and crates.io
+  `0.4.0` to be aligned.
 
 ## Trend Signals
 
@@ -56,10 +57,10 @@ session-level usage summaries.
 
 ## Limitations
 
-- Cursor support is experimental because Cursor's local database schema is not a
-  public API.
-- Grok support reports local context-token snapshots, not precise provider
-  billable usage or account quota.
+- Cursor requires an explicit API key or dashboard session token; project
+  aggregation and 5-hour billing blocks are not supported for Cursor.
+- Grok sessions without per-turn usage fall back to an estimated snapshot cost;
+  Grok 5-hour billing blocks are not supported.
 - External platform posting requires explicit platform/account authorization and
   final copy approval.
 

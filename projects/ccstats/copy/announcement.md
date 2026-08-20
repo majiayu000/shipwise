@@ -25,10 +25,11 @@ recorded. The README card contains illustrative data and is not proof.
 
 ## Proof
 
-Verified on 2026-08-13: crates.io max version `0.4.0`, 365 total downloads, 147
-recent downloads, GitHub latest release `v0.4.0`, 7 GitHub stars, and a
-successful temporary install plus `ccstats codex today --no-cost` quickstart
-run.
+Verified on 2026-08-20: crates.io max version `0.4.0`, 404 total downloads, 184
+recent downloads, GitHub latest release `v0.5.0`, and 11 GitHub stars. The
+0.4.0 temporary install plus `ccstats codex today --no-cost` quickstart was
+verified on 2026-08-13. Do not publish this draft until the release/package
+version mismatch is resolved.
 
 ## Install / Try
 
@@ -38,9 +39,10 @@ cargo install ccstats --version 0.4.0 --locked
 
 ## Known Limitations
 
-Cursor support is experimental because Cursor's local database schema is not a
-public API. Grok support reports local context-token snapshots, not precise
-provider billable usage or account quota.
+Cursor requires an explicit API key or dashboard session token and does not
+support project aggregation or 5-hour billing blocks. Grok sessions without
+per-turn usage fall back to an estimated snapshot cost; Grok 5-hour billing
+blocks are not supported.
 
 ## CTA
 

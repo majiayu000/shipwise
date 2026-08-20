@@ -27,8 +27,9 @@ Status: draft only. Filled from `templates/platforms/x_thread.md` after reading
 4. Proof:
 
    ```text
-   Verified 2026-08-13: crates.io and GitHub Releases both point at v0.4.0,
-   and a clean temporary cargo install plus ccstats codex today --no-cost ran.
+   Verified 2026-08-20: GitHub Releases points at v0.5.0 while crates.io remains
+   at v0.4.0. Hold this draft until they are aligned. The v0.4.0 install and
+   ccstats codex today --no-cost quickstart were verified on 2026-08-13.
    ```
 
 5. How to try:
@@ -47,8 +48,9 @@ Status: draft only. Filled from `templates/platforms/x_thread.md` after reading
 7. Limitations:
 
    ```text
-   Cursor support is experimental; Grok reports local context-token snapshots,
-   not exact provider billable usage.
+   Cursor requires explicit credentials and lacks project aggregation and
+   5-hour billing blocks. Grok can fall back to estimated snapshot costs and
+   also lacks 5-hour billing blocks.
    ```
 
 8. CTA:

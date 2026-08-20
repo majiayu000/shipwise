@@ -22,18 +22,19 @@
 - Sources checked: GitHub repo metadata, GitHub `main` README from the local
   ccstats checkout, GitHub latest release, crates.io crate API, and local SEO
   Agent Suite baseline commands.
-- Retrieval date: 2026-08-13.
+- Retrieval date: 2026-08-20.
 - Comparable projects: local Claude Code usage dashboards, token/cost usage
   CLIs.
 - Signal type: readiness validation.
 - What changed in our plan: Shipwise now has a ccstats record refreshed to
-  v0.4.0 and draft copy produced through the declared template flow.
+  current public facts, a green discoverability subset gate, and draft copy
+  produced through the declared template flow.
 - What stayed out of scope: posting to X, HN, Reddit, Product Hunt, or Chinese
   communities without platform/account authorization and final copy approval.
 - Local issue: https://github.com/majiayu000/shipwise/issues/8
 - Local PR: https://github.com/majiayu000/shipwise/pull/13
-- Follow-up date: when external posting is authorized or SEO Agent Suite gains
-  the documented `--project-yaml` capability locally.
+- Follow-up date: when GitHub/crates.io versions are aligned and external
+  posting is authorized.
 
 ## Assets
 
@@ -50,7 +51,7 @@
 
 ## Checklist
 
-Copied from `docs/RELEASE_LIFECYCLE_CHECKLIST.md` and refreshed on 2026-08-13.
+Copied from `docs/RELEASE_LIFECYCLE_CHECKLIST.md` and refreshed on 2026-08-20.
 
 ### Readiness
 
@@ -75,7 +76,7 @@ Copied from `docs/RELEASE_LIFECYCLE_CHECKLIST.md` and refreshed on 2026-08-13.
 - [x] Issue template or support path exists.
 - [x] Release notes exist for latest GitHub release.
 - [x] Package access path is live on crates.io.
-- [x] GitHub release matches crates.io version `0.4.0`.
+- [ ] GitHub release `v0.5.0` matches crates.io version `0.4.0`.
 - [ ] A sanitized real-output proof asset exists.
 - [ ] Terminal demo GIF is verified.
 - [x] Draft platform-specific copy exists under `projects/ccstats/copy/`.
@@ -94,14 +95,13 @@ Copied from `docs/RELEASE_LIFECYCLE_CHECKLIST.md` and refreshed on 2026-08-13.
 - [x] Community health files are present.
 - [x] A release is published.
 - [x] Package registry metadata is filled.
-- [ ] Documented SEO Agent Suite `--project-yaml` gate passes.
-- [x] Legacy SEO Agent Suite baseline command emits JSON.
+- [x] Documented SEO Agent Suite `--project-yaml` gate passes.
 
 ### Launch And Review
 
 - [x] GitHub release exists.
 - [x] Package registry artifact exists.
-- [x] GitHub release matches crates.io version `0.4.0`.
+- [ ] GitHub release `v0.5.0` matches crates.io version `0.4.0`.
 - [ ] Explicit platform/account authorization is recorded.
 - [ ] Final copy approval is recorded.
 - [ ] External first-wave platform posts are published.
@@ -119,6 +119,6 @@ External launch remains blocked until these facts are recorded:
 - Current official platform rules checked immediately before posting.
 - Sanitized terminal demo or screenshot captured from a real ccstats run; the
   imagegen-generated README card is not sufficient proof.
-- SEO Agent Suite `--project-yaml` gate rerun with a supporting checkout, or an
-  explicit decision recorded to proceed with only the legacy baseline.
+- GitHub release `v0.5.0` and crates.io `0.4.0` aligned, or an explicit launch
+  version decision recorded.
 - Published URLs logged in `projects/ccstats/links.md`.

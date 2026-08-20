@@ -33,14 +33,13 @@ cargo install ccstats --version 0.4.0 --locked
 
 What is working:
 - Daily, weekly, monthly, project, session, and model-level summaries
-- Claude Code, OpenAI Codex, Grok, and Kimi Code sources, plus experimental
-  Cursor support
+- Claude Code, OpenAI Codex, Cursor usage API, Grok, and Kimi Code sources
 
 Known limitations:
-- Cursor support is experimental because the local database schema is not a
-  public API
-- Grok support reports local context-token snapshots, not exact provider
-  billable usage
+- Cursor requires explicit credentials and does not support project aggregation
+  or 5-hour billing blocks
+- Grok sessions without per-turn usage fall back to estimated snapshot costs;
+  Grok 5-hour billing blocks are not supported
 
 I am especially looking for feedback on which usage breakdowns are missing from
 your workflow.

@@ -4,11 +4,12 @@ Do not publish claims from this file unless their status is `verified`.
 
 ## Verification Summary
 
-- Verification date: 2026-08-13
+- Verification date: 2026-08-20 for live metadata and the discoverability gate;
+  2026-08-13 for the install and quickstart
 - Verified by: Shipwise dogfood refresh for issue #8
-- Result: blocked for external launch until platform/account authorization,
-  final copy approval, and the documented SEO Agent Suite `--project-yaml` gate
-  are resolved
+- Result: the discoverability subset gate passed; external launch remains
+  blocked on version alignment, real-output proof, platform/account
+  authorization, and final copy approval
 
 ## Install And Quickstart
 
@@ -45,32 +46,32 @@ terminal capture from the verified quickstart is recorded.
 
 | Claim | Source or command | Date | Status | Publishable? |
 |---|---|---:|---|---:|
-| crates.io max version is `0.4.0` | crates.io crate API | 2026-08-13 | verified | yes |
-| crates.io total downloads are 365 and recent downloads are 147 | crates.io crate API | 2026-08-13 | verified | yes, with date |
-| GitHub latest release is `v0.4.0` | GitHub release metadata | 2026-08-13 | verified | yes |
-| GitHub release `v0.4.0` has prebuilt assets and checksums | GitHub release metadata | 2026-08-13 | verified | yes |
-| GitHub stars are 7, forks are 0, and open issues are 1 | GitHub repo metadata | 2026-08-13 | verified | yes, with date |
-| GitHub social preview image is configured | GitHub repo metadata | 2026-08-13 | verified | yes |
+| crates.io max version is `0.4.0` | crates.io crate API | 2026-08-20 | verified | yes |
+| crates.io total downloads are 404 and recent downloads are 184 | crates.io crate API | 2026-08-20 | verified | yes, with date |
+| GitHub latest release is `v0.5.0` | GitHub release metadata | 2026-08-20 | verified | yes |
+| GitHub release `v0.5.0` has prebuilt assets and checksums | GitHub release metadata | 2026-08-20 | verified | yes |
+| GitHub stars are 11, forks are 0, and open issues are 0 | GitHub repo metadata | 2026-08-20 | verified | yes, with date |
+| GitHub social preview image is configured | GitHub metadata and subset gate input | 2026-08-20 | verified | yes |
 | `cargo install ccstats --version 0.4.0 --locked` works | local temporary install root | 2026-08-13 | verified | yes |
 | `ccstats codex today --no-cost` renders a Token Usage table | local temporary install root | 2026-08-13 | verified | yes, without local totals |
-| SEO Agent Suite supports `--project-yaml` locally | `repo_seo_baseline.py --help` | 2026-08-13 | blocked | no |
+| Shipwise discoverability subset checks pass | `repo_seo_baseline.py --project-yaml ... --json` | 2026-08-20 | verified | yes, as a local subset only |
 
 ## Numeric Claims
 
-- 365 total crates.io downloads as of 2026-08-13.
-- 147 recent crates.io downloads as of 2026-08-13.
-- 7 GitHub stars as of 2026-08-13.
-- 0 GitHub forks as of 2026-08-13.
-- 1 open GitHub issue as of 2026-08-13.
+- 404 total crates.io downloads as of 2026-08-20.
+- 184 recent crates.io downloads as of 2026-08-20.
+- 11 GitHub stars as of 2026-08-20.
+- 0 GitHub forks as of 2026-08-20.
+- 0 open GitHub issues as of 2026-08-20.
 
 ## Limitations
 
-- Cursor support is experimental because Cursor's local database schema is not a
-  public API.
-- Grok support reports local context-token snapshots, not precise provider
-  billable usage or account quota.
-- The local SEO Agent Suite checkout does not expose the documented
-  `--project-yaml` gate, so the project-yaml subset gate cannot be marked green.
+- Cursor requires an explicit API key or dashboard session token; project
+  aggregation and 5-hour billing blocks are not supported for Cursor.
+- Grok sessions without `turn_completed.usage` fall back to an
+  `estimated_proxy` snapshot cost; Grok 5-hour billing blocks are not supported.
+- GitHub release `v0.5.0` is newer than crates.io max version `0.4.0`; the
+  package install command therefore still installs `0.4.0`.
 - External community posts were not authorized in this Shipwise run.
 
 ## Launch Blockers
@@ -78,5 +79,5 @@ terminal capture from the verified quickstart is recorded.
 - Explicit platform/account authorization is not recorded.
 - Final copy approval is not recorded.
 - A sanitized real-output terminal demo or screenshot is not recorded.
-- SEO Agent Suite must be updated to a revision with `--project-yaml`, or the
-  launch plan must explicitly accept proceeding with only the legacy baseline.
+- GitHub release and crates.io package versions must be aligned, or the launch
+  plan must explicitly choose which version is being launched.

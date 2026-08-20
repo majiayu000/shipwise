@@ -3,11 +3,11 @@
 ## Summary
 
 - Project: ccstats
-- Version: 0.4.0
+- Version: GitHub release 0.5.0; crates.io package 0.4.0
 - Archetype: cli-tool
 - Goal type: feedback
 - Repo: https://github.com/majiayu000/ccstats
-- Review date: 2026-08-13
+- Review date: 2026-08-20
 - Recommendation: blocked
 
 ## Status Legend
@@ -33,12 +33,12 @@
 
 | Check | Status | Evidence | Next action |
 |---|---|---|---|
-| Release or package path | verified | crates.io max version is `0.4.0`; GitHub latest release is `v0.4.0` with prebuilt assets and checksums. | Keep release, package, and install command aligned. |
+| Release or package path | blocked | GitHub latest release is `v0.5.0`, while crates.io max version remains `0.4.0`. | Publish `0.5.0` to crates.io or explicitly choose `0.4.0` as the launch version before posting. |
 | README first screen | verified | README has badges, visual card, positioning, search keywords, installation, and quickstarts near the top. | Consider changing H1 from `# ccstats` to a name-plus-keyword heading in the ccstats repo. |
 | Limitations documented | verified | Cursor and Grok limitations are recorded in README, `project.yaml`, and draft copy. | Keep in every platform draft. |
 | Platform source docs checked | verified | `docs/platforms/github.md`, `package-registries.md`, `x.md`, `hacker-news.md`, and `reddit.md` were read before drafting copy. | Recheck official platform sources immediately before posting. |
 | Baseline metrics recorded | verified | `metrics.md` records stars, forks, open issues, crates.io downloads, and retrieval date. | Refresh on launch day. |
-| SEO Agent Suite project-yaml gate | blocked | Local `repo_seo_baseline.py --help` supports `--root`, `--homepage`, `--npm`, `--crate`, and `--json`, but not `--project-yaml`. | Update SEO Agent Suite to a revision with `--project-yaml`, then rerun the documented gate. |
+| SEO Agent Suite project-yaml gate | verified | SEO Agent Suite `bb83ab7` exposed `--project-yaml`; all Shipwise subset checks returned `ok` on 2026-08-20. | Rerun against clean current checkouts before external posting. |
 
 ## P2 Channel Polish
 
@@ -53,23 +53,26 @@
 ```bash
 cargo install ccstats --version 0.4.0 --locked --root /tmp/shipwise-ccstats-0.4.0-1786552427 --force
 /tmp/shipwise-ccstats-0.4.0-1786552427/bin/ccstats codex today --no-cost
-python3 /Users/apple/Desktop/code/AI/tool/seo-agent-suite/scripts/repo_seo_baseline.py --help
-python3 /Users/apple/Desktop/code/AI/tool/seo-agent-suite/scripts/repo_seo_baseline.py --root /Users/apple/Desktop/code/AI/tool/ccstats --crate ccstats --json
+python3 <seo-agent-suite>/scripts/repo_seo_baseline.py --help
+python3 <seo-agent-suite>/scripts/repo_seo_baseline.py \
+  --root <ccstats> \
+  --crate ccstats \
+  --project-yaml <shipwise>/projects/ccstats/project.yaml \
+  --json
 ```
 
 Expected output:
 
 ```text
-Install succeeds, quickstart renders a Token Usage table, the legacy SEO
-baseline emits JSON, and the project-yaml capability check remains blocked
-because --project-yaml is absent from --help.
+The 0.4.0 install succeeds, the quickstart renders a Token Usage table, and the
+project-yaml command exits zero with every emitted shipwise check at `ok`.
 ```
 
 ## Decision
 
 - Launch: no
-- Reason: a real-output proof asset, external platform/account authorization,
-  final copy approval, and the documented SEO Agent Suite `--project-yaml`
-  gate are still blocked.
-- Next action: update SEO Agent Suite to a supporting revision, rerun the
-  project-yaml gate, then approve platform/account/final copy before posting.
+- Reason: a real-output proof asset, release/package version alignment,
+  external platform/account authorization, and final copy approval are still
+  blocked. The local discoverability subset gate is green.
+- Next action: align the GitHub and crates.io versions, capture real-output
+  proof, then approve platform/account/final copy before posting.
