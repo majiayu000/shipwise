@@ -30,11 +30,16 @@ totals, but those private local totals are not copied into public launch docs.
 
 | Asset | Path or URL | Real data? | Status |
 |---|---|---:|---|
-| README card | https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png | yes | verified |
-| GitHub social preview | https://repository-images.githubusercontent.com/1148135944/8a73d2be-8357-4c18-b705-08f54d9383ac | yes | verified |
-| Terminal demo GIF | not recorded | not applicable | unverified |
+| README card | https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png | no — imagegen-generated illustrative dashboard data | marketing visual only; not proof |
+| GitHub social preview | https://repository-images.githubusercontent.com/1148135944/8a73d2be-8357-4c18-b705-08f54d9383ac | unverified | preview configured; not proof |
+| Terminal demo GIF | not recorded | not applicable | missing |
 | Benchmark | not recorded | not applicable | not applicable |
 | User quote | not recorded | not applicable | not applicable |
+
+The README card contains illustrative token, cost, request, and log values that
+are not tied to a recorded ccstats run. It must not be cited as real output or
+published as numeric proof. External launch remains blocked until a sanitized
+terminal capture from the verified quickstart is recorded.
 
 ## Claim Inventory
 
@@ -72,5 +77,6 @@ totals, but those private local totals are not copied into public launch docs.
 
 - Explicit platform/account authorization is not recorded.
 - Final copy approval is not recorded.
+- A sanitized real-output terminal demo or screenshot is not recorded.
 - SEO Agent Suite must be updated to a revision with `--project-yaml`, or the
   launch plan must explicitly accept proceeding with only the legacy baseline.

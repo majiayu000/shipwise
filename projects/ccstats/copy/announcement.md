@@ -20,8 +20,8 @@ model, and session instead of checking each tool's local data separately.
 
 ## Demo
 
-README card:
-https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png
+Blocked until a sanitized terminal capture from the verified quickstart is
+recorded. The README card contains illustrative data and is not proof.
 
 ## Proof
 

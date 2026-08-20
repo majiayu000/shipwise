@@ -3,8 +3,8 @@
 ## Decision
 
 - Archetype: CLI / local developer tool (`cli-tool`)
-- Primary goal: feedback and adoption from developers who track AI coding cost
-  and token usage locally.
+- Primary goal: feedback from developers who track AI coding cost and token
+  usage locally.
 - Primary platforms: GitHub release, crates.io, X thread, and HN Show HN only
   if this is treated as the first public launch and the maintainer is available
   for comments.
@@ -41,7 +41,7 @@
 - [x] Install/access path
 - [x] Quickstart
 - [ ] Terminal demo GIF
-- [x] README card visual proof
+- [x] README card marketing visual (illustrative data; not proof)
 - [x] GitHub social preview image
 - [x] Proof
 - [x] Release notes
@@ -76,7 +76,7 @@ Copied from `docs/RELEASE_LIFECYCLE_CHECKLIST.md` and refreshed on 2026-08-13.
 - [x] Release notes exist for latest GitHub release.
 - [x] Package access path is live on crates.io.
 - [x] GitHub release matches crates.io version `0.4.0`.
-- [x] Visual proof exists through the README card.
+- [ ] A sanitized real-output proof asset exists.
 - [ ] Terminal demo GIF is verified.
 - [x] Draft platform-specific copy exists under `projects/ccstats/copy/`.
 - [ ] Platform-specific public copy is finalized.
@@ -117,8 +117,8 @@ External launch remains blocked until these facts are recorded:
 - Account or tool that will publish each post.
 - Final copy approved for each platform.
 - Current official platform rules checked immediately before posting.
-- Decision on whether the README card is sufficient proof or a terminal demo
-  GIF is required.
+- Sanitized terminal demo or screenshot captured from a real ccstats run; the
+  imagegen-generated README card is not sufficient proof.
 - SEO Agent Suite `--project-yaml` gate rerun with a supporting checkout, or an
   explicit decision recorded to proceed with only the legacy baseline.
 - Published URLs logged in `projects/ccstats/links.md`.

@@ -50,5 +50,6 @@ Trend signals are opportunity inputs, not acceptance criteria. Do not claim that
 any local work guarantees external ranking, stars, traffic, or launch success.
 
 The launch-readiness signal is stronger than the June dogfood record because the
-release/package version mismatch is gone and visual proof exists. External
-posting is still blocked by authorization and final copy approval.
+release/package version mismatch is gone. The README card is an illustrative
+marketing visual, not proof; external posting remains blocked on a sanitized
+real-output asset, authorization, and final copy approval.

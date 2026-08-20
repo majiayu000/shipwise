@@ -20,8 +20,8 @@ Status: draft only. Filled from `templates/platforms/x_thread.md` after reading
 3. Demo:
 
    ```text
-   README card:
-   https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png
+   Attach a sanitized terminal capture from the verified quickstart before
+   approval. The README card contains illustrative data and is not proof.
    ```
 
 4. Proof:

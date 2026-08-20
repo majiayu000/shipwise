@@ -27,6 +27,7 @@ verification:
 launch:
   goal_type: "feedback"
   launch_blockers:
+    - "A sanitized real-output terminal demo or screenshot is not recorded; the imagegen-generated README card is illustrative, not proof."
     - "Explicit platform/account authorization is not recorded."
     - "Final copy approval is not recorded."
     - "The documented SEO Agent Suite --project-yaml subset gate cannot run with the local checkout because the capability is absent."
@@ -86,7 +87,7 @@ channels:
     - "niche Reddit after subreddit-specific rules are checked"
     - "Chinese developer community after localization"
 assets:
-  demo: "README card is visible above the README first paragraph; terminal demo GIF remains optional and unverified."
+  demo: "Blocked: capture sanitized real output from the verified quickstart. The README card is an imagegen-generated marketing visual with illustrative dashboard data, not proof."
   screenshots:
     - "https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png"
   social_image: "https://repository-images.githubusercontent.com/1148135944/8a73d2be-8357-4c18-b705-08f54d9383ac"

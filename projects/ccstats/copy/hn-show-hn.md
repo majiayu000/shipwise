@@ -33,8 +33,8 @@ cargo install ccstats --version 0.4.0 --locked
 
 What is working:
 - Daily, weekly, monthly, project, session, and model-level summaries
-- Claude Code and OpenAI Codex sources, with experimental Cursor, Grok, and Kimi
-  Code support
+- Claude Code, OpenAI Codex, Grok, and Kimi Code sources, plus experimental
+  Cursor support
 
 Known limitations:
 - Cursor support is experimental because the local database schema is not a

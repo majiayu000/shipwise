@@ -45,8 +45,9 @@ session-level usage summaries.
 
 ## Proof
 
-- Demo: README card at
-  https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png
+- Demo: blocked until a sanitized real-output terminal capture is recorded.
+  The README card is imagegen-generated marketing art with illustrative data,
+  not proof.
 - Benchmark: not used for this launch.
 - Real output: `ccstats codex today --no-cost` rendered a Token Usage table from
   local Codex data in the 2026-08-13 dogfood run.

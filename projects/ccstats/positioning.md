@@ -32,7 +32,7 @@ project, session, and model-level usage summaries.
 ## Differentiation
 
 - Local-first CLI with multiple AI coding sources.
-- Supports Claude Code, OpenAI Codex, experimental Cursor, Grok local
+- Supports Claude Code and OpenAI Codex, Cursor (experimental), Grok local
   context-token snapshots, and Kimi Code session usage.
 - Provides CLI and Rust SDK surfaces from the same aggregation logic.
 

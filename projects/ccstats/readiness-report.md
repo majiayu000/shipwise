@@ -25,7 +25,7 @@
 | Target user named | verified | `project.yaml` and `positioning.md` name developers using Claude Code, OpenAI Codex, Cursor, Grok, or Kimi Code. | Keep. |
 | Install/access path works | verified | `cargo install ccstats --version 0.4.0 --locked --root /tmp/shipwise-ccstats-0.4.0-1786552427 --force` completed. | Rerun before external posting. |
 | Quickstart works | verified | `/tmp/shipwise-ccstats-0.4.0-1786552427/bin/ccstats codex today --no-cost` rendered a Token Usage table for local Codex data. | Rerun before external posting; do not publish local usage totals without approval. |
-| Real proof asset exists | verified | README card exists at `docs/branding/readme-card.png`, is visible above the README first paragraph, and GitHub metadata reports a configured social preview image. | Use the README card for first-wave draft copy unless a terminal GIF is later approved. |
+| Real proof asset exists | missing | The README card is imagegen-generated and contains illustrative dashboard values not tied to a recorded run. | Capture sanitized real output from the verified quickstart; do not use the card as numeric proof. |
 | License is present | verified | GitHub metadata and `Cargo.toml` report MIT. | Keep. |
 | Support path exists | verified | GitHub issue templates exist and the support path is https://github.com/majiayu000/ccstats/issues. | Keep. |
 
@@ -45,7 +45,7 @@
 | Check | Status | Evidence | Next action |
 |---|---|---|---|
 | Platform-specific copy | verified | `projects/ccstats/copy/announcement.md`, `x-thread.md`, `hn-show-hn.md`, and `reddit-post.md` are filled from the declared template flow. | Approve final copy per platform before posting. |
-| Social image or preview | verified | GitHub metadata reports a social preview image URL and the README card exists. | Confirm the preview renders correctly immediately before social posting. |
+| Social image or preview | verified | GitHub metadata reports a social preview image URL and the imagegen-generated README card exists. | Treat it as a marketing visual only, disclose that its dashboard data is illustrative, and use a separate real-output proof asset. |
 | Second-wave channels | blocked | Reddit and Chinese community drafts require community-specific rule checks and localization. | Do not post until the specific community and account are approved. |
 
 ## Verification Commands
@@ -68,7 +68,8 @@ because --project-yaml is absent from --help.
 ## Decision
 
 - Launch: no
-- Reason: external platform/account authorization, final copy approval, and the
-  documented SEO Agent Suite `--project-yaml` gate are still blocked.
+- Reason: a real-output proof asset, external platform/account authorization,
+  final copy approval, and the documented SEO Agent Suite `--project-yaml`
+  gate are still blocked.
 - Next action: update SEO Agent Suite to a supporting revision, rerun the
   project-yaml gate, then approve platform/account/final copy before posting.
