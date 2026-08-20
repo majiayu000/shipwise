@@ -1,7 +1,19 @@
 # Copy
 
-Draft platform copy currently lives in `../platform-copy.md` to preserve the
-existing dogfood record.
+Draft copy in this directory is generated from the declared Shipwise template
+flow:
 
-Move final approved platform-specific drafts here before publishing, one file
-per platform.
+```text
+PROJECT_BRIEF.md -> ANNOUNCEMENT.md -> platform templates
+```
+
+Files:
+
+- `project-brief.md`: filled from `templates/core/PROJECT_BRIEF.md`
+- `announcement.md`: filled from `templates/core/ANNOUNCEMENT.md`
+- `x-thread.md`: filled from `templates/platforms/x_thread.md`
+- `hn-show-hn.md`: filled from `templates/platforms/hn_show_hn.md`
+- `reddit-post.md`: filled from `templates/platforms/reddit_post.md`
+
+Status: draft only. Do not publish any file here until the authorization gate in
+`../launch-plan.md` is satisfied and final copy approval is recorded.

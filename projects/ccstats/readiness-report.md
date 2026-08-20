@@ -3,9 +3,11 @@
 ## Summary
 
 - Project: ccstats
-- Version: 0.2.65
+- Version: GitHub release 0.5.0; crates.io package 0.4.0
 - Archetype: cli-tool
-- Review date: 2026-06-26
+- Goal type: feedback
+- Repo: https://github.com/majiayu000/ccstats
+- Review date: 2026-08-20
 - Recommendation: blocked
 
 ## Status Legend
@@ -20,40 +22,57 @@
 
 | Check | Status | Evidence | Next action |
 |---|---|---|---|
-| Target user named | verified | `project.yaml` and `positioning.md` name developers using Claude Code, OpenAI Codex, Cursor, or Grok. | Keep. |
-| Install/access path works | verified | `cargo install ccstats --version 0.2.65 --locked` recorded in launch plan. | Rerun before external posting. |
-| Quickstart works | verified | `ccstats codex today --no-cost` recorded in launch plan. | Rerun before external posting. |
-| Proof asset exists | blocked | README card exists, terminal demo GIF is not verified. | Verify demo GIF or explicitly approve README card as the proof asset. |
-| License is present | verified | GitHub repository metadata and launch plan record license presence. | Keep. |
-| Support path exists | verified | GitHub issues/support path exists; 0 open issues recorded. | Keep. |
+| Target user named | verified | `project.yaml` and `positioning.md` name developers using Claude Code, OpenAI Codex, Cursor, Grok, or Kimi Code. | Keep. |
+| Install/access path works | verified | `cargo install ccstats --version 0.4.0 --locked --root /tmp/shipwise-ccstats-0.4.0-1786552427 --force` completed. | Rerun before external posting. |
+| Quickstart works | verified | `/tmp/shipwise-ccstats-0.4.0-1786552427/bin/ccstats codex today --no-cost` rendered a Token Usage table for local Codex data. | Rerun before external posting; do not publish local usage totals without approval. |
+| Real proof asset exists | missing | The README card is imagegen-generated and contains illustrative dashboard values not tied to a recorded run. | Capture sanitized real output from the verified quickstart; do not use the card as numeric proof. |
+| License is present | verified | GitHub metadata and `Cargo.toml` report MIT. | Keep. |
+| Support path exists | verified | GitHub issue templates exist and the support path is https://github.com/majiayu000/ccstats/issues. | Keep. |
 
 ## P1 Readiness Gaps
 
 | Check | Status | Evidence | Next action |
 |---|---|---|---|
-| Release or package path | blocked | crates.io is `0.2.65`; latest GitHub release is `v0.2.64`. | Publish or defer `v0.2.65` release before external launch copy. |
-| README first screen | verified | `positioning.md` records README install, quickstart, and limitations. | Rerun a final visual/readme check. |
-| Limitations documented | verified | Cursor and Grok limitations are recorded. | Keep in every platform draft. |
-| Platform source docs checked | unverified | Platform copy is draft only. | Recheck selected platform docs before posting. |
-| Baseline metrics recorded | verified | `metrics.md` records stars, downloads, issues, and date. | Refresh metrics on launch day. |
+| Release or package path | blocked | GitHub latest release is `v0.5.0`, while crates.io max version remains `0.4.0`. | Publish `0.5.0` to crates.io or explicitly choose `0.4.0` as the launch version before posting. |
+| README first screen | verified | README has badges, visual card, positioning, search keywords, installation, and quickstarts near the top. | Consider changing H1 from `# ccstats` to a name-plus-keyword heading in the ccstats repo. |
+| Limitations documented | verified | Cursor and Grok limitations are recorded in README, `project.yaml`, and draft copy. | Keep in every platform draft. |
+| Platform source docs checked | verified | `docs/platforms/github.md`, `package-registries.md`, `x.md`, `hacker-news.md`, and `reddit.md` were read before drafting copy. | Recheck official platform sources immediately before posting. |
+| Baseline metrics recorded | verified | `metrics.md` records stars, forks, open issues, crates.io downloads, and retrieval date. | Refresh on launch day. |
+| SEO Agent Suite project-yaml gate | verified | SEO Agent Suite `bb83ab7` exposed `--project-yaml`; all Shipwise subset checks returned `ok` on 2026-08-20. | Rerun against clean current checkouts before external posting. |
 
 ## P2 Channel Polish
 
 | Check | Status | Evidence | Next action |
 |---|---|---|---|
-| Platform-specific copy | unverified | `platform-copy.md` is draft only. | Move approved drafts under `copy/` or update the existing draft after source-doc checks. |
-| Social image or preview | unverified | README card exists; GitHub custom social preview was not verified. | Verify repository social preview before posting links. |
-| Second-wave channels | not applicable | External posting is blocked. | Revisit after first-wave authorization. |
+| Platform-specific copy | verified | `projects/ccstats/copy/announcement.md`, `x-thread.md`, `hn-show-hn.md`, and `reddit-post.md` are filled from the declared template flow. | Approve final copy per platform before posting. |
+| Social image or preview | verified | GitHub metadata reports a social preview image URL and the imagegen-generated README card exists. | Treat it as a marketing visual only, disclose that its dashboard data is illustrative, and use a separate real-output proof asset. |
+| Second-wave channels | blocked | Reddit and Chinese community drafts require community-specific rule checks and localization. | Do not post until the specific community and account are approved. |
 
 ## Verification Commands
 
 ```bash
-Public GitHub and crates.io metadata checks from the 2026-06-26 dogfood run.
+cargo install ccstats --version 0.4.0 --locked --root /tmp/shipwise-ccstats-0.4.0-1786552427 --force
+/tmp/shipwise-ccstats-0.4.0-1786552427/bin/ccstats codex today --no-cost
+python3 <seo-agent-suite>/scripts/repo_seo_baseline.py --help
+python3 <seo-agent-suite>/scripts/repo_seo_baseline.py \
+  --root <ccstats> \
+  --crate ccstats \
+  --project-yaml <shipwise>/projects/ccstats/project.yaml \
+  --json
+```
+
+Expected output:
+
+```text
+The 0.4.0 install succeeds, the quickstart renders a Token Usage table, and the
+project-yaml command exits zero with every emitted shipwise check at `ok`.
 ```
 
 ## Decision
 
 - Launch: no
-- Reason: external platform/account authorization, final copy approval, proof
-  asset verification, and release version alignment are still blocked.
-- Next action: resolve blockers in `launch-plan.md`, then refresh this report.
+- Reason: a real-output proof asset, release/package version alignment,
+  external platform/account authorization, and final copy approval are still
+  blocked. The local discoverability subset gate is green.
+- Next action: align the GitHub and crates.io versions, capture real-output
+  proof, then approve platform/account/final copy before posting.
