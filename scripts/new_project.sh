@@ -18,14 +18,18 @@ case "$name" in
     ;;
 esac
 
-case " $valid_archetypes " in
-  *" $archetype "*) ;;
-  *)
-    echo "Unknown archetype: $archetype" >&2
-    echo "Valid archetypes: $valid_archetypes" >&2
-    exit 2
-    ;;
-esac
+archetype_ok=0
+for token in $valid_archetypes; do
+  if [ "$archetype" = "$token" ]; then
+    archetype_ok=1
+    break
+  fi
+done
+if [ "$archetype_ok" -ne 1 ]; then
+  echo "Unknown archetype: $archetype" >&2
+  echo "Valid archetypes: $valid_archetypes" >&2
+  exit 2
+fi
 
 if ! command -v perl >/dev/null 2>&1; then
   echo "perl not found: cannot fill name/archetype in project.yaml" >&2

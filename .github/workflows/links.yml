@@ -37,6 +37,16 @@ jobs:
             test -e "projects/ci-smoke/$(basename "$f")"
           done
 
+      - name: Reject compound archetype concatenations
+        run: |
+          set +e
+          out="$(./scripts/new_project.sh plan-bad 'cli-tool library-sdk' 2>&1)"
+          status=$?
+          set -e
+          test "$status" -ne 0
+          printf '%s\n' "$out" | grep -q 'Unknown archetype'
+          test ! -e projects/plan-bad
+
       - name: Check template variable contract
         run: ./scripts/check_template_variables.sh
 
