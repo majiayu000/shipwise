@@ -237,13 +237,24 @@ footer .rule-line{border-top:2px solid var(--ink);padding-top:22px;display:flex;
   <div class="wrap">
     <div class="sec-head"><span class="sec-no">02</span><h2>The discoverability gate</h2></div>
     <div class="gate-grid">
-      <pre><code><span class="c"># hand the Shipwise record to the execution layer</span>
-python3 scripts/repo_seo_baseline.py \
-  --root  /path/to/target-repo \
-  --project-yaml shipwise/projects/ccstats/project.yaml \
-  --json
+      <pre><code><span class="c"># SEO Agent Suite is a separate checkout — not Shipwise CI</span>
+export SEO_AGENT_SUITE_ROOT=/absolute/path/to/seo-agent-suite
+TARGET_REPO_ROOT=/absolute/path/to/target-repo
+SHIPWISE_ROOT="$(git rev-parse --show-toplevel)"
+SEO_BASELINE="$SEO_AGENT_SUITE_ROOT/scripts/repo_seo_baseline.py"
 
-<span class="c"># the gate refuses to pass on missing evidence</span>
+<span class="c"># mandatory capability preflight (see docs/DISCOVERABILITY.md)</span>
+if python3 "$SEO_BASELINE" --help | grep -q -- '--project-yaml'; then
+  python3 "$SEO_BASELINE" \
+    --root "$TARGET_REPO_ROOT" \
+    --project-yaml "$SHIPWISE_ROOT/projects/&lt;project&gt;/project.yaml" \
+    --json
+else
+  echo 'SEO Agent Suite lacks --project-yaml; upgrade and rerun.' >&amp;2
+  false
+fi
+
+<span class="c"># the local gate refuses to pass on missing evidence</span>
 "status": <span class="err">"error"</span>,
 "errors": [{
   "surface": "shipwise",
@@ -260,8 +271,10 @@ python3 scripts/repo_seo_baseline.py \
         </p>
         <p class="gate-note" style="margin-top:14px">
           Failures land in a structured <code>errors</code> array with a non-zero
-          exit code — CI and launch-readiness reviews <strong>fail closed</strong>
-          instead of silently shipping an unfindable repo.
+          exit code — SEO Agent Suite local-gate runs and launch-readiness
+          reviews <strong>fail closed</strong> instead of silently shipping an
+          unfindable repo. Shipwise CI checks links, scaffold smoke, and
+          markdown lint only; it does not run this discoverability gate.
         </p>
         <div class="verdicts">
           <span class="verdict fail">Blocked · fix record</span>
