@@ -1,5 +1,33 @@
 # Launch Readiness Report
 
+## Current update: 2026-09-26
+
+- Recommendation: **blocked** for external platform posts.
+- Release alignment: **verified**. [GitHub latest release](https://github.com/majiayu000/ccstats/releases/tag/v0.9.0)
+  and [crates.io](https://crates.io/crates/ccstats) both report `0.9.0`.
+- Release binary and terminal output: **verified**. The checksum-verified
+  macOS arm64 binary reported `ccstats 0.9.0` and rendered the
+  [fixture-backed CLI demo](assets/2026-09-26-cli-demo.md). Its numbers are
+  synthetic, not user metrics.
+- `cargo install` and a live-log quickstart for `0.9.0`: **unverified** in this
+  run. The `0.4.0` checks below are historical.
+- Discoverability subset gate: **verified** for the current project YAML and
+  clean ccstats checkout. All emitted Shipwise checks are `ok` with SEO Agent
+  Suite `9d6c626`. The full command
+  still exits `1` because this host resolves `github.com` to a non-public
+  proxy address, which the script's site URL guard rejects; its page probe
+  therefore remains **unverified**.
+- Platform-ready screenshot or GIF: **missing**. The README card remains an
+  illustrative marketing visual. The terminal transcript needs approval for
+  any external use.
+- Platform copy: **blocked** pending a refresh of the 2026-08-20 drafts,
+  current platform rule checks, and final approval.
+- Platform/account authorization: **blocked**; no post URLs or post-launch
+  metrics are recorded.
+
+The report below is the 2026-08-20 snapshot. Its version mismatch and
+readiness states describe that date, not the current release.
+
 ## Summary
 
 - Project: ccstats

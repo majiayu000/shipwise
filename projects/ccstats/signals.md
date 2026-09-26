@@ -1,5 +1,9 @@
 # Signals
 
+The evidence table below is the 2026-08-20 snapshot. See
+[readiness-report.md](readiness-report.md) for the 2026-09-26 release and
+discoverability checks.
+
 ## Trend Decision
 
 - Sources checked: GitHub repo metadata, GitHub `main` README from the local
