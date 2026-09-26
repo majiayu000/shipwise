@@ -6,15 +6,18 @@
 - [x] The checksum-verified release binary produced a
   [fixture-backed terminal demo](assets/2026-09-26-cli-demo.md), with synthetic
   numbers clearly labeled.
-- [ ] Verify a clean `cargo install` and live-log quickstart for `0.9.0`.
+- [x] Verify a clean `cargo install` of `0.9.0` in a temporary root; the
+  installed binary ran against local logs and rendered a Codex Token Usage
+  table. No private totals were recorded in Shipwise.
 - [x] Rerun the discoverability subset gate on current ccstats metadata;
   every emitted Shipwise check is `ok` with SEO Agent Suite `9d6c626`.
 - [ ] Rerun the separate homepage page probe in an environment with public
   DNS; this host's proxy DNS makes the full baseline exit `1`.
 - [ ] Approve a platform-ready screenshot or GIF if the selected channel needs
   one; the README card has illustrative numbers.
-- [ ] Refresh and approve platform copy. Existing drafts still describe the
-  older `v0.5.0` release and `0.4.0` crate.
+- [x] Refresh X, HN, and Reddit drafts for `v0.9.0` with current source docs.
+- [ ] Approve final copy for the selected platforms. Show HN eligibility and
+  the selected subreddit's rules need separate decisions.
 - [ ] Record explicit authorization for each platform/account, then post and
   log URLs and Day 1 / Day 7 / Day 30 outcomes.
 

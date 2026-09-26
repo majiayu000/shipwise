@@ -4,6 +4,8 @@ The checks below are the 2026-08-20 snapshot. Current `v0.9.0` release
 alignment and the fixture-backed terminal demo are recorded in
 [readiness-report.md](readiness-report.md) and
 [assets/2026-09-26-cli-demo.md](assets/2026-09-26-cli-demo.md).
+An isolated `cargo install` of `0.9.0` and a real-log CLI run also passed on
+2026-09-26. Their private usage output was not recorded here.
 
 Do not publish claims from this file unless their status is `verified`.
 

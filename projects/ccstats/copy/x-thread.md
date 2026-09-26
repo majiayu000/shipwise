@@ -1,67 +1,50 @@
 # X Thread Draft
 
-Status: draft only. Filled from `templates/platforms/x_thread.md` after reading
-`docs/platforms/x.md` on 2026-08-13.
+Status: draft only. Refreshed from `templates/platforms/x_thread.md` after
+checking the [current X automation rules](https://help.x.com/en/rules-and-policies/x-automation)
+on 2026-09-26. Post manually only after the account and final text are
+approved. Each numbered text block is a separate proposed post.
 
-1. Hook:
-
-   ```text
-   My AI coding usage was split across Claude Code, OpenAI Codex, Cursor, Grok,
-   and Kimi Code local data.
-   ```
-
-2. What it is:
+1. Hook and link
 
    ```text
-   I built ccstats, a fast CLI for token and cost usage analytics across Claude
-   Code, OpenAI Codex, Cursor, Grok, and Kimi Code logs.
+   ccstats v0.9.0 is a local-first CLI for token and cost analytics across 29 AI coding-agent data sources. It turns usage metadata into terminal reports and JSON/CSV. No ccstats account. https://github.com/majiayu000/ccstats
    ```
 
-3. Demo:
+2. Demo
 
    ```text
-   Attach a sanitized terminal capture from the verified quickstart before
-   approval. The README card contains illustrative data and is not proof.
+   Demo: the released 0.9.0 binary rendered this terminal table from a synthetic Codex fixture. The token numbers are sample data, not user metrics: https://github.com/majiayu000/shipwise/blob/main/projects/ccstats/assets/2026-09-26-cli-demo.md
    ```
 
-4. Proof:
+3. How to try
 
    ```text
-   Verified 2026-08-20: GitHub Releases points at v0.5.0 while crates.io remains
-   at v0.4.0. Hold this draft until they are aligned. The v0.4.0 install and
-   ccstats codex today --no-cost quickstart were verified on 2026-08-13.
+   Try the CLI: cargo install ccstats --version 0.9.0 --locked
+   Then run: ccstats today --source codex
+
+   A clean install and real-log run passed. No private usage totals are shared in this thread.
    ```
 
-5. How to try:
-
-   ```bash
-   cargo install ccstats --version 0.4.0 --locked
-   ```
-
-6. Why it is different:
+4. Limitations
 
    ```text
-   It reads local usage sources and summarizes usage by day, project, session,
-   and model instead of forcing a manual pass across separate tool logs.
+   Cost caveats: Cursor uses its API with explicit credentials. Grok API-equivalent cost is not a subscription bill. Unknown costs remain unknown; estimates are labeled. Pricing refresh and currency conversion can use the network.
    ```
 
-7. Limitations:
+5. Feedback request
 
    ```text
-   Cursor requires explicit credentials and lacks project aggregation and
-   5-hour billing blocks. Grok can fall back to estimated snapshot costs and
-   also lacks 5-hour billing blocks.
+   Which AI coding source or usage breakdown is missing from your workflow? Open an issue: https://github.com/majiayu000/ccstats/issues. Please do not attach raw session logs or credentials.
    ```
 
-8. CTA:
-
-   ```text
-   Try it here: https://github.com/majiayu000/ccstats. Feedback I want: which
-   usage breakdown is missing from your workflow?
-   ```
+The demo link contains actual release-binary output over synthetic input. The
+upstream README card has illustrative numbers and is not numeric proof.
 
 Before posting:
 
-- Confirm the posting account and final copy approval.
-- Do not automate replies, DMs, reposts, or engagement loops.
-- Log the final URL in `../links.md`.
+- [ ] Confirm the account and final thread approval.
+- [ ] Confirm that the demo link and any attached visual are labeled as sample
+  data; do not attach the illustrative README card as numeric proof.
+- [ ] Do not automate replies, DMs, reposts, or engagement loops.
+- [ ] Log the final post URL in `../links.md`.

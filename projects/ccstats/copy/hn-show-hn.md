@@ -1,16 +1,18 @@
 # Hacker News Draft
 
-Status: draft only. Filled from `templates/platforms/hn_show_hn.md` after
-reading `docs/platforms/hacker-news.md` on 2026-08-13.
+Status: draft only. Refreshed from `templates/platforms/hn_show_hn.md` after
+checking the [current Show HN guidelines](https://news.ycombinator.com/showhn.html)
+on 2026-09-26.
 
-Use Show HN only if the maintainer treats this as the first public launch and is
-available to answer comments. Otherwise, skip HN or submit a non-Show link only
-after approval.
+Use Show HN only if the maker confirms this is a first public launch or a
+major overhaul and is available to discuss it. A `v0.9.0` release announcement
+alone does not establish Show HN eligibility. Otherwise, skip HN or consider
+a regular submission only after approval.
 
 Title:
 
 ```text
-Show HN: ccstats - local token and cost analytics for AI coding logs
+Show HN: ccstats - local token and cost analytics for AI coding agents
 ```
 
 Post URL:
@@ -19,37 +21,37 @@ Post URL:
 https://github.com/majiayu000/ccstats
 ```
 
-First comment:
+First comment, for the maker's account only:
 
 ```text
-Hi HN, I built ccstats because my AI coding usage was spread across local
-Claude Code, OpenAI Codex, Cursor, Grok, and Kimi Code data.
+Hi HN, I work on ccstats. It is a local-first CLI for token and cost analytics
+across 29 AI coding-agent data sources. It reads usage metadata and produces
+terminal reports and JSON/CSV without requiring a ccstats account.
 
-It is a fast CLI for token and cost usage analytics across local AI coding logs.
+The GitHub release and crates.io package are both at 0.9.0. To try the CLI:
 
-You can try it with:
+cargo install ccstats --version 0.9.0 --locked
+ccstats today --source codex
 
-cargo install ccstats --version 0.4.0 --locked
+The 0.9.0 install and a run against local logs passed. No private usage totals
+are published here. A separate example table from the released binary uses a
+synthetic Codex fixture; its token counts are sample data, not user metrics:
+https://github.com/majiayu000/shipwise/blob/main/projects/ccstats/assets/2026-09-26-cli-demo.md
 
-What is working:
-- Daily, weekly, monthly, project, session, and model-level summaries
-- Claude Code, OpenAI Codex, Cursor usage API, Grok, and Kimi Code sources
+Current caveats: Cursor usage requires an explicit API credential. Grok
+API-equivalent cost is not an actual subscription charge. Pricing refresh and
+currency conversion can use the network; unknown costs remain unknown.
 
-Known limitations:
-- Cursor requires explicit credentials and does not support project aggregation
-  or 5-hour billing blocks
-- Grok sessions without per-turn usage fall back to estimated snapshot costs;
-  Grok 5-hour billing blocks are not supported
-
-I am especially looking for feedback on which usage breakdowns are missing from
-your workflow.
+I would value feedback on missing data sources or breakdowns, especially for
+people comparing usage across more than one coding agent.
 ```
 
 Checklist:
 
-- [x] Users can try it without a waitlist.
-- [x] It is not just a blog post, newsletter, list, or landing page.
-- [ ] The maintainer is available to answer comments.
+- [x] Users can install and try the CLI without a waitlist.
+- [x] The post URL is the product repo, not a landing page.
+- [ ] The maker confirms this is a first public launch or major overhaul and
+  can answer comments.
 - [x] No request for upvotes or coordinated comments.
-- [ ] Final platform/account authorization is recorded.
+- [ ] Final account and comment approval is recorded.
 - [ ] Final post URL is logged in `../links.md`.

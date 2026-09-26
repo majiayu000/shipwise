@@ -1,78 +1,80 @@
 # Project Brief
 
-Status: draft source filled from `templates/core/PROJECT_BRIEF.md` on
-2026-08-13. Live evidence last refreshed 2026-08-20.
+Status: draft source refreshed from `templates/core/PROJECT_BRIEF.md` on
+2026-09-26. No external post is authorized by this file.
 
 ## Identity
 
 - Project: ccstats
-- Version: GitHub release 0.5.0; crates.io package 0.4.0
+- Version: GitHub release `v0.9.0`; crates.io package `0.9.0`
 - Archetype: CLI / local developer tool (`cli-tool`)
 - Repo: https://github.com/majiayu000/ccstats
-- Install/access: `cargo install ccstats --version 0.4.0 --locked`
+- Install/access: `cargo install ccstats --version 0.9.0 --locked`
 
 ## Audience
 
-- Target user: developers using Claude Code, OpenAI Codex, Cursor, Grok, or Kimi
-  Code who need local token and cost usage analytics.
-- Current pain: AI coding usage is spread across local logs and is hard to
-  inspect by day, project, model, or session.
-- Existing workaround: manually inspect local JSONL, SQLite, or session metadata
-  and reconcile usage across tools by hand.
-- Why now: the multi-tool positioning and 0.4.0 install/quickstart path are
-  verified, but external posting must wait for GitHub `v0.5.0` and crates.io
-  `0.4.0` to be aligned.
+- Target user: developers using AI coding agents who want local, scriptable
+  token and cost usage reports.
+- Current pain: usage metadata is scattered across agent logs and services,
+  making a day, project, model, or session breakdown hard to inspect.
+- Existing workaround: inspect separate agent logs and provider dashboards or
+  maintain custom parsing scripts.
+- Why now: GitHub and crates.io both publish `0.9.0`; the current README
+  documents 29 registered sources and a no-account CLI quickstart.
 
 ## Trend Signals
 
-- Sources checked: GitHub repo metadata, GitHub README, GitHub latest release,
-  crates.io crate API, and local SEO Agent Suite baseline commands.
-- Comparable projects: local Claude Code usage dashboards and token/cost usage
-  CLIs.
-- Signal type: readiness validation.
-- Local opportunity: publish a small, honest first-wave launch focused on local
-  AI coding usage visibility after final authorization.
-- Not guaranteed: GitHub Trending, Hacker News ranking, Reddit response, stars,
-  downloads, or any external traffic outcome.
+- Sources checked: ccstats GitHub README, release metadata, crates.io API,
+  current source and privacy docs, and the dated Shipwise readiness report.
+- Comparable projects: local AI coding usage dashboards and token/cost CLIs.
+- Signal type: readiness validation, not a promise of launch traffic.
+- Local opportunity: seek feedback on source coverage and useful breakdowns
+  after the per-platform copy and account are approved.
+- Not guaranteed: GitHub Trending, HN ranking, Reddit response, stars,
+  downloads, or traffic.
 
 ## Positioning
 
 ```text
-ccstats is for developers using Claude Code, OpenAI Codex, Cursor, Grok, or Kimi
-Code who need local token and cost usage analytics.
-It uses local log parsing and aggregation to deliver day, project, model, and
-session-level usage summaries.
+ccstats gives developers a local-first view of token and cost usage across 29
+AI coding-agent data sources. It renders terminal reports and JSON/CSV from
+usage metadata without requiring a ccstats account.
 ```
 
 ## Proof
 
-- Demo: blocked until a sanitized real-output terminal capture is recorded.
-  The README card is imagegen-generated marketing art with illustrative data,
-  not proof.
+- Demo: [actual 0.9.0 CLI output over a synthetic Codex fixture](../assets/2026-09-26-cli-demo.md).
+  The numbers are sample data, not a user's usage or a benchmark.
 - Benchmark: not used for this launch.
-- Real output: `ccstats codex today --no-cost` rendered a Token Usage table from
-  local Codex data in the 2026-08-13 dogfood run.
+- Real output: the checksum-verified `v0.9.0` release binary rendered a Token
+  Usage table from the isolated fixture on 2026-09-26. A separate clean
+  `cargo install` and real-log run also passed without publishing usage values.
 - User quote: not used for this launch.
 - Comparison: not used for this launch.
+- Marketing visual: the upstream README card has illustrative values and must
+  not be presented as measured output.
 
 ## Limitations
 
-- Cursor requires an explicit API key or dashboard session token; project
-  aggregation and 5-hour billing blocks are not supported for Cursor.
-- Grok sessions without per-turn usage fall back to an estimated snapshot cost;
-  Grok 5-hour billing blocks are not supported.
-- External platform posting requires explicit platform/account authorization and
-  final copy approval.
+- Cursor usage comes from its API and needs an explicit credential. `--offline`
+  does not make this source local; an offline replay file is a separate path.
+- Grok API-equivalent cost is not a user's actual subscription charge; missing
+  request coverage can leave a range or unknown value.
+- Pricing refresh and currency conversion can use the network. No ccstats
+  account is required; see the upstream privacy document for the full scope.
+- External platform posting requires explicit account authorization and final
+  per-platform copy approval.
 
 ## Launch Goal
 
-Feedback.
+Feedback on missing data sources and breakdowns.
 
 ## Selected Channels
 
-- Primary: GitHub release, crates.io, X thread, and HN Show HN only if this is
-  treated as the first public launch and the maintainer is available.
-- Secondary: niche Reddit after subreddit-specific rules are checked, plus a
-  localized Chinese developer community draft if approved.
-- Not doing: Product Hunt first wave, mass posting, automated DMs, or any post
-  without link logging.
+- Primary: GitHub release and crates.io as existing distribution paths; an X
+  thread after account/copy approval. Show HN only if the maker treats this as
+  a first public launch or major overhaul and can answer comments.
+- Secondary: one relevant subreddit after its specific rules and posting
+  account are checked, plus a localized community draft only if approved.
+- Not doing: Product Hunt first wave, mass posting, automated DMs, or posts
+  without URL logging.
