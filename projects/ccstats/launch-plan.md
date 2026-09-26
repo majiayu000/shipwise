@@ -1,5 +1,26 @@
 # Launch Plan
 
+## Current update: 2026-09-26
+
+- [x] GitHub latest release and crates.io max version are both `0.9.0`.
+- [x] The checksum-verified release binary produced a
+  [fixture-backed terminal demo](assets/2026-09-26-cli-demo.md), with synthetic
+  numbers clearly labeled.
+- [ ] Verify a clean `cargo install` and live-log quickstart for `0.9.0`.
+- [x] Rerun the discoverability subset gate on current ccstats metadata;
+  every emitted Shipwise check is `ok` with SEO Agent Suite `9d6c626`.
+- [ ] Rerun the separate homepage page probe in an environment with public
+  DNS; this host's proxy DNS makes the full baseline exit `1`.
+- [ ] Approve a platform-ready screenshot or GIF if the selected channel needs
+  one; the README card has illustrative numbers.
+- [ ] Refresh and approve platform copy. Existing drafts still describe the
+  older `v0.5.0` release and `0.4.0` crate.
+- [ ] Record explicit authorization for each platform/account, then post and
+  log URLs and Day 1 / Day 7 / Day 30 outcomes.
+
+The checklist below records the 2026-08-20 run. Its unchecked version-match
+item was accurate on that date; the current check is above.
+
 ## Decision
 
 - Archetype: CLI / local developer tool (`cli-tool`)

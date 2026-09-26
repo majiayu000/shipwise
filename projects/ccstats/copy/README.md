@@ -17,3 +17,7 @@ Files:
 
 Status: draft only. Do not publish any file here until the authorization gate in
 `../launch-plan.md` is satisfied and final copy approval is recorded.
+
+The drafts were written for the 2026-08-20 `v0.5.0` GitHub release and
+`0.4.0` crate. They contain outdated version, install, and limitation claims
+as of the 2026-09-26 `v0.9.0` release; refresh them before final approval.

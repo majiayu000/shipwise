@@ -1,5 +1,10 @@
 # Proof
 
+The checks below are the 2026-08-20 snapshot. Current `v0.9.0` release
+alignment and the fixture-backed terminal demo are recorded in
+[readiness-report.md](readiness-report.md) and
+[assets/2026-09-26-cli-demo.md](assets/2026-09-26-cli-demo.md).
+
 Do not publish claims from this file unless their status is `verified`.
 
 ## Verification Summary

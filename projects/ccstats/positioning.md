@@ -1,5 +1,9 @@
 # Positioning
 
+The proof and limitations below record the 2026-08-20 review. For current
+`v0.9.0` release facts and validation limits, see
+[readiness-report.md](readiness-report.md).
+
 ## One Sentence
 
 ```text
@@ -52,7 +56,8 @@ project, session, and model-level usage summaries.
 Terms the target user would actually type (the problem, not the brand).
 See `docs/DISCOVERABILITY.md` and `templates/seo/keyword_map.md`.
 
-- Primary: token/cost usage analytics
+- Primary: token and cost analytics (updated to match the 2026-09-26 GitHub
+  description)
 - Secondary: Claude Code usage stats, Codex usage stats, Cursor usage stats
 - Long-tail: local AI coding token usage CLI, OpenAI Codex cost analytics,
   Claude Code project session usage

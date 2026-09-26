@@ -1,5 +1,16 @@
 # Metrics
 
+## Current prelaunch snapshot
+
+- Date: 2026-09-26
+- GitHub stars: 13; forks: 2; open issues: 0
+- crates.io downloads: 558 total; 276 recent
+- GitHub latest release: `v0.9.0`; crates.io max version: `0.9.0`
+- Version alignment: verified from the GitHub release and crates.io APIs
+- External post metrics: not started; no post URLs are recorded
+
+The dated 2026-08-20 baseline below remains as a historical snapshot.
+
 ## Baseline
 
 - Date: 2026-08-20
