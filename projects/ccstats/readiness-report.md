@@ -9,8 +9,11 @@
   macOS arm64 binary reported `ccstats 0.9.0` and rendered the
   [fixture-backed CLI demo](assets/2026-09-26-cli-demo.md). Its numbers are
   synthetic, not user metrics.
-- `cargo install` and a live-log quickstart for `0.9.0`: **unverified** in this
-  run. The `0.4.0` checks below are historical.
+- `cargo install` and a real-log CLI run for `0.9.0`: **verified** in an
+  isolated temporary install root on 2026-09-26. The installed binary
+  reported `ccstats 0.9.0` and rendered a Codex Token Usage table. Private
+  usage totals and log paths were not copied into Shipwise. The `0.4.0`
+  checks below are historical.
 - Discoverability subset gate: **verified** for the current project YAML and
   clean ccstats checkout. All emitted Shipwise checks are `ok` with SEO Agent
   Suite `9d6c626`. The full command
@@ -20,8 +23,9 @@
 - Platform-ready screenshot or GIF: **missing**. The README card remains an
   illustrative marketing visual. The terminal transcript needs approval for
   any external use.
-- Platform copy: **blocked** pending a refresh of the 2026-08-20 drafts,
-  current platform rule checks, and final approval.
+- Platform copy: **drafted** for `v0.9.0` in `copy/`; X, HN, and Reddit
+  source rules were checked on 2026-09-26. Final text approval is pending.
+  Show HN eligibility and a specific subreddit's rules remain unresolved.
 - Platform/account authorization: **blocked**; no post URLs or post-launch
   metrics are recorded.
 

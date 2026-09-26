@@ -18,6 +18,12 @@ Files:
 Status: draft only. Do not publish any file here until the authorization gate in
 `../launch-plan.md` is satisfied and final copy approval is recorded.
 
-The drafts were written for the 2026-08-20 `v0.5.0` GitHub release and
-`0.4.0` crate. They contain outdated version, install, and limitation claims
-as of the 2026-09-26 `v0.9.0` release; refresh them before final approval.
+The drafts were refreshed on 2026-09-26 for the verified `v0.9.0` release and
+crate. The [terminal demo](../assets/2026-09-26-cli-demo.md) is real binary
+output over synthetic input; its numbers are sample data. The upstream README
+card is illustrative and must not be used as numeric proof.
+
+X and Show HN copy still need final account/text approval. Show HN also needs
+the maker to confirm first-launch or major-overhaul eligibility and availability
+for comments. Reddit copy needs a selected subreddit, its current rules, and
+a community-specific rewrite before approval.

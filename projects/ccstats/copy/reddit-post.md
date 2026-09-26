@@ -1,56 +1,55 @@
 # Reddit Post Draft
 
-Status: draft only. Filled from `templates/platforms/reddit_post.md` after
-reading `docs/platforms/reddit.md` on 2026-08-13.
+Status: draft only. Refreshed from `templates/platforms/reddit_post.md` after
+checking the [current Reddit spam policy](https://support.reddithelp.com/hc/en-us/articles/360043504051-Spam)
+on 2026-09-26. A specific subreddit and its current rules are still required.
 
-Subreddit:
+Subreddit: not selected. This body is a source draft to adapt for one relevant
+community, not text to post unchanged across subreddits.
+
+Proposed title:
 
 ```text
-Choose one relevant subreddit after checking its current rules, flair policy,
-self-promotion policy, and weekly-thread requirements.
+How do you review token and cost usage across AI coding agents?
 ```
 
-Title:
+Proposed body, for the maker's account only:
 
 ```text
-I built a local token and cost usage CLI for AI coding tools
-```
+I work on ccstats, a local-first CLI for token and cost analytics across 29 AI
+coding-agent data sources. It summarizes usage metadata by day, project, model,
+and session and can export JSON/CSV.
 
-Body:
+The practical use case is checking usage across tools without manually
+reconciling each agent's logs. The GitHub release and crates.io package are
+both at 0.9.0. A clean cargo install and run against local logs passed:
 
-```text
-I built ccstats for developers using Claude Code, OpenAI Codex, Cursor, Grok, or
-Kimi Code because local AI coding usage is hard to inspect across tools.
+cargo install ccstats --version 0.9.0 --locked
+ccstats today --source codex
 
-The practical use case:
-Run one local CLI to summarize token and cost usage by day, project, session,
-and model.
+Example output from the released binary is here:
+https://github.com/majiayu000/shipwise/blob/main/projects/ccstats/assets/2026-09-26-cli-demo.md
+It uses a synthetic Codex fixture. The token counts are sample data, not my
+private usage or anyone else's measured result. The README card is an
+illustration, not numeric proof.
 
-Demo:
-Blocked until a sanitized real-output terminal capture is recorded. The README
-card is an illustrative marketing visual, not proof.
+Limitations: Cursor usage comes from its API and needs explicit credentials.
+Grok API-equivalent cost is not an actual subscription charge. Pricing refresh
+and currency conversion can use the network.
 
-How to try:
-cargo install ccstats --version 0.4.0 --locked
+Which source or breakdown would help you most? Please don't post raw session
+logs or credentials in a public reply. I am involved in the project and am
+asking for feedback, not votes.
 
-What I am looking for:
-Which usage breakdown would be most useful in your workflow?
-
-Limitations:
-Cursor requires explicit credentials and does not support project aggregation
-or 5-hour billing blocks. Grok sessions without per-turn usage fall back to
-estimated snapshot costs; Grok 5-hour billing blocks are not supported.
-
-Disclosure:
-I built the project.
+Repo: https://github.com/majiayu000/ccstats
 ```
 
 Before posting:
 
-- [ ] Choose the subreddit.
-- [ ] Read that subreddit's current rules.
-- [ ] Rewrite the title and body for that community.
-- [ ] Remove any phrasing that reads as broadcast promotion.
-- [ ] Replace the blocked demo text with a sanitized real-output capture.
-- [ ] Confirm the posting account and final copy approval.
-- [ ] Log the final post URL in `../links.md`.
+- [ ] Choose one relevant subreddit and account.
+- [ ] Read and record that subreddit's current self-promotion, flair, title,
+  karma, and weekly-thread rules in `../launch-plan.md`.
+- [ ] Rewrite the title and body for that community; do not reuse identical
+  copy in another subreddit.
+- [ ] Confirm final copy and account authorization.
+- [ ] Log the final post URL and moderation outcome in `../links.md`.
