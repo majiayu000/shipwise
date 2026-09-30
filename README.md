@@ -2,6 +2,8 @@
 
 Agent-facing open-source publishing guide.
 
+Read the [project overview](https://majiayu000.github.io/shipwise/) or follow the [Agent Quick Start](#agent-quick-start) below.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/majiayu000/shipwise/actions/workflows/links.yml/badge.svg)](https://github.com/majiayu000/shipwise/actions/workflows/links.yml)
 [![Release](https://img.shields.io/github/v/release/majiayu000/shipwise)](https://github.com/majiayu000/shipwise/releases/latest)
