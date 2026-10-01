@@ -193,3 +193,10 @@ See [CHANGELOG.md](CHANGELOG.md).
 - GitHub Releases docs: https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
 - Cargo publishing: https://doc.rust-lang.org/cargo/reference/publishing.html
 - npm publish: https://docs.npmjs.com/cli/v10/commands/npm-publish/
+
+## Worked launch example
+
+The [first CLI launch walkthrough](https://majiayu000.github.io/shipwise/#first-launch)
+shows the scaffold command, output directory and records to fill before running
+SEO Agent Suite from its separate checkout. This is the open-source launch
+planning project maintained at `majiayu000/shipwise`.

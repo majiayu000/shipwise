@@ -193,7 +193,7 @@ footer .rule-line{border-top:2px solid var(--ink);padding-top:22px;display:flex;
 
 <header>
   <div class="wrap mast">
-    <span class="kicker">Agent-facing launch manifest</span>
+    <span class="kicker">Open-source launch planning · majiayu000/shipwise</span>
     <h1>Ship<span class="accent">wise</span></h1>
     <p class="tagline">
       Launch open source like a shipping operation: repo design, discoverability,
@@ -206,6 +206,27 @@ footer .rule-line{border-top:2px solid var(--ink);padding-top:22px;display:flex;
     </div>
   </div>
 </header>
+
+<section id="first-launch">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">START</span><h2>Prepare your first CLI launch</h2></div>
+    <div class="gate-grid">
+      <pre><code>git clone https://github.com/majiayu000/shipwise.git
+cd shipwise
+./scripts/new_project.sh my-cli cli-tool
+<span class="c"># Created .../shipwise/projects/my-cli</span></code></pre>
+      <div>
+        <p class="gate-note">The scaffold creates a project record, not a published announcement. Replace <code>my-cli</code> with your project name. If it already exists, open the existing record rather than overwriting it.</p>
+        <ol class="gate-note">
+          <li>Fill <code>projects/my-cli/project.yaml</code> with the repository URL, audience, positioning and discoverability fields.</li>
+          <li>Record a reproducible install command, expected output, license and support route in <code>proof.md</code> and <code>readiness-report.md</code>.</li>
+          <li>Use the <a href="https://github.com/majiayu000/shipwise/blob/main/docs/DECISION_TREE.md">decision tree</a> to choose channels, then draft <code>launch-plan.md</code>. Keep unverified claims out of copy.</li>
+        </ol>
+        <p class="gate-note">Start with the <a href="https://github.com/majiayu000/shipwise/blob/main/docs/AGENT_GUIDE.md">agent guide</a>, check the <a href="https://github.com/majiayu000/shipwise/blob/main/docs/DISCOVERABILITY.md">discoverability checklist</a>, and review the applicable <a href="https://github.com/majiayu000/shipwise/tree/main/docs/platforms">platform rules</a> before requesting authorization to publish.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="layers">
   <div class="wrap">
@@ -233,7 +254,7 @@ footer .rule-line{border-top:2px solid var(--ink);padding-top:22px;display:flex;
           <li>Repo / package / docs-site baseline evidence collection</li>
           <li>Technical page audit: meta, canonical, OG, JSON-LD, robots, sitemap</li>
           <li>Content &amp; GEO briefs with source boundaries</li>
-          <li>Non-zero exit on every unproven claim</li>
+          <li>Structured errors for implemented audit checks</li>
         </ul>
       </div>
     </div>
@@ -244,10 +265,12 @@ footer .rule-line{border-top:2px solid var(--ink);padding-top:22px;display:flex;
   <div class="wrap">
     <div class="sec-head"><span class="sec-no">02</span><h2>The discoverability gate</h2></div>
     <div class="gate-grid">
-      <pre><code><span class="c"># hand the Shipwise record to the execution layer</span>
+      <pre><code><span class="c"># run from a separate SEO Agent Suite checkout</span>
+git clone https://github.com/majiayu000/seo-agent-suite.git
+cd seo-agent-suite
 python3 scripts/repo_seo_baseline.py \
   --root  /path/to/target-repo \
-  --project-yaml shipwise/projects/ccstats/project.yaml \
+  --project-yaml /path/to/shipwise/projects/my-cli/project.yaml \
   --json
 
 <span class="c"># the gate refuses to pass on missing evidence</span>
@@ -268,7 +291,7 @@ python3 scripts/repo_seo_baseline.py \
         <p class="gate-note" style="margin-top:14px">
           Failures land in a structured <code>errors</code> array with a non-zero
           exit code — CI and launch-readiness reviews <strong>fail closed</strong>
-          instead of silently shipping an unfindable repo.
+          on implemented checks. A cleared local audit does not prove indexing, search demand, rankings or a successful launch.
         </p>
         <div class="verdicts">
           <span class="verdict fail">Blocked · fix record</span>
@@ -287,10 +310,10 @@ python3 scripts/repo_seo_baseline.py \
       <caption>What ships in the Shipwise repository</caption>
       <thead><tr><th>Hold</th><th>Contents</th><th>Use when</th></tr></thead>
       <tbody>
-        <tr><td>docs/</td><td>Agent guide, decision tree, discoverability pillar, feedback loop, success metrics, trend signal workflow</td><td>Planning any launch</td></tr>
+        <tr><td><a href="https://github.com/majiayu000/shipwise/tree/main/docs">docs/</a></td><td>Agent guide, decision tree, discoverability pillar, feedback loop, success metrics, trend signal workflow</td><td>Planning any launch</td></tr>
         <tr><td>docs/platforms/</td><td>Hard rules and official source links for 8 platforms</td><td>Before drafting platform copy</td></tr>
         <tr><td>checklists/</td><td>Release-lifecycle pointers and the discoverability run sheet</td><td>Pre-launch gate review</td></tr>
-        <tr><td>templates/</td><td>Variable contract, readiness report, announcement, repo metadata, keyword map, per-platform copy</td><td>Producing launch assets</td></tr>
+        <tr><td><a href="https://github.com/majiayu000/shipwise/tree/main/templates">templates/</a></td><td>Variable contract, readiness report, announcement, repo metadata, keyword map, per-platform copy</td><td>Producing launch assets</td></tr>
         <tr><td>projects/</td><td>Real launch records — scaffolded by <code>new_project.sh</code>, filled with proof, metrics, and retros</td><td>Recording every launch</td></tr>
       </tbody>
     </table>
