@@ -2,6 +2,7 @@
 
 - Date: 2026-10-02
 - Tracking: [Shipwise #8](https://github.com/majiayu000/shipwise/issues/8)
+- Fix: [PR #22](https://github.com/majiayu000/shipwise/pull/22)
 - Result: repository-side defect fixed; external launch loop remains incomplete.
 
 ## Defect and correction
