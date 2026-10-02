@@ -1,5 +1,10 @@
 # Hacker News Show HN Template
 
+Use this outline to organize verified facts, not as copy for an agent to fill
+and submit. Under the [HN guidelines](https://news.ycombinator.com/newsguidelines.html),
+the maker must write the final title and comment personally. Generated or
+AI-edited text and automated posting are prohibited, even if a draft is approved.
+
 Title:
 
 ```text
@@ -38,5 +43,7 @@ Checklist:
 
 - [ ] Users can try it without a waitlist.
 - [ ] It is not just a blog post, newsletter, list, or landing page.
+- [ ] You personally wrote the final title and comment without generated or
+  AI-edited text, and will post manually.
 - [ ] You are available to answer comments.
 - [ ] No request for upvotes or coordinated comments.

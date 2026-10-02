@@ -1,8 +1,14 @@
 # Hacker News Draft
 
-Status: draft only. Refreshed from `templates/platforms/hn_show_hn.md` after
+Status: fact-reference draft only; not eligible for direct posting. Refreshed from `templates/platforms/hn_show_hn.md` after
 checking the [current Show HN guidelines](https://news.ycombinator.com/showhn.html)
 on 2026-09-26.
+
+The [general HN guidelines](https://news.ycombinator.com/newsguidelines.html)
+prohibit generated or AI-edited text and automated posting. The proposed title
+and first comment below were prepared as an agent draft. The maker must write
+their own final title and comment from verified facts; approving or lightly
+editing this draft is insufficient.
 
 Use Show HN only if the maker confirms this is a first public launch or a
 major overhaul and is available to discuss it. A `v0.9.0` release announcement
@@ -21,7 +27,7 @@ Post URL:
 https://github.com/majiayu000/ccstats
 ```
 
-First comment, for the maker's account only:
+First-comment fact reference; do not paste or submit this generated draft:
 
 ```text
 Hi HN, I work on ccstats. It is a local-first CLI for token and cost analytics
@@ -53,5 +59,7 @@ Checklist:
 - [ ] The maker confirms this is a first public launch or major overhaul and
   can answer comments.
 - [x] No request for upvotes or coordinated comments.
+- [ ] The maker personally wrote the final title and comment without generated
+  or AI-edited text and will post manually.
 - [ ] Final account and comment approval is recorded.
 - [ ] Final post URL is logged in `../links.md`.
