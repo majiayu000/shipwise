@@ -2,6 +2,7 @@
 
 - Date: 2026-10-11
 - Tracking: [Shipwise #8](https://github.com/majiayu000/shipwise/issues/8)
+- Corrections and proof: [PR #24](https://github.com/majiayu000/shipwise/pull/24)
 - Result: `0.11.0` isolated Cargo install and actual CLI replay passed;
   a concrete X package is ready for review. The external launch is incomplete.
 
