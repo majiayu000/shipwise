@@ -1,12 +1,13 @@
 # Assets
 
-The [0.9.0 CLI demo](2026-09-26-cli-demo.md) records actual release-binary
-output over a clearly labeled synthetic fixture. It contains no private usage
-data. A platform-ready screenshot or GIF still needs approval.
+Current review package: [0.11.0 isolated CLI demo](2026-10-11-cli-demo.md),
+[PNG](2026-10-11-cli-demo.png), and [GIF](2026-10-11-cli-demo.gif).
+These render actual output from an installed `0.11.0` CLI over synthetic input.
+They contain no private usage, prompts, paths, or credentials. They are ready
+for final review; no platform upload or post has been made.
 
-Current marketing visual:
+The [0.9.0 CLI demo](2026-09-26-cli-demo.md) remains historical evidence.
 
-- README card: https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png
-  (imagegen-generated; dashboard values are illustrative and are not proof)
-
-The README card is not sufficient proof of real usage data.
+Marketing visual: the [upstream README card](https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png)
+has illustrative dashboard values. Use the current labeled transcript assets
+for this launch's proof, not that card as numeric evidence.

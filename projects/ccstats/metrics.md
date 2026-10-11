@@ -4,7 +4,7 @@
 
 - Date: 2026-10-11
 - GitHub stars: 13; forks: 2; open issues: 0
-- crates.io downloads: 1,133 total; 833 recent
+- crates.io downloads: 1,135 total; 835 recent
 - GitHub latest release: `v0.11.0`; crates.io max version: `0.11.0`
 - Version alignment: verified from the [GitHub release API](https://api.github.com/repos/majiayu000/ccstats/releases/latest)
   and [crates.io API](https://crates.io/api/v1/crates/ccstats)

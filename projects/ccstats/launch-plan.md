@@ -1,23 +1,31 @@
 # Launch Plan
 
-## Current update: 2026-10-11
+## Current update: 2026-10-11 — review package
 
-- [x] Verify public version alignment: GitHub latest release and crates.io are
-  both `0.11.0`; see the [readiness report](readiness-report.md).
-- [x] Refresh the dated public prelaunch baseline in [metrics.md](metrics.md).
-- [ ] Verify the `0.11.0` install and quickstart before using it in final copy.
-- [ ] Capture and approve current sanitized real-output proof; the existing
-  `0.9.0` synthetic-fixture transcript remains historical.
-- [ ] Rerun the discoverability subset gate and homepage probe before launch;
-  the last gate record and its DNS/proxy limitation are from 2026-09-26.
-- [ ] Refresh the historical `0.9.0` platform drafts after current proof exists;
-  recheck official platform rules and approve selected X/Reddit copy.
-- [ ] For HN, confirm eligibility and have the maker write the final text
-  personally, as required by the [HN source guide](../../docs/platforms/hacker-news.md).
-- [ ] Record each selected platform and posting account's authorization.
-- [ ] After authorized posting, log URLs and Day 1 / Day 7 / Day 30 outcomes.
+- [x] Verify GitHub/crates.io `0.11.0` alignment and public prelaunch counts.
+- [x] Install `0.11.0` in a new root and run the actual quickstart/replay with
+  an isolated synthetic Codex fixture. See [proof](assets/2026-10-11-cli-demo.md).
+- [x] Prepare and inspect labeled PNG/GIF transcript assets with no private data.
+- [x] Run the discoverability subset: all 16 checks `ok` with SEO Agent Suite
+  `9aba5379`; ccstats tagged source `971a146d`.
+- [ ] Complete homepage/crate HTTP probes from a public-DNS environment. The
+  full baseline currently exits 1 on non-public DNS resolution; no guard was bypassed.
+- [x] Choose one initial channel: a manual X thread with the attached demo.
+- [x] Prepare [current X text](copy/x-thread.md) and recheck official X rules.
+- [ ] Approve the exact X account, final text, and demo attachment.
+- [ ] After authorized posting, record its URL and actual Day 1 / 7 / 30 outcomes.
 
-The older snapshots below are historical evidence, not current launch approval.
+### Channel decision for this package
+
+The project is a CLI tool. A short X thread fits the terminal demonstration
+and needs no unsupported first-launch claim. Existing GitHub/crates.io releases
+supply the install path. HN is deferred because eligibility and maker-authored
+text need separate work; Reddit needs a selected community. Product Hunt is
+outside this small launch. Proposed sender: the maintainer's chosen X account;
+no handle is assumed, and no account access is needed to review these files.
+
+The prepared asset/copy approval is the next concrete decision. The dated
+checklists below are historical evidence, not additional current channel gates.
 
 ## Historical update: 2026-09-26
 
@@ -154,16 +162,15 @@ Copied from `docs/RELEASE_LIFECYCLE_CHECKLIST.md` and refreshed on 2026-08-20.
 
 ## Authorization Gate
 
-External launch remains blocked until these facts are recorded:
+Before the selected X thread is sent:
 
-- Platforms approved for posting.
-- Account or tool that will publish each post.
-- Final X/Reddit copy approved for each selected platform; HN final text must
-  be personally written by the maker without generated or AI-edited text.
-- Current official platform rules checked immediately before posting.
-- Sanitized terminal demo or screenshot captured from a real ccstats run; the
-  imagegen-generated README card is not sufficient proof.
-- Current install, quickstart, and discoverability checks completed before
-  posting. GitHub/crates.io `0.11.0` alignment is already verified on 2026-10-11.
-- After posting, published URLs logged in `projects/ccstats/links.md`; this is
-  an outcome record, not a prerequisite for preparing the launch.
+- Confirm the exact publishing account and approve [the text and attachment](copy/x-thread.md).
+- Recheck official platform rules if publication is delayed beyond this review.
+- Keep the visible synthetic-input label; these are actual CLI results from
+  example data, not real-user usage or a benchmark.
+- Retain the disclosed full-baseline HTTP probe limitation; the install,
+  quickstart, and local discoverability subset have already passed.
+
+After posting, log the URL and real outcomes in `links.md`, `metrics.md`, and
+the existing Day 1 / Day 7 / Day 30 records. Their windows begin after posting;
+no feedback is fabricated in advance.

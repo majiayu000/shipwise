@@ -1,7 +1,7 @@
 name: "ccstats"
 version: "0.11.0"
 archetype: "cli-tool"
-status: "repo-side dogfood recorded; v0.11.0 public release alignment verified; external publishing blocked"
+status: "0.11.0 isolated install and synthetic CLI proof verified; X package ready for review; external publishing pending"
 repo: "https://github.com/majiayu000/ccstats"
 website: "https://crates.io/crates/ccstats"
 docs: "https://docs.rs/ccstats/latest/ccstats/"
@@ -14,23 +14,21 @@ audience:
   primary_problem: "AI coding usage is spread across local logs and is hard to inspect by day, project, model, or session."
 positioning:
   one_sentence: "ccstats is a fast CLI for token and cost usage analytics across Claude Code, OpenAI Codex, Cursor, Grok, and Kimi Code logs."
-  proof: "Verified 2026-10-11 from public APIs: GitHub latest release and crates.io max_version are both 0.11.0. Install, quickstart, release archives and the SEO gate were not rerun. The 2026-09-26 install and synthetic-fixture demo establish 0.9.0 evidence only."
+  proof: "Verified 2026-10-11: GitHub/crates.io 0.11.0 alignment; a fresh install root via cargo install and actual quickstart/fixed-date replay passed on macOS arm64 using only an isolated synthetic Codex fixture. PNG/GIF show rendered actual output, not real-user usage."
   limitations: "Source-specific caveats are documented in the current upstream README and docs/sources.md; recheck them for v0.11.0 before approving platform copy."
 verification:
   license_status: "verified: MIT license in GitHub metadata and Cargo.toml"
   support_path: "https://github.com/majiayu000/ccstats/issues"
   quickstart_command: "ccstats today --source codex --no-cost --offline --timezone UTC"
-  expected_output: "A Token Usage table when Codex data exists; the recorded 0.9.0 demo uses synthetic data only."
+  expected_output: "Token Usage table; the isolated synthetic fixture produces 130 total tokens from one record."
   verification_command: "python3 <seo-agent-suite>/scripts/repo_seo_baseline.py --root <ccstats> --crate ccstats --project-yaml <shipwise>/projects/ccstats/project.yaml --json"
   verification_date: "2026-10-11"
-  proof_asset_path: "projects/ccstats/assets/2026-09-26-cli-demo.md"
+  proof_asset_path: "projects/ccstats/assets/2026-10-11-cli-demo.md"
 launch:
   goal_type: "feedback"
   launch_blockers:
-    - "A platform-ready screenshot or GIF has not been approved; the recorded terminal output uses a clearly labeled synthetic fixture."
-    - "The 0.11.0 install/quickstart and discoverability gate need a fresh prelaunch check; the 2026-09-26 subset pass and proxy-DNS failure are historical."
-    - "Explicit platform/account authorization is not recorded."
-    - "Platform drafts still describe 0.9.0. X/Reddit need refreshed and approved text; HN needs maker-authored final text and eligibility confirmation. Current platform/subreddit rules remain to be checked."
+    - "Exact X account and final text/asset approval are pending; concrete package is in copy/x-thread.md."
+    - "Full SEO HTTP probes remain unverified because this host resolves homepage/crate URLs to non-public addresses; all local subset checks pass."
 discoverability:
   description: "Local-first CLI (and desktop) for token and cost analytics across AI coding agents"
   primary_keyword: "token and cost analytics"
@@ -65,20 +63,20 @@ discoverability:
   homepage_url: "https://github.com/majiayu000/ccstats"
   social_image_set: true
   social_image_url: "https://repository-images.githubusercontent.com/1148135944/8a73d2be-8357-4c18-b705-08f54d9383ac"
-  local_gate_status: "2026-09-26: all Shipwise subset checks ok with SEO Agent Suite 9d6c626; full baseline exits 1 because this host resolves github.com to a non-public proxy address"
+  local_gate_status: "2026-10-11: all 16 Shipwise subset checks ok with SEO Agent Suite 9aba5379 against ccstats tag 971a146d; full command exits 1 because homepage/crate HTTP probes reject non-public DNS resolution"
 signals:
   sources_checked:
     - "GitHub repo metadata"
     - "GitHub main README via GitHub Contents API"
     - "GitHub latest release"
     - "crates.io crate API"
-    - "Historical SEO Agent Suite project-yaml subset gate output (2026-09-26; not rerun)"
+    - "SEO Agent Suite project-yaml subset gate output (2026-10-11; all 16 checks ok, full baseline exit 1)"
   retrieval_date: "2026-10-11"
   comparable_projects:
     - "Claude Code usage dashboards"
     - "Local token/cost usage CLIs"
   signal_type: "readiness validation"
-  decision: "Prepare repo-side launch record and template-derived draft copy, then defer external posting until explicit platform/account authorization and final copy approval."
+  decision: "Prepare one X thread using the verified 0.11.0 synthetic-input CLI demo; retain posting/account approval and real outcome recording as the next steps."
   local_issue: "https://github.com/majiayu000/shipwise/issues/8"
   local_pr: "https://github.com/majiayu000/shipwise/pull/13"
 channels:
@@ -86,12 +84,13 @@ channels:
     - "GitHub release"
     - "crates.io"
     - "X thread"
-    - "Hacker News Show HN only if treated as the first public launch and the maintainer is available"
+
   secondary:
-    - "niche Reddit after subreddit-specific rules are checked"
+    - "HN deferred: eligibility and maker-authored final text required"
+    - "niche Reddit deferred: subreddit-specific rules required"
     - "Chinese developer community after localization"
 assets:
-  demo: "Actual v0.9.0 binary output over a labeled synthetic fixture: projects/ccstats/assets/2026-09-26-cli-demo.md. External visual use still needs approval."
+  demo: "Actual installed 0.11.0 CLI output over synthetic Codex input: projects/ccstats/assets/2026-10-11-cli-demo.md, .png and .gif. Final X attachment review pending."
   screenshots:
     - "https://github.com/majiayu000/ccstats/blob/main/docs/branding/readme-card.png"
   social_image: "https://repository-images.githubusercontent.com/1148135944/8a73d2be-8357-4c18-b705-08f54d9383ac"
@@ -108,8 +107,8 @@ metrics:
   github_stars: 13
   github_forks: 2
   github_open_issues: 0
-  downloads: 1133
-  recent_downloads: 833
+  downloads: 1135
+  recent_downloads: 835
 review_dates:
   day_1: "blocked until external posting is authorized"
   day_7: "blocked until external posting is authorized"
