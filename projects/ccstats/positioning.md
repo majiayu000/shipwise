@@ -1,7 +1,7 @@
 # Positioning
 
 The proof and limitations below record the 2026-08-20 review. For current
-`v0.9.0` release facts and validation limits, see
+`v0.11.0` public release facts and validation limits, see
 [readiness-report.md](readiness-report.md).
 
 ## One Sentence

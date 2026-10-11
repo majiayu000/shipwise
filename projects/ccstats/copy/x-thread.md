@@ -1,5 +1,9 @@
 # X Thread Draft
 
+Historical `0.9.0` draft. Public metadata now reports `0.11.0` (2026-10-11);
+see the [current readiness report](../readiness-report.md) before refreshing
+this text. Current-version install/proof checks and posting approval are pending.
+
 Status: draft only. Refreshed from `templates/platforms/x_thread.md` after
 checking the [current X automation rules](https://help.x.com/en/rules-and-policies/x-automation)
 on 2026-09-26. Post manually only after the account and final text are

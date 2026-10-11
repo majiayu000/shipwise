@@ -1,6 +1,37 @@
 # Launch Readiness Report
 
-## Current update: 2026-09-26
+## Current update: 2026-10-11
+
+- Recommendation: **blocked** for external platform posts.
+- Release alignment: **verified** from the public APIs. [GitHub latest release](https://github.com/majiayu000/ccstats/releases/tag/v0.11.0)
+  and [crates.io](https://crates.io/api/v1/crates/ccstats) both report `0.11.0`;
+  the release was published on 2026-10-08. The earlier version mismatch is resolved.
+- Public baseline: **verified**. GitHub has 13 stars, 2 forks, and 0 open
+  issues; crates.io reports 1,133 total and 833 recent downloads. These are
+  prelaunch snapshots, not outcomes attributed to Shipwise.
+- Current-version install/quickstart: **unverified in this refresh**.
+  `cargo install ccstats --version 0.11.0 --locked` is the published install
+  command; the historical `0.9.0` install and demo below do not verify `0.11.0`.
+- Discoverability: the last recorded subset pass is 2026-09-26. The gate and
+  homepage probe were **not rerun** in this public-facts refresh. The prior
+  full-baseline DNS/proxy failure is historical, not a current diagnosis.
+- Proof asset: the existing [terminal demo](assets/2026-09-26-cli-demo.md)
+  remains `0.9.0` output over synthetic input. A current, sanitized real-output
+  capture and any platform-ready visual still need preparation and approval.
+- Platform copy: the files in `copy/` remain **historical `0.9.0` drafts**.
+  Refresh after current install/proof checks, then recheck platform rules and
+  approve X text or a selected subreddit's adapted text. HN requires the maker
+  to write the final text personally; approving the agent draft is insufficient.
+- Platform/account authorization: **blocked**. No external post URLs or
+  Day 1 / Day 7 / Day 30 outcomes are recorded. Those windows start after posting.
+
+Sources: [repository metadata](https://api.github.com/repos/majiayu000/ccstats),
+[latest release metadata](https://api.github.com/repos/majiayu000/ccstats/releases/latest),
+and [crate metadata](https://crates.io/api/v1/crates/ccstats), retrieved 2026-10-11.
+No installer, release archive, upstream tests, platform account, or private logs
+were accessed for this refresh.
+
+## Historical update: 2026-09-26
 
 - Recommendation: **blocked** for external platform posts.
 - Release alignment: **verified**. [GitHub latest release](https://github.com/majiayu000/ccstats/releases/tag/v0.9.0)

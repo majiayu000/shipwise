@@ -1,5 +1,9 @@
 # Project Brief
 
+Historical `0.9.0` draft. Public metadata now reports `0.11.0` (2026-10-11);
+see the [current readiness report](../readiness-report.md) before refreshing
+this text. Current-version install/proof checks and posting approval are pending.
+
 Status: draft source refreshed from `templates/core/PROJECT_BRIEF.md` on
 2026-09-26. No external post is authorized by this file.
 

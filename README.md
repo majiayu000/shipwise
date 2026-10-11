@@ -171,8 +171,9 @@ This is a documentation-first guide:
 - `scripts/new_project.sh` can scaffold a project launch folder, but does not publish.
 - `projects/ccstats/` records the first real repo-side dogfood validation,
   including a verified historical `ccstats` v0.4.0 install/quickstart and
-  discoverability gate record. Its 2026-09-26 readiness update records the
-  aligned `v0.9.0` release/crate and a fixture-backed CLI demo.
+  discoverability gate record. Its 2026-10-11 readiness update verifies public
+  `v0.11.0` release/crate alignment; install, demo, and gate evidence remain
+  dated historical checks, with fresh prelaunch verification still pending.
 - `projects/ccstats/copy/` contains draft-only platform copy produced through
   the declared `PROJECT_BRIEF -> ANNOUNCEMENT -> platform templates` flow.
 - External platform posting still requires explicit platform/account
