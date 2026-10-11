@@ -4,6 +4,11 @@ This is the execution checklist for any open-source launch. Copy it into `projec
 
 The checklist is tool-agnostic. Record outcomes in markdown first. If you use remem, Notion, a spreadsheet, or another database, mirror the same facts there.
 
+Apply items to the project's archetype and selected channels. Use the existing
+readiness statuses with reasons for `not applicable`; docs, collections and
+source-only projects need not publish a package or GitHub Release. Custom
+social artwork, five topics and all community files are not universal gates.
+
 ## Phase 1: Readiness
 
 ### 1. Define Launch Intent
@@ -18,8 +23,8 @@ Output: `projects/<project>/positioning.md`
 ### 2. Verify Product State
 
 - [ ] Tests pass for the project.
-- [ ] Clean install path is verified.
-- [ ] Quickstart is copied from README and run successfully.
+- [ ] Clean install or read/access path is verified for the selected channel.
+- [ ] Quickstart or documented first-use example is verified.
 - [ ] Known limitations are documented.
 - [ ] License is present.
 
@@ -31,6 +36,8 @@ Block launch if install or quickstart fails.
 - [ ] Benchmarks include machine/context/date.
 - [ ] User quotes have permission or are paraphrased.
 - [ ] Placeholder numbers are removed.
+- [ ] One evidence report is referenced with collection time, target/tool
+      revisions, observed published version and scope, including unavailable checks.
 
 Output: `projects/<project>/proof.md`
 
@@ -50,18 +57,20 @@ Output: `projects/<project>/readiness-report.md`
 ### 4. Prepare GitHub Surface
 
 - [ ] README first screen has positioning, install, quickstart, demo, and limitations.
-- [ ] README H1 matches name plus primary keyword.
-- [ ] GitHub description (one keyword sentence), 5-20 topics, and homepage URL are set.
+- [ ] README H1 names the project and uses natural descriptive terms.
+- [ ] GitHub description is accurate, topics relevant (at most 20, no minimum),
+      and homepage points to a useful real page if one exists.
 - [ ] Issue template or support path exists.
-- [ ] Release notes are drafted.
+- [ ] Release notes are drafted if a Release is selected.
 - [ ] Distribution section is filled from `templates/github/README_DISTRIBUTION_SECTION.md`.
-- [ ] Discoverability gate passed: `checklists/discoverability.md` (see `docs/DISCOVERABILITY.md`).
+- [ ] Applicable discovery findings recorded: `checklists/discoverability.md`
+      (see `docs/DISCOVERABILITY.md`); P2 polish does not block P0 readiness.
 
 Use `templates/github/REPO_METADATA.md` and `templates/seo/keyword_map.md`.
 
 ### 5. Prepare Distribution
 
-- [ ] Release artifact exists, or hosted access path is live.
+- [ ] Selected distribution path works: artifact, hosted/read access or source install.
 - [ ] Package dry-run completed where relevant.
 - [ ] Checksums or version metadata are ready where relevant.
 - [ ] Install commands are tested.
@@ -89,12 +98,15 @@ Use `docs/DISTRIBUTION_TEMPLATE.md`.
 
 ### 8. Publish Primary Artifact
 
-- [ ] GitHub release is published.
-- [ ] Package registry or hosted artifact is available.
+- [ ] Each selected publication surface is verified independently in `proof.md`:
+      source merge, package artifact, GitHub Release, site/access and indexing.
+- [ ] GitHub Release is published if selected.
+- [ ] Selected package, hosted/read access or source install is available.
 - [ ] README links resolve.
 - [ ] Release notes link to docs and install commands.
 
-Record initial metrics.
+Record initial metrics with source and window in `metrics.md`; leave uncollected
+data `unverified`. A merged source change does not prove other surfaces are live.
 
 ### 9. Publish First Wave
 

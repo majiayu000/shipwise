@@ -40,7 +40,7 @@ If you only have 30 minutes, do this:
 - Write one-sentence positioning.
 - Confirm installation works in a clean environment.
 - Prepare one real demo GIF or screenshot.
-- Publish GitHub release / package artifact.
+- Verify the selected artifact, source install or read/access path.
 - Post to one high-intent platform and one owned channel.
 - Record what happened.
 
@@ -142,12 +142,18 @@ Use [docs/DECISION_TREE.md](docs/DECISION_TREE.md) for the full table.
 Every launch needs:
 
 - One-sentence positioning.
-- README with installation, quickstart, use cases, help path, license, and limitations.
+- README with install/read/access path, first-use example, help, license and limitations.
 - One real demo: GIF, screenshot, terminal recording, video, or hosted demo.
-- Distribution path: release asset, package registry, hosted app, docs site, or API endpoint.
+- Working distribution path: source install, release asset, package registry,
+  hosted app, docs/read access, or API endpoint, according to the project.
 - Platform-specific copy for each channel you actually use.
-- Baseline metrics before launch.
+- Baseline metrics with source/window; mark inaccessible data `unverified`.
 - A post-launch review date.
+
+Use the existing readiness statuses for the actual archetype and channels.
+Custom social artwork is P2 polish; five topics, every community file, a package
+or GitHub Release are not universal blockers. Keep one dated evidence reference
+in `proof.md` and distinguish source merge, package, Release, live site and indexing.
 
 ## Do Not Do
 

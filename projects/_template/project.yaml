@@ -30,6 +30,7 @@ verification:
   expected_output: ""
   verification_command: ""
   verification_date: ""
+  evidence_report: "" # One report path/URL; metadata and scope indexed in proof.md.
   proof_asset_path: ""
 launch:
   goal_type: ""
@@ -59,8 +60,8 @@ links:
   product_hunt: ""
 metrics:
   baseline_date: ""
-  github_stars: 0
-  downloads: 0
+  github_stars: null # Unknown until measured; use 0 only with a source/window.
+  downloads: null
 review_dates:
   day_1: ""
   day_7: ""

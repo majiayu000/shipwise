@@ -10,25 +10,18 @@ A launch should be judged by its goal, not by one universal metric.
 | Adoption | installs, downloads, active users | stars, forks, package dependents |
 | Credibility | mentions, newsletter inclusion, HN/PH discussion | high-quality replies, inbound DMs |
 | Contributors | PRs, issues, discussions | first-time contributor count |
-| SEO / long-tail | docs traffic, search referrals | backlinks, blog reads |
+| SEO / long-tail | query/page impressions, clicks and CTR | search referrals, docs traffic, relevant links |
 | Sales / leads | qualified leads, trials, calls | Product Hunt or LinkedIn traffic |
 
 ## Baseline
 
-Record before launch:
-
-```markdown
-## Baseline
-
-- Date:
-- GitHub stars:
-- Forks:
-- Open issues:
-- Downloads:
-- Package version:
-- Website/docs traffic:
-- Existing audience size:
-```
+Use [the project metrics template](../projects/_template/metrics.md) before
+launch and for each review. It records query/page, impressions, clicks, CTR,
+window, source, filters and retrieval time; keep comparisons on the same scope.
+Reference the dated report in `proof.md` rather than copying evidence payloads.
+Uncollected/inaccessible values are `unverified`, unused channels are
+`not applicable`, and 0 requires an actual observation. Lighthouse lab runs,
+real-user field measurements and search traffic are separate evidence.
 
 ## Day 1
 

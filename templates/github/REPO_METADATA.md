@@ -17,8 +17,9 @@ Homepage:    {{docs_or_landing_or_package_url}}
 
 ## Topics
 
-5 to 20 topics, broad plus specific, all relevant. Use existing GitHub topics
-where possible.
+Choose relevant topics for purpose, domain and language. GitHub allows at most
+20 and has no minimum of 5. Use only applicable terms from the candidates below;
+topic count is not a launch blocker.
 
 ```text
 {{primary_keyword}}, {{archetype_term}}, {{language_or_runtime}},
@@ -35,13 +36,16 @@ Carries:  project name + one-line value
 File:     {{path_to_social_preview_image}}
 ```
 
-- Upload under Settings -> Social preview. Without it, shared links render as a
-  generic card.
+- Optional P2 polish: upload under Settings -> Social preview if useful.
+  Otherwise GitHub supplies a card with repo information and the owner's avatar.
+  Preview the selected channel; do not assume missing artwork reduces clicks.
 
 ## Community Health Files
 
-Confirm each exists in the repo (completes the GitHub community profile and acts
-as a trust signal):
+Verify the actual license and a usable help path as P0 checks. Review the other
+files against the project's contribution/security process; this is not a
+universal completeness gate. A support path need not require both CONTRIBUTING
+and issue templates. Record `not applicable` with a reason where appropriate.
 
 - [ ] README.md
 - [ ] LICENSE

@@ -1,6 +1,10 @@
 # Distribution Template
 
 Use this to make the project installable and understandable before posting about it.
+Select the channels users actually need. Source-only docs, writeups and
+collections can use a working read/access path or source install; package and
+Release checklists are `not applicable` when those channels are not selected.
+Record each publication surface independently in `proof.md`.
 
 ## README Distribution Section
 
@@ -85,7 +89,7 @@ Expected output:
 
 | Platform | Required assets |
 |---|---|
-| GitHub | README, release notes, install command, demo, topics |
+| GitHub | README, install/access path, proof, relevant topics; Release notes if selected |
 | HN Show HN | runnable project, concise title, founder comment, limitations |
 | X | hook, demo asset, proof, repo link |
 | Reddit | community-specific framing, no mass-post copy |

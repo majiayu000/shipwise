@@ -42,7 +42,7 @@ must not be treated as guaranteed external outcomes.
 2. Gather trend signals if timing, opportunity, issue creation, or PR scope depends on current community momentum
 3. Classify archetype
 4. Design repo and metadata for discovery (see DISCOVERABILITY.md); run the
-   optional SEO Agent Suite subset gate only after its documented capability
+   optional SEO Agent Suite subset review only after its documented capability
    preflight confirms `repo_seo_baseline.py --project-yaml` is available
 5. Read platform source docs
 6. Decide channels
@@ -73,6 +73,9 @@ Before drafting public copy, collect:
 - Trend sources and comparable projects, if current momentum influenced the work.
 
 If these facts are missing, create a preflight TODO instead of publishable copy.
+Interpret install/access and quickstart for the actual project: a writeup can
+have a reading path and method/example, and a collection can have a sample query.
+Do not invent a package, site or Release for an unused channel.
 
 ## Readiness Report
 
@@ -90,6 +93,15 @@ Use these status values:
 
 If install/access, quickstart, license, proof, or support path is missing,
 mark the launch as blocked and write local next actions instead of public copy.
+Verify the actual license, not just a badge; a usable help path need not include
+both issue templates and CONTRIBUTING. Relevant topics have no minimum count,
+custom social artwork is P2, and other community files depend on the process.
+
+Reference one evidence report from `proof.md` with collection time, target/tool
+revision, observed published version and scope. Keep source merge, published
+package, Release, live access and indexing as separate observations. A Suite
+check is evidence for its documented scope, not a launch or publication decision.
+Missing permissions/network evidence stays `unverified`; it is not a zero metric.
 
 ## Channel Decision Record
 
