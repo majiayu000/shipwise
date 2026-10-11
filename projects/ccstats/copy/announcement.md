@@ -1,5 +1,9 @@
 # Core Announcement
 
+Historical `0.9.0` draft. Public metadata now reports `0.11.0` (2026-10-11);
+see the [current readiness report](../readiness-report.md) before refreshing
+this text. Current-version install/proof checks and posting approval are pending.
+
 Status: draft only. Refreshed from `templates/core/ANNOUNCEMENT.md` on
 2026-09-26. This is source copy for platform-specific drafts, not a post.
 

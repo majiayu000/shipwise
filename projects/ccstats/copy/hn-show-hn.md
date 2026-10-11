@@ -1,5 +1,9 @@
 # Hacker News Draft
 
+Historical `0.9.0` draft. Public metadata now reports `0.11.0` (2026-10-11);
+see the [current readiness report](../readiness-report.md) before refreshing
+this text. Current-version install/proof checks and posting approval are pending.
+
 Status: fact-reference draft only; not eligible for direct posting. Refreshed from `templates/platforms/hn_show_hn.md` after
 checking the [current Show HN guidelines](https://news.ycombinator.com/showhn.html)
 on 2026-09-26.

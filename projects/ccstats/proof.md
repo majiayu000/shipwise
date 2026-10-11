@@ -1,6 +1,11 @@
 # Proof
 
-The checks below are the 2026-08-20 snapshot. Current `v0.9.0` release
+Current public release/crate alignment is `0.11.0`, checked 2026-10-11 in
+[readiness-report.md](readiness-report.md). This refresh did not rerun install,
+quickstart, archive verification, or SEO checks. No historical check below
+establishes current-version runtime behavior.
+
+The checks below are the 2026-08-20 snapshot. Historical `v0.9.0` release
 alignment and the fixture-backed terminal demo are recorded in
 [readiness-report.md](readiness-report.md) and
 [assets/2026-09-26-cli-demo.md](assets/2026-09-26-cli-demo.md).

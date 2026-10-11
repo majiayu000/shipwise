@@ -2,7 +2,7 @@
 
 - Repo: https://github.com/majiayu000/ccstats
 - Docs: https://docs.rs/ccstats/latest/ccstats/
-- Release: https://github.com/majiayu000/ccstats/releases/tag/v0.9.0 (latest checked 2026-09-26)
+- Release: https://github.com/majiayu000/ccstats/releases/tag/v0.11.0 (latest checked 2026-10-11)
 - Package: https://crates.io/crates/ccstats
 - X: not posted; explicit platform/account authorization required
 - HN: not posted; explicit platform/account authorization required

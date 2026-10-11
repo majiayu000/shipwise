@@ -1,5 +1,9 @@
 # Reddit Post Draft
 
+Historical `0.9.0` draft. Public metadata now reports `0.11.0` (2026-10-11);
+see the [current readiness report](../readiness-report.md) before refreshing
+this text. Current-version install/proof checks and posting approval are pending.
+
 Status: draft only. Refreshed from `templates/platforms/reddit_post.md` after
 checking the [current Reddit spam policy](https://support.reddithelp.com/hc/en-us/articles/360043504051-Spam)
 on 2026-09-26. A specific subreddit and its current rules are still required.
