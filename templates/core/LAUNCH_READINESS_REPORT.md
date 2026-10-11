@@ -2,6 +2,11 @@
 
 Use this before writing publishable launch copy. If any P0 check is `missing`,
 `unverified`, or `blocked`, the output is a preflight TODO, not a launch draft.
+Apply checks to the actual project and selected channels; record reasons for
+`not applicable`. A working source/read/access path can satisfy distribution.
+Five topics, a custom social image, all community files, a package or a GitHub
+Release are not universal gates. A usable help path need not include both issue
+templates and CONTRIBUTING. Custom social artwork remains P2 polish.
 
 ## Summary
 
@@ -12,6 +17,8 @@ Use this before writing publishable launch copy. If any P0 check is `missing`,
 - Repo: {{repo_url}}
 - Review date: {{verification_date}}
 - Recommendation: {{readiness_recommendation}}
+- Evidence report: {{evidence_report}} (metadata, scope and independent
+  publication observations in `proof.md`)
 
 ## Status Legend
 
@@ -29,14 +36,14 @@ Use this before writing publishable launch copy. If any P0 check is `missing`,
 | Install/access path works | {{install_status}} | {{install_command}} | {{install_next_action}} |
 | Quickstart works | {{quickstart_status}} | {{quickstart_command}} | {{quickstart_next_action}} |
 | Real proof asset exists | {{proof_status}} | {{proof}} | {{proof_next_action}} |
-| License is present | {{license_status}} | {{license_evidence}} | {{license_next_action}} |
+| Actual license permits intended use | {{license_status}} | {{license_evidence}} | {{license_next_action}} |
 | Support path exists | {{support_status}} | {{support_path}} | {{support_next_action}} |
 
 ## P1 Readiness Gaps
 
 | Check | Status | Evidence | Next action |
 |---|---|---|---|
-| Release or package path | {{distribution_status}} | {{distribution_evidence}} | {{distribution_next_action}} |
+| Selected distribution/access path | {{distribution_status}} | {{distribution_evidence}} | {{distribution_next_action}} |
 | README first screen | {{readme_status}} | {{readme_evidence}} | {{readme_next_action}} |
 | Limitations documented | {{limitations_status}} | {{limitations}} | {{limitations_next_action}} |
 | Platform source docs checked | {{source_docs_status}} | {{source_docs_checked}} | {{source_docs_next_action}} |
@@ -47,7 +54,7 @@ Use this before writing publishable launch copy. If any P0 check is `missing`,
 | Check | Status | Evidence | Next action |
 |---|---|---|---|
 | Platform-specific copy | {{platform_copy_status}} | {{platform_copy_evidence}} | {{platform_copy_next_action}} |
-| Social image or preview | {{social_image_status}} | {{social_image}} | {{social_image_next_action}} |
+| Optional custom social image/preview polish | {{social_image_status}} | {{social_image}} | {{social_image_next_action}} |
 | Second-wave channels | {{second_wave_status}} | {{secondary_channels}} | {{second_wave_next_action}} |
 
 ## Verification Commands

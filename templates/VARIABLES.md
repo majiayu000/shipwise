@@ -9,7 +9,7 @@ publishable copy.
 | Variable | Source field | Required before launch? |
 |---|---|---:|
 | `{{project_name}}` | `project.yaml:name` | yes |
-| `{{version}}` | `project.yaml:version` | yes |
+| `{{version}}` | `project.yaml:version` (source revision for unversioned work) | yes |
 | `{{archetype}}` | `project.yaml:archetype` | yes |
 | `{{repo_url}}` | `project.yaml:repo` | yes |
 | `{{docs_url}}` | `project.yaml:docs` | no |
@@ -24,6 +24,7 @@ publishable copy.
 | `{{expected_output}}` | `project.yaml:verification.expected_output` | yes |
 | `{{verification_command}}` | `project.yaml:verification.verification_command` | yes |
 | `{{verification_date}}` | `project.yaml:verification.verification_date` | yes |
+| `{{evidence_report}}` | `project.yaml:verification.evidence_report`; one report indexed in `proof.md` with time, target/tool revision, observed published version and scope | yes |
 | `{{license_status}}` | `project.yaml:verification.license_status` | yes |
 | `{{support_path}}` | `project.yaml:verification.support_path` | yes |
 | `{{proof_asset_path}}` | `project.yaml:verification.proof_asset_path` | yes |
@@ -34,6 +35,11 @@ publishable copy.
 | `{{launch_date}}` | `project.yaml:review_dates.day_1` or launch plan | yes when scheduled |
 | `{{social_image}}` | `project.yaml:assets.social_image` | no |
 | `{{secondary_channels}}` | `project.yaml:channels.secondary` | no |
+
+For docs, collections or source-only projects, record the actual read/access
+path instead of inventing a package install or release version. Mark genuinely
+unused surfaces `not applicable` with a reason. Empty metrics are unknown;
+`metrics.md` records the source and window for measured values.
 
 ## Derived Copy Variables
 

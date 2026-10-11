@@ -32,8 +32,8 @@ Use these canonical slugs in `projects/<project>/project.yaml` and
 
 | Archetype | User's first action | Typical projects | Must have | First wave | Second wave | Avoid first |
 |---|---|---|---|---|---|---|
-| CLI / local developer tool | Install and run a command | stats tools, cleanup tools, code analyzers | release artifact, install command, terminal demo | GitHub, package registry, X, HN or niche Reddit | blog, Chinese community, newsletter | Product Hunt without visuals |
-| Library / SDK | Add dependency or copy code | crates, npm packages, API clients | package, docs, API example | Package registry, GitHub, example repo, technical blog | X, HN, newsletter | broad social without docs |
+| CLI / local developer tool | Install and run a command | stats tools, cleanup tools, code analyzers | verified artifact or source install, terminal proof | GitHub, package registry if used, X, HN or niche Reddit | blog, Chinese community, newsletter | Product Hunt without visuals |
+| Library / SDK | Add dependency or copy code | crates, npm packages, API clients | verified dependency/source path, docs, API example | Package registry if used, GitHub, example repo, technical blog | X, HN, newsletter | broad social without docs |
 | AI / agent workflow tool | Try workflow with existing tools | MCP servers, skills, browser QA, prompt tooling | integration proof, workflow demo, limitations | GitHub, X, niche Reddit/Discord, demo video | HN, Chinese video/article | claims without workflow demo |
 | Framework / guardrail / quality system | Adopt a rule or policy | hooks, linters, guardrails, security checks | config examples, before/after, false-positive policy | GitHub, technical article, X | HN, Reddit | moralizing quality claims |
 | Registry / dataset / index | Search or query the collection | registries, catalogs, benchmarks, datasets | schema, sample query, coverage stats | GitHub, HN, X, docs | blog, newsletter | "largest" claims without data |
@@ -43,6 +43,9 @@ Use these canonical slugs in `projects/<project>/project.yaml` and
 ## Step 2: Check Readiness
 
 Do not launch if any blocker is true.
+Interpret first use for the actual archetype and selected channel: reading or a
+sample query may replace installation. A package, GitHub Release, five topics,
+custom social image or complete community profile is not universally required.
 
 | Blocker | Why it blocks launch |
 |---|---|
@@ -78,7 +81,7 @@ No global rule says Chinese must come before international or the reverse. Pick 
 | README quickstart | required | required | required | required | optional |
 | Demo GIF/video | required | optional | required | required | optional |
 | Benchmark/real output | required | optional | recommended | optional | required |
-| Package/release artifact | required | required | recommended | optional | optional |
+| Package/release artifact | if selected | if selected | if selected | optional | optional |
 | API/schema docs | optional | required | recommended | optional | optional |
 | Screenshots | recommended | optional | recommended | required | optional |
 | FAQ/limitations | required | required | required | required | required |

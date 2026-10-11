@@ -8,6 +8,8 @@ Package registries are distribution channels, not announcement channels. Use the
 - npm publish: https://docs.npmjs.com/cli/v10/commands/npm-publish/
 - PyPI trusted publishing: https://docs.pypi.org/trusted-publishers/
 - Homebrew Formula Cookbook: https://docs.brew.sh/Formula-Cookbook
+- Cargo workspace inheritance: https://doc.rust-lang.org/cargo/reference/workspaces.html
+- npm private flag and metadata: https://docs.npmjs.com/cli/v11/configuring-npm/package-json
 
 ## Use When
 
@@ -16,9 +18,17 @@ Package registries are distribution channels, not announcement channels. Use the
 - Binary utility.
 - Tool that should be installed into a developer workflow.
 
+Apply this guide only to the selected public packages/channels. Source-only
+projects need not publish a package. For workspace inheritance, private members,
+name collisions and immutable old versions, see the bounded examples in
+[DISCOVERABILITY.md](../DISCOVERABILITY.md#evidence-examples).
+
 ## Agent Checklist
 
 - [ ] Package name and version are final.
+- [ ] Exact package name/version and declared repository association checked;
+      matching metadata does not verify publisher identity or artifact provenance.
+      Private members excluded from public-registry checks rather than queried by name.
 - [ ] Metadata is complete: description, license, repository, README.
 - [ ] Dry-run or equivalent check passed.
 - [ ] Package contents were inspected.
@@ -28,15 +38,15 @@ Package registries are distribution channels, not announcement channels. Use the
 
 ## Registry SEO
 
-Registry search ranks mostly on name match, description, keywords, and download
-count. Metadata is a discoverability surface, not an afterthought. Fill it with
-the keyword map. Full guidance: [../DISCOVERABILITY.md](../DISCOVERABILITY.md).
+Registry search varies by service. The metadata sources describe useful fields,
+not a universal ranking formula. Fill supported fields accurately with the
+keyword map. Full guidance: [../DISCOVERABILITY.md](../DISCOVERABILITY.md).
 
 - Description: one sentence with the primary keyword; it shows in registry search
   results and is read by coding agents that recommend packages.
 - Keywords / categories / classifiers: set the per-registry fields below.
 - Repository and homepage links: set so the package points back to the source.
-- Same canonical name/slug as the GitHub repo and docs.
+- Document the mapping when package, GitHub and docs names differ.
 
 ## Registry Notes
 
@@ -56,10 +66,13 @@ replaced. Treat version, README, license, included files, and metadata as frozen
 Run `npm pack --dry-run` and confirm package contents. Be careful with package names, scope, access, 2FA, and dist tags.
 
 For discoverability, set `description`, `keywords`, `repository`, and `homepage`
-in `package.json`. npm search ranks on these plus popularity.
+in `package.json`; npm documents description and keywords as discovery aids.
+`private: true` prevents publication and is not a missing-public-package defect.
 
 Hard rule: run `npm pack --dry-run` and inspect package contents before any
 announcement. Do not rely on `.gitignore` alone for published file selection.
+Published name/version pairs cannot be reused. A README change on main does not
+update an old artifact; verify the published package before claiming a fix is live.
 
 ### PyPI
 

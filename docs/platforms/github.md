@@ -9,6 +9,7 @@ GitHub is the source of trust for open-source projects.
 - Topics: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics
 - Social preview: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/customizing-your-repositorys-social-media-preview
 - Community profile: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories
+- Repository search: https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories
 
 ## Use When
 
@@ -16,45 +17,44 @@ Every open-source launch should prepare GitHub first.
 
 ## Discoverability
 
-The repo page is a ranking surface, not only a landing page. GitHub search and
-Google both index it. Design it before posting anywhere. Full guidance:
+The repo page is a discovery and evaluation surface. GitHub documents searchable
+fields, not their relative weight or Google ranking/CTR effects. Full guidance:
 [../DISCOVERABILITY.md](../DISCOVERABILITY.md).
 
-- About description: one sentence with the primary keyword; it is reused in
-  GitHub search, Google snippets, and social cards.
-- Topics: set 5 to 20 relevant topics; empty topics is a discoverability bug.
-- README first paragraph and headings are the main indexed text; put the user's
-  search terms there in natural language.
-- Social preview image (1280x640) so shared links do not render as a generic card.
-- Community health files (LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY,
-  issue templates) complete the community profile and act as trust signals.
+- About description: explain the project accurately using natural search terms.
+- Topics: choose relevant terms, at most 20; no minimum count is required.
+- README: explain what, who and how to start; exact keyword placement is advice.
+- Preview the default card (repo information and owner's avatar). A custom
+  1280x640 image is optional P2 polish; no click-loss estimate is assumed.
+- Verify the actual license and usable support path. Other community files
+  depend on the project's contribution/security process.
 
 ## Agent Checklist
 
 - [ ] README first screen explains what it is, who it is for, and how to start.
-- [ ] README H1 matches name plus primary keyword.
+- [ ] README H1 names the project; descriptive terms read naturally.
 - [ ] License is present.
-- [ ] Release notes exist for the launch version.
-- [ ] GitHub description (one keyword sentence) and 5-20 topics are set.
-- [ ] Homepage URL field points to docs, landing page, or package.
-- [ ] Social preview image is set.
+- [ ] Release notes exist if a GitHub Release is a selected distribution channel.
+- [ ] GitHub description is accurate and topics are relevant (no minimum count).
+- [ ] Homepage points to a useful docs/landing/package page if one exists.
+- [ ] Default or custom preview checked on the selected social channel (P2 polish).
 - [ ] Issue/support path exists.
 - [ ] Demo/proof asset is visible from README.
 - [ ] Distribution section links to packages, binaries, docs, or hosted app.
 
-Run the full gate: [../../checklists/discoverability.md](../../checklists/discoverability.md).
+Review applicable items: [../../checklists/discoverability.md](../../checklists/discoverability.md).
+Use the existing readiness statuses and record reasons for `not applicable`.
 
 ## Hard Rules
 
 - Topics: GitHub allows no more than 20 topics; topic names must use lowercase
   letters, numbers, and hyphens, and must be 50 characters or less.
-- Shipwise default: use 5 to 20 relevant topics, with no unrelated trending
-  topics.
-- Social preview: use a 1280x640 image and verify the repository setting before
-  publishing social links.
-- Release/version: the GitHub release, package registry version, and install
-  command must refer to the same intended launch version, or the mismatch must
-  be recorded as a blocker.
+- Do not add unrelated topics or require five topics as a platform rule.
+- Release/version: verify each selected artifact and its install instructions
+  against the intended version. Record source revision, published package,
+  Release, live site and indexing independently in `proof.md`; a source merge
+  does not publish the others. Block a claimed install path that resolves to an
+  unintended version. Docs/source-only projects need no package or Release.
 
 ## Do Not
 

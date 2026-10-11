@@ -1,40 +1,52 @@
-# Discoverability Gate Checklist
+# Discoverability Checklist
 
-Minimum design-for-discovery gate. Run before launch, alongside
+Review the discovery surfaces selected for this launch, alongside
 `checklists/release-lifecycle.md`. Full guidance: [docs/DISCOVERABILITY.md](../docs/DISCOVERABILITY.md).
 This checklist is an execution run sheet; the linked doc remains the source for
 rules and rationale.
 
+Record each applicable finding in `readiness-report.md` using `verified`,
+`missing`, `unverified`, `blocked` or `not applicable`, with a reason and evidence
+reference to `proof.md`. An unchecked polish item does not block launch. Preserve
+P0 checks for legal use, working install/access, quickstart, real proof and help.
+Docs, collections and source-only projects need not publish a package or Release.
+
 ## Identity
 
-- [ ] Canonical name/slug is the same across GitHub, package, docs, and social.
+- [ ] Project identity and any different package/source names are mapped accurately.
 - [ ] Primary keyword is decided (the term a user would actually search).
 
 ## GitHub Repo
 
-- [ ] About description is one sentence with the primary keyword, no fake claims.
-- [ ] 5 to 20 topics set, broad plus specific, all relevant.
-- [ ] Homepage URL field points to docs, landing page, or package page.
-- [ ] Social preview image (1280x640) set, carrying name and one-line value.
-- [ ] README H1 matches name plus primary keyword.
-- [ ] README first paragraph states what, who, and the search term.
+- [ ] About description explains the project naturally, with no fake claims.
+- [ ] Relevant topics chosen (at most 20; GitHub has no minimum of 5).
+- [ ] Homepage points to a useful real page, if one exists.
+- [ ] Selected channel's default or custom share card reviewed; custom image is P2.
+- [ ] README H1 names the project; a descriptive term is optional.
+- [ ] README first paragraph states what and who, using natural search terms.
 - [ ] Section headings are descriptive (Installation, Quickstart, Use cases).
-- [ ] Install command and a real demo are above the fold.
-- [ ] Community health files present: LICENSE, CONTRIBUTING, CODE_OF_CONDUCT,
-      SECURITY, issue template.
-- [ ] A release is published (recency signal).
+- [ ] Applicable install/access path, quickstart and proof are easy to find.
+- [ ] Actual license and usable help path verified; other community files fit
+      the contribution/security processes, rather than a universal file count.
+- [ ] Release/versioned artifact checked if selected; source-only access is valid.
 
 ## Search / Docs Site (if one exists)
 
 - [ ] Unique title and meta description per page.
-- [ ] One H1 per page; descriptive, slugified URLs.
-- [ ] sitemap.xml and robots.txt present; pages are indexable (no stray noindex).
-- [ ] Content renders without client-side-only JS, or is pre-rendered.
+- [ ] Clear heading hierarchy and descriptive URLs; no exact H1-count gate.
+- [ ] Crawl directives, canonical and structured data reviewed for validity;
+      no accidental noindex. Record indexing separately from eligibility.
+- [ ] Origin-root robots rules and any sitemap reviewed where applicable;
+      missing robots.txt alone is not a block and sitemap may use a subpath.
+- [ ] Important content is available in the rendered page.
 - [ ] Canonical URL set on syndicated copies of the same article.
 
 ## Package Registry (if publishing)
 
-- [ ] Description filled with the primary keyword.
+- [ ] Exact public package name/version and declared repository association
+      checked; a match does not verify publisher identity or artifact provenance.
+      Private packages are not applicable to public-registry checks.
+- [ ] Description accurately explains the package.
 - [ ] Keywords / categories / classifiers set per registry.
 - [ ] Repository and homepage links set in package metadata.
 

@@ -186,8 +186,8 @@ footer .rule-line{border-top:2px solid var(--ink);padding-top:22px;display:flex;
 
 <div class="ticker" aria-hidden="true">
   <span>
-    GATE STATUS: FAIL-CLOSED &nbsp;●&nbsp; PLANNING LAYER: SHIPWISE &nbsp;●&nbsp; EXECUTION LAYER: SEO AGENT SUITE &nbsp;●&nbsp; NO SILENT FALLBACK &nbsp;●&nbsp; EVIDENCE BEFORE COPY &nbsp;●&nbsp;
-    GATE STATUS: FAIL-CLOSED &nbsp;●&nbsp; PLANNING LAYER: SHIPWISE &nbsp;●&nbsp; EXECUTION LAYER: SEO AGENT SUITE &nbsp;●&nbsp; NO SILENT FALLBACK &nbsp;●&nbsp; EVIDENCE BEFORE COPY &nbsp;●&nbsp;
+    P0 READINESS: EVIDENCE REQUIRED &nbsp;●&nbsp; PLANNING LAYER: SHIPWISE &nbsp;●&nbsp; EXECUTION LAYER: SEO AGENT SUITE &nbsp;●&nbsp; SCOPED CHECKS &nbsp;●&nbsp; EVIDENCE BEFORE COPY &nbsp;●&nbsp;
+    P0 READINESS: EVIDENCE REQUIRED &nbsp;●&nbsp; PLANNING LAYER: SHIPWISE &nbsp;●&nbsp; EXECUTION LAYER: SEO AGENT SUITE &nbsp;●&nbsp; SCOPED CHECKS &nbsp;●&nbsp; EVIDENCE BEFORE COPY &nbsp;●&nbsp;
   </span>
 </div>
 
@@ -199,7 +199,7 @@ footer .rule-line{border-top:2px solid var(--ink);padding-top:22px;display:flex;
       Launch open source like a shipping operation: repo design, discoverability,
       platform rules, templates, and checklists — written for agents, gated by evidence.
     </p>
-    <div class="stamp">Fail&#8209;closed</div>
+    <div class="stamp">Evidence first</div>
     <div class="cta-row">
       <a class="btn" href="https://github.com/majiayu000/shipwise">Shipwise repo</a>
       <a class="btn ghost" href="https://github.com/majiayu000/seo-agent-suite">SEO Agent Suite</a>
@@ -263,7 +263,7 @@ cd shipwise
 
 <section id="gate">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-no">02</span><h2>The discoverability gate</h2></div>
+    <div class="sec-head"><span class="sec-no">02</span><h2>The discoverability review</h2></div>
     <div class="gate-grid">
       <pre><code><span class="c"># run from a separate SEO Agent Suite checkout</span>
 git clone https://github.com/majiayu000/seo-agent-suite.git
@@ -273,29 +273,25 @@ python3 scripts/repo_seo_baseline.py \
   --project-yaml /path/to/shipwise/projects/my-cli/project.yaml \
   --json
 
-<span class="c"># the gate refuses to pass on missing evidence</span>
-"status": <span class="err">"error"</span>,
-"errors": [{
-  "surface": "shipwise",
-  "check":   "social_image_set",
-  "reason":  <span class="err">"social preview image is not marked as set"</span>
-}]
-<span class="c"># exit code</span> <span class="err">1</span>  <span class="c">— fix the record, not the gate</span></code></pre>
+<span class="c"># use Python 3.11+; inspect the actual report and check scope</span>
+<span class="c"># reference it once from proof.md with time and source revision</span>
+<span class="c"># review P0 readiness separately from metadata recommendations</span></code></pre>
       <div>
         <p class="gate-note">
-          The <code>discoverability:</code> block in every project record is a
-          <strong>machine-checkable contract</strong>: description, primary keyword,
-          5–20 GitHub topics, homepage URL, social preview state, license,
-          contributing guide, and support path.
+          The project record supports a <strong>scoped evidence review</strong>.
+          Apply checks to the actual project and selected channels. Verify the
+          license, working install/access, quickstart, real proof and usable help.
+          Relevant topics have no minimum count; custom social artwork is P2 polish.
         </p>
         <p class="gate-note" style="margin-top:14px">
-          Failures land in a structured <code>errors</code> array with a non-zero
-          exit code — CI and launch-readiness reviews <strong>fail closed</strong>
-          on implemented checks. A cleared local audit does not prove indexing, search demand, rankings or a successful launch.
+          Inspect the audit's checks, recommendations and errors in its actual
+          output. Source-only projects need no package or GitHub Release. Keep
+          source merge, package, Release, live site and indexing as independent
+          observations. A local pass does not prove launch readiness or search growth.
         </p>
         <div class="verdicts">
-          <span class="verdict fail">Blocked · fix record</span>
-          <span class="verdict pass">Cleared · draft copy</span>
+          <span class="verdict fail">P0 blocked · fix facts</span>
+          <span class="verdict pass">Evidence collected · review readiness</span>
         </div>
       </div>
     </div>
