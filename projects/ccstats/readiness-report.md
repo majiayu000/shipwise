@@ -1,35 +1,46 @@
 # Launch Readiness Report
 
-## Current update: 2026-10-11
+## Current update: 2026-10-11 — isolated install and review package
 
-- Recommendation: **blocked** for external platform posts.
-- Release alignment: **verified** from the public APIs. [GitHub latest release](https://github.com/majiayu000/ccstats/releases/tag/v0.11.0)
-  and [crates.io](https://crates.io/api/v1/crates/ccstats) both report `0.11.0`;
-  the release was published on 2026-10-08. The earlier version mismatch is resolved.
-- Public baseline: **verified**. GitHub has 13 stars, 2 forks, and 0 open
-  issues; crates.io reports 1,133 total and 833 recent downloads. These are
-  prelaunch snapshots, not outcomes attributed to Shipwise.
-- Current-version install/quickstart: **unverified in this refresh**.
-  `cargo install ccstats --version 0.11.0 --locked` is the published install
-  command; the historical `0.9.0` install and demo below do not verify `0.11.0`.
-- Discoverability: the last recorded subset pass is 2026-09-26. The gate and
-  homepage probe were **not rerun** in this public-facts refresh. The prior
-  full-baseline DNS/proxy failure is historical, not a current diagnosis.
-- Proof asset: the existing [terminal demo](assets/2026-09-26-cli-demo.md)
-  remains `0.9.0` output over synthetic input. A current, sanitized real-output
-  capture and any platform-ready visual still need preparation and approval.
-- Platform copy: the files in `copy/` remain **historical `0.9.0` drafts**.
-  Refresh after current install/proof checks, then recheck platform rules and
-  approve X text or a selected subreddit's adapted text. HN requires the maker
-  to write the final text personally; approving the agent draft is insufficient.
-- Platform/account authorization: **blocked**. No external post URLs or
-  Day 1 / Day 7 / Day 30 outcomes are recorded. Those windows start after posting.
+- Recommendation: **ready for final review of one X thread**; external posting
+  remains blocked until the user approves the account and concrete materials.
+- Release alignment: **verified**. GitHub release and crates.io are both
+  `0.11.0` (released 2026-10-08).
+- Install and quickstart: **verified** on macOS arm64 with Rust/Cargo 1.97.0.
+  A new-root `cargo install ccstats --version 0.11.0 --locked --jobs 2`
+  completed, version output was `ccstats 0.11.0`, and the actual CLI rendered
+  130 tokens from one synthetic Codex fixture. Fixed-date replay also passed.
+  Existing dependency caches were available; this was not a cold-cache test.
+- Proof asset: **verified for the controlled fixture**. The [reproduction and
+  output](assets/2026-10-11-cli-demo.md), [PNG](assets/2026-10-11-cli-demo.png),
+  and [GIF](assets/2026-10-11-cli-demo.gif) contain actual output and visible
+  synthetic-data labels. No real sessions or credentials were read. The visual
+  is a rendered transcript, not a real-user screenshot or latency recording.
+- License/support: **verified**. The tagged source contains an MIT license and
+  issue templates; the public issue endpoint exists.
+- Discoverability subset: **verified**. All 16 emitted Shipwise checks were
+  `ok` using SEO Agent Suite `9aba5379` and ccstats tag commit `971a146d`.
+  The **full baseline exits 1**: homepage and crate HTTP probes reject this
+  host's non-public DNS resolution. Those probes remain unverified. GitHub
+  metadata and crate version were separately retrieved successfully with
+  `gh`/`curl`; that does not make the failed baseline green.
+- Channel/copy: **prepared**. [X thread](copy/x-thread.md) is the chosen small
+  first wave, using the current demo and a concrete install command. Official
+  X automation/authenticity rules were checked on 2026-10-11. HN and Reddit
+  drafts remain deferred; their extra eligibility/community work is not a
+  prerequisite for reviewing this X package.
+- Public baseline: 13 stars, 2 forks, 0 open issues; 1,135 total and 835 recent
+  crates.io downloads at this refresh. These are prelaunch snapshots, not
+  results attributed to Shipwise.
+- Remaining: final X account/text/asset approval, actual authorized publication,
+  logged URL, and real Day 1 / Day 7 / Day 30 outcomes. No posts were sent.
 
-Sources: [repository metadata](https://api.github.com/repos/majiayu000/ccstats),
-[latest release metadata](https://api.github.com/repos/majiayu000/ccstats/releases/latest),
-and [crate metadata](https://crates.io/api/v1/crates/ccstats), retrieved 2026-10-11.
-No installer, release archive, upstream tests, platform account, or private logs
-were accessed for this refresh.
+Sources: [release](https://github.com/majiayu000/ccstats/releases/tag/v0.11.0),
+[crate API](https://crates.io/api/v1/crates/ccstats),
+[repo API](https://api.github.com/repos/majiayu000/ccstats),
+[license at the tag](https://github.com/majiayu000/ccstats/blob/v0.11.0/LICENSE),
+[X automation](https://help.x.com/en/rules-and-policies/x-automation), and
+[X authenticity](https://help.x.com/en/rules-and-policies/authenticity).
 
 ## Historical update: 2026-09-26
 

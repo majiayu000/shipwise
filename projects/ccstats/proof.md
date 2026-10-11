@@ -1,9 +1,11 @@
 # Proof
 
-Current public release/crate alignment is `0.11.0`, checked 2026-10-11 in
-[readiness-report.md](readiness-report.md). This refresh did not rerun install,
-quickstart, archive verification, or SEO checks. No historical check below
-establishes current-version runtime behavior.
+Current `0.11.0` installation, isolated quickstart, fixed-date replay, and
+publicly reviewable assets are verified in the [2026-10-11 demo](assets/2026-10-11-cli-demo.md).
+The input is synthetic and the CLI output is real; no private sessions were read.
+The current [readiness report](readiness-report.md) separately records the green
+local SEO subset and failed full HTTP probes. Historical checks below do not
+add current-version or real-user coverage.
 
 The checks below are the 2026-08-20 snapshot. Historical `v0.9.0` release
 alignment and the fixture-backed terminal demo are recorded in

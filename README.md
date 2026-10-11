@@ -172,8 +172,9 @@ This is a documentation-first guide:
 - `projects/ccstats/` records the first real repo-side dogfood validation,
   including a verified historical `ccstats` v0.4.0 install/quickstart and
   discoverability gate record. Its 2026-10-11 readiness update verifies public
-  `v0.11.0` release/crate alignment; install, demo, and gate evidence remain
-  dated historical checks, with fresh prelaunch verification still pending.
+  `v0.11.0` release/crate alignment, an isolated Cargo install and synthetic-input
+  CLI demo, and a green local SEO subset. Full HTTP probes remain blocked by
+  this host's DNS resolution. A concrete X thread and labeled PNG/GIF await review.
 - `projects/ccstats/copy/` contains draft-only platform copy produced through
   the declared `PROJECT_BRIEF -> ANNOUNCEMENT -> platform templates` flow.
 - External platform posting still requires explicit platform/account

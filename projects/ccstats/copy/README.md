@@ -18,10 +18,11 @@ Files:
 Status: draft only. Do not publish any file here until the authorization gate in
 `../launch-plan.md` is satisfied and final copy approval is recorded.
 
-As of 2026-10-11, the current public release/crate is `0.11.0`. These drafts
-still describe `0.9.0`; refresh them after the current install/proof checks in
-the [readiness report](../readiness-report.md), then recheck platform rules.
-The HN file is a fact reference only; its final text must be maker-authored.
+Current review package: [X thread](x-thread.md), updated 2026-10-11 for the
+verified `0.11.0` install and [synthetic-input demo](../assets/2026-10-11-cli-demo.md).
+The other platform files below remain historical `0.9.0` drafts and are deferred.
+Their unresolved channel checks do not block review of this selected X package.
+The HN file is a fact reference only; final text must be maker-authored.
 
 The drafts were refreshed on 2026-09-26 for the verified `v0.9.0` release and
 crate. The [terminal demo](../assets/2026-09-26-cli-demo.md) is real binary
